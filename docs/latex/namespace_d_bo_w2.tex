@@ -1,0 +1,308 @@
+\hypertarget{namespace_d_bo_w2}{}\doxysection{D\+Bo\+W2 Namespace Reference}
+\label{namespace_d_bo_w2}\index{DBoW2@{DBoW2}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_d_bo_w2_1_1_bow_vector}{Bow\+Vector}}
+\begin{DoxyCompactList}\small\item\em Vector of words to represent images. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_d_bo_w2_1_1_f_class}{F\+Class}}
+\begin{DoxyCompactList}\small\item\em Generic class to encapsulate functions to manage descriptors. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_d_bo_w2_1_1_feature_vector}{Feature\+Vector}}
+\begin{DoxyCompactList}\small\item\em Vector of nodes with indexes of local features. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_d_bo_w2_1_1_f_o_r_b}{F\+O\+RB}}
+\begin{DoxyCompactList}\small\item\em Functions to manipulate O\+RB descriptors. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_d_bo_w2_1_1_general_scoring}{General\+Scoring}}
+\begin{DoxyCompactList}\small\item\em Base class of scoring functions. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_d_bo_w2_1_1_templated_vocabulary}{Templated\+Vocabulary}}
+\begin{DoxyCompactList}\small\item\em Generic Vocabulary. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef unsigned int \mbox{\hyperlink{namespace_d_bo_w2_ab1a0d3283b2d4690a383372ed20bfeb5}{Word\+Id}}
+\begin{DoxyCompactList}\small\item\em Id of words. \end{DoxyCompactList}\item 
+typedef double \mbox{\hyperlink{namespace_d_bo_w2_a55fcd7333e591a38e96b91f41bc182f6}{Word\+Value}}
+\begin{DoxyCompactList}\small\item\em Value of a word. \end{DoxyCompactList}\item 
+typedef unsigned int \mbox{\hyperlink{namespace_d_bo_w2_a3a0fa9c50c0df508759362d6204566f2}{Node\+Id}}
+\begin{DoxyCompactList}\small\item\em Id of nodes in the vocabulary treee. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespace_d_bo_w2_a53e9e0bcfc25c861815e413a7cf3fa51}{L\+Norm}} \{ \mbox{\hyperlink{namespace_d_bo_w2_a53e9e0bcfc25c861815e413a7cf3fa51a94f5879ff083c0a8364805ae4f9c2d5c}{L1}}, 
+\mbox{\hyperlink{namespace_d_bo_w2_a53e9e0bcfc25c861815e413a7cf3fa51aff96c9503798aa8504a954d3832e5eaa}{L2}}
+ \}
+\begin{DoxyCompactList}\small\item\em L-\/norms for normalization. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{namespace_d_bo_w2_a5de5c8a307aca9a84ffefda2a9bc467a}{Weighting\+Type}} \{ \mbox{\hyperlink{namespace_d_bo_w2_a5de5c8a307aca9a84ffefda2a9bc467aaa3425e88466862008dff6883e07e205d}{T\+F\+\_\+\+I\+DF}}, 
+\mbox{\hyperlink{namespace_d_bo_w2_a5de5c8a307aca9a84ffefda2a9bc467aa15d1950b5707de9ac0760c2c6dae48bd}{TF}}, 
+\mbox{\hyperlink{namespace_d_bo_w2_a5de5c8a307aca9a84ffefda2a9bc467aa5a1c1f7cd866c8bea4551e296298c3bc}{I\+DF}}, 
+\mbox{\hyperlink{namespace_d_bo_w2_a5de5c8a307aca9a84ffefda2a9bc467aae517632073c3a0b980558ebb6519d759}{B\+I\+N\+A\+RY}}
+ \}
+\begin{DoxyCompactList}\small\item\em Weighting type. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{namespace_d_bo_w2_aa252a592dd607c6e60dede06ceef2722}{Scoring\+Type}} \{ \newline
+\mbox{\hyperlink{namespace_d_bo_w2_aa252a592dd607c6e60dede06ceef2722a2df432e58efd2a13d4950ee96aa6a20f}{L1\+\_\+\+N\+O\+RM}}, 
+\mbox{\hyperlink{namespace_d_bo_w2_aa252a592dd607c6e60dede06ceef2722ad1a4e066e848e5247e4d94dd3e08f509}{L2\+\_\+\+N\+O\+RM}}, 
+\mbox{\hyperlink{namespace_d_bo_w2_aa252a592dd607c6e60dede06ceef2722ad0bd4548b18fb1c165961506e199f38d}{C\+H\+I\+\_\+\+S\+Q\+U\+A\+RE}}, 
+\mbox{\hyperlink{namespace_d_bo_w2_aa252a592dd607c6e60dede06ceef2722a607c4948ab28605098d7cedb9bce14ae}{KL}}, 
+\newline
+\mbox{\hyperlink{namespace_d_bo_w2_aa252a592dd607c6e60dede06ceef2722a22de570628b33a2662630def802a23cb}{B\+H\+A\+T\+T\+A\+C\+H\+A\+R\+Y\+YA}}, 
+\mbox{\hyperlink{namespace_d_bo_w2_aa252a592dd607c6e60dede06ceef2722a14556ffa1d80b1c7540ea68506eb5b56}{D\+O\+T\+\_\+\+P\+R\+O\+D\+U\+CT}}
+ \}
+\begin{DoxyCompactList}\small\item\em Scoring type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{namespace_d_bo_w2_a06d2058b1bde1cdc49f277fec62073e2}{operator$<$$<$}} (std\+::ostream \&out, const \mbox{\hyperlink{class_d_bo_w2_1_1_bow_vector}{Bow\+Vector}} \&v)
+\item 
+std\+::ostream \& \mbox{\hyperlink{namespace_d_bo_w2_ac65e2bfb945a77c5294d0300a4fed49c}{operator$<$$<$}} (std\+::ostream \&out, const \mbox{\hyperlink{class_d_bo_w2_1_1_feature_vector}{Feature\+Vector}} \&v)
+\item 
+class \mbox{\hyperlink{namespace_d_bo_w2_a75539718457109a0efbd4778f7fa7369}{\+\_\+\+\_\+\+S\+C\+O\+R\+I\+N\+G\+\_\+\+C\+L\+A\+SS}} (L1\+Scoring, true, \mbox{\hyperlink{namespace_d_bo_w2_a53e9e0bcfc25c861815e413a7cf3fa51a94f5879ff083c0a8364805ae4f9c2d5c}{L1}})
+\begin{DoxyCompactList}\small\item\em L1 Scoring object. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{namespace_d_bo_w2_ac7a02f9992dcadb8af97192765c6d9d3}{\+\_\+\+\_\+\+S\+C\+O\+R\+I\+N\+G\+\_\+\+C\+L\+A\+SS}} (L2\+Scoring, true, \mbox{\hyperlink{namespace_d_bo_w2_a53e9e0bcfc25c861815e413a7cf3fa51aff96c9503798aa8504a954d3832e5eaa}{L2}})
+\begin{DoxyCompactList}\small\item\em L2 Scoring object. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{namespace_d_bo_w2_a6f9c1118526ece0dc3ed4054266fbdda}{\+\_\+\+\_\+\+S\+C\+O\+R\+I\+N\+G\+\_\+\+C\+L\+A\+SS}} (Chi\+Square\+Scoring, true, \mbox{\hyperlink{namespace_d_bo_w2_a53e9e0bcfc25c861815e413a7cf3fa51a94f5879ff083c0a8364805ae4f9c2d5c}{L1}})
+\begin{DoxyCompactList}\small\item\em Chi square Scoring object. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{namespace_d_bo_w2_ae19b56aa4101670a2f019358dc621693}{\+\_\+\+\_\+\+S\+C\+O\+R\+I\+N\+G\+\_\+\+C\+L\+A\+SS}} (K\+L\+Scoring, true, \mbox{\hyperlink{namespace_d_bo_w2_a53e9e0bcfc25c861815e413a7cf3fa51a94f5879ff083c0a8364805ae4f9c2d5c}{L1}})
+\begin{DoxyCompactList}\small\item\em KL divergence Scoring object. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{namespace_d_bo_w2_a8b204afc23807ec9a07127d36e88e07f}{\+\_\+\+\_\+\+S\+C\+O\+R\+I\+N\+G\+\_\+\+C\+L\+A\+SS}} (Bhattacharyya\+Scoring, true, \mbox{\hyperlink{namespace_d_bo_w2_a53e9e0bcfc25c861815e413a7cf3fa51a94f5879ff083c0a8364805ae4f9c2d5c}{L1}})
+\begin{DoxyCompactList}\small\item\em Bhattacharyya Scoring object. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{namespace_d_bo_w2_ae07d9b48e6fefc0f0c01df371c17b3ca}{\+\_\+\+\_\+\+S\+C\+O\+R\+I\+N\+G\+\_\+\+C\+L\+A\+SS}} (Dot\+Product\+Scoring, false, \mbox{\hyperlink{namespace_d_bo_w2_a53e9e0bcfc25c861815e413a7cf3fa51a94f5879ff083c0a8364805ae4f9c2d5c}{L1}})
+\begin{DoxyCompactList}\small\item\em Dot product Scoring object. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class T\+Descriptor , class F $>$ }\\std\+::ostream \& \mbox{\hyperlink{namespace_d_bo_w2_aecdf616fe16d2cf09f521a603b9d43f1}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{class_d_bo_w2_1_1_templated_vocabulary}{Templated\+Vocabulary}}$<$ T\+Descriptor, F $>$ \&voc)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+File\+: \mbox{\hyperlink{_bow_vector_8cpp}{Bow\+Vector.\+cpp}} Date\+: March 2011 Author\+: Dorian Galvez-\/\+Lopez Description\+: bag of words vector License\+: see the L\+I\+C\+E\+N\+S\+E.\+txt file
+
+File\+: \mbox{\hyperlink{_bow_vector_8h}{Bow\+Vector.\+h}} Date\+: March 2011 Author\+: Dorian Galvez-\/\+Lopez Description\+: bag of words vector License\+: see the L\+I\+C\+E\+N\+S\+E.\+txt file
+
+File\+: \mbox{\hyperlink{_f_class_8h}{F\+Class.\+h}} Date\+: November 2011 Author\+: Dorian Galvez-\/\+Lopez Description\+: generic \mbox{\hyperlink{class_d_bo_w2_1_1_f_class}{F\+Class}} to instantiate templated classes License\+: see the L\+I\+C\+E\+N\+S\+E.\+txt file
+
+File\+: \mbox{\hyperlink{_feature_vector_8cpp}{Feature\+Vector.\+cpp}} Date\+: November 2011 Author\+: Dorian Galvez-\/\+Lopez Description\+: feature vector License\+: see the L\+I\+C\+E\+N\+S\+E.\+txt file
+
+File\+: \mbox{\hyperlink{_feature_vector_8h}{Feature\+Vector.\+h}} Date\+: November 2011 Author\+: Dorian Galvez-\/\+Lopez Description\+: feature vector License\+: see the L\+I\+C\+E\+N\+S\+E.\+txt file
+
+File\+: \mbox{\hyperlink{_f_o_r_b_8h}{F\+O\+R\+B.\+h}} Date\+: June 2012 Author\+: Dorian Galvez-\/\+Lopez Description\+: functions for O\+RB descriptors License\+: see the L\+I\+C\+E\+N\+S\+E.\+txt file
+
+File\+: \mbox{\hyperlink{_scoring_object_8h}{Scoring\+Object.\+h}} Date\+: November 2011 Author\+: Dorian Galvez-\/\+Lopez Description\+: functions to compute bow scores License\+: see the L\+I\+C\+E\+N\+S\+E.\+txt file 
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{namespace_d_bo_w2_a3a0fa9c50c0df508759362d6204566f2}\label{namespace_d_bo_w2_a3a0fa9c50c0df508759362d6204566f2}} 
+\index{DBoW2@{DBoW2}!NodeId@{NodeId}}
+\index{NodeId@{NodeId}!DBoW2@{DBoW2}}
+\doxysubsubsection{\texorpdfstring{NodeId}{NodeId}}
+{\footnotesize\ttfamily typedef unsigned int \mbox{\hyperlink{namespace_d_bo_w2_a3a0fa9c50c0df508759362d6204566f2}{D\+Bo\+W2\+::\+Node\+Id}}}
+
+
+
+Id of nodes in the vocabulary treee. 
+
+\mbox{\Hypertarget{namespace_d_bo_w2_ab1a0d3283b2d4690a383372ed20bfeb5}\label{namespace_d_bo_w2_ab1a0d3283b2d4690a383372ed20bfeb5}} 
+\index{DBoW2@{DBoW2}!WordId@{WordId}}
+\index{WordId@{WordId}!DBoW2@{DBoW2}}
+\doxysubsubsection{\texorpdfstring{WordId}{WordId}}
+{\footnotesize\ttfamily typedef unsigned int \mbox{\hyperlink{namespace_d_bo_w2_ab1a0d3283b2d4690a383372ed20bfeb5}{D\+Bo\+W2\+::\+Word\+Id}}}
+
+
+
+Id of words. 
+
+\mbox{\Hypertarget{namespace_d_bo_w2_a55fcd7333e591a38e96b91f41bc182f6}\label{namespace_d_bo_w2_a55fcd7333e591a38e96b91f41bc182f6}} 
+\index{DBoW2@{DBoW2}!WordValue@{WordValue}}
+\index{WordValue@{WordValue}!DBoW2@{DBoW2}}
+\doxysubsubsection{\texorpdfstring{WordValue}{WordValue}}
+{\footnotesize\ttfamily typedef double \mbox{\hyperlink{namespace_d_bo_w2_a55fcd7333e591a38e96b91f41bc182f6}{D\+Bo\+W2\+::\+Word\+Value}}}
+
+
+
+Value of a word. 
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{namespace_d_bo_w2_a53e9e0bcfc25c861815e413a7cf3fa51}\label{namespace_d_bo_w2_a53e9e0bcfc25c861815e413a7cf3fa51}} 
+\index{DBoW2@{DBoW2}!LNorm@{LNorm}}
+\index{LNorm@{LNorm}!DBoW2@{DBoW2}}
+\doxysubsubsection{\texorpdfstring{LNorm}{LNorm}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_d_bo_w2_a53e9e0bcfc25c861815e413a7cf3fa51}{D\+Bo\+W2\+::\+L\+Norm}}}
+
+
+
+L-\/norms for normalization. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{L1@{L1}!DBoW2@{DBoW2}}\index{DBoW2@{DBoW2}!L1@{L1}}}\mbox{\Hypertarget{namespace_d_bo_w2_a53e9e0bcfc25c861815e413a7cf3fa51a94f5879ff083c0a8364805ae4f9c2d5c}\label{namespace_d_bo_w2_a53e9e0bcfc25c861815e413a7cf3fa51a94f5879ff083c0a8364805ae4f9c2d5c}} 
+L1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{L2@{L2}!DBoW2@{DBoW2}}\index{DBoW2@{DBoW2}!L2@{L2}}}\mbox{\Hypertarget{namespace_d_bo_w2_a53e9e0bcfc25c861815e413a7cf3fa51aff96c9503798aa8504a954d3832e5eaa}\label{namespace_d_bo_w2_a53e9e0bcfc25c861815e413a7cf3fa51aff96c9503798aa8504a954d3832e5eaa}} 
+L2&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespace_d_bo_w2_aa252a592dd607c6e60dede06ceef2722}\label{namespace_d_bo_w2_aa252a592dd607c6e60dede06ceef2722}} 
+\index{DBoW2@{DBoW2}!ScoringType@{ScoringType}}
+\index{ScoringType@{ScoringType}!DBoW2@{DBoW2}}
+\doxysubsubsection{\texorpdfstring{ScoringType}{ScoringType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_d_bo_w2_aa252a592dd607c6e60dede06ceef2722}{D\+Bo\+W2\+::\+Scoring\+Type}}}
+
+
+
+Scoring type. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{L1\_NORM@{L1\_NORM}!DBoW2@{DBoW2}}\index{DBoW2@{DBoW2}!L1\_NORM@{L1\_NORM}}}\mbox{\Hypertarget{namespace_d_bo_w2_aa252a592dd607c6e60dede06ceef2722a2df432e58efd2a13d4950ee96aa6a20f}\label{namespace_d_bo_w2_aa252a592dd607c6e60dede06ceef2722a2df432e58efd2a13d4950ee96aa6a20f}} 
+L1\+\_\+\+N\+O\+RM&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{L2\_NORM@{L2\_NORM}!DBoW2@{DBoW2}}\index{DBoW2@{DBoW2}!L2\_NORM@{L2\_NORM}}}\mbox{\Hypertarget{namespace_d_bo_w2_aa252a592dd607c6e60dede06ceef2722ad1a4e066e848e5247e4d94dd3e08f509}\label{namespace_d_bo_w2_aa252a592dd607c6e60dede06ceef2722ad1a4e066e848e5247e4d94dd3e08f509}} 
+L2\+\_\+\+N\+O\+RM&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CHI\_SQUARE@{CHI\_SQUARE}!DBoW2@{DBoW2}}\index{DBoW2@{DBoW2}!CHI\_SQUARE@{CHI\_SQUARE}}}\mbox{\Hypertarget{namespace_d_bo_w2_aa252a592dd607c6e60dede06ceef2722ad0bd4548b18fb1c165961506e199f38d}\label{namespace_d_bo_w2_aa252a592dd607c6e60dede06ceef2722ad0bd4548b18fb1c165961506e199f38d}} 
+C\+H\+I\+\_\+\+S\+Q\+U\+A\+RE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KL@{KL}!DBoW2@{DBoW2}}\index{DBoW2@{DBoW2}!KL@{KL}}}\mbox{\Hypertarget{namespace_d_bo_w2_aa252a592dd607c6e60dede06ceef2722a607c4948ab28605098d7cedb9bce14ae}\label{namespace_d_bo_w2_aa252a592dd607c6e60dede06ceef2722a607c4948ab28605098d7cedb9bce14ae}} 
+KL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BHATTACHARYYA@{BHATTACHARYYA}!DBoW2@{DBoW2}}\index{DBoW2@{DBoW2}!BHATTACHARYYA@{BHATTACHARYYA}}}\mbox{\Hypertarget{namespace_d_bo_w2_aa252a592dd607c6e60dede06ceef2722a22de570628b33a2662630def802a23cb}\label{namespace_d_bo_w2_aa252a592dd607c6e60dede06ceef2722a22de570628b33a2662630def802a23cb}} 
+B\+H\+A\+T\+T\+A\+C\+H\+A\+R\+Y\+YA&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DOT\_PRODUCT@{DOT\_PRODUCT}!DBoW2@{DBoW2}}\index{DBoW2@{DBoW2}!DOT\_PRODUCT@{DOT\_PRODUCT}}}\mbox{\Hypertarget{namespace_d_bo_w2_aa252a592dd607c6e60dede06ceef2722a14556ffa1d80b1c7540ea68506eb5b56}\label{namespace_d_bo_w2_aa252a592dd607c6e60dede06ceef2722a14556ffa1d80b1c7540ea68506eb5b56}} 
+D\+O\+T\+\_\+\+P\+R\+O\+D\+U\+CT&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespace_d_bo_w2_a5de5c8a307aca9a84ffefda2a9bc467a}\label{namespace_d_bo_w2_a5de5c8a307aca9a84ffefda2a9bc467a}} 
+\index{DBoW2@{DBoW2}!WeightingType@{WeightingType}}
+\index{WeightingType@{WeightingType}!DBoW2@{DBoW2}}
+\doxysubsubsection{\texorpdfstring{WeightingType}{WeightingType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_d_bo_w2_a5de5c8a307aca9a84ffefda2a9bc467a}{D\+Bo\+W2\+::\+Weighting\+Type}}}
+
+
+
+Weighting type. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TF\_IDF@{TF\_IDF}!DBoW2@{DBoW2}}\index{DBoW2@{DBoW2}!TF\_IDF@{TF\_IDF}}}\mbox{\Hypertarget{namespace_d_bo_w2_a5de5c8a307aca9a84ffefda2a9bc467aaa3425e88466862008dff6883e07e205d}\label{namespace_d_bo_w2_a5de5c8a307aca9a84ffefda2a9bc467aaa3425e88466862008dff6883e07e205d}} 
+T\+F\+\_\+\+I\+DF&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TF@{TF}!DBoW2@{DBoW2}}\index{DBoW2@{DBoW2}!TF@{TF}}}\mbox{\Hypertarget{namespace_d_bo_w2_a5de5c8a307aca9a84ffefda2a9bc467aa15d1950b5707de9ac0760c2c6dae48bd}\label{namespace_d_bo_w2_a5de5c8a307aca9a84ffefda2a9bc467aa15d1950b5707de9ac0760c2c6dae48bd}} 
+TF&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IDF@{IDF}!DBoW2@{DBoW2}}\index{DBoW2@{DBoW2}!IDF@{IDF}}}\mbox{\Hypertarget{namespace_d_bo_w2_a5de5c8a307aca9a84ffefda2a9bc467aa5a1c1f7cd866c8bea4551e296298c3bc}\label{namespace_d_bo_w2_a5de5c8a307aca9a84ffefda2a9bc467aa5a1c1f7cd866c8bea4551e296298c3bc}} 
+I\+DF&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BINARY@{BINARY}!DBoW2@{DBoW2}}\index{DBoW2@{DBoW2}!BINARY@{BINARY}}}\mbox{\Hypertarget{namespace_d_bo_w2_a5de5c8a307aca9a84ffefda2a9bc467aae517632073c3a0b980558ebb6519d759}\label{namespace_d_bo_w2_a5de5c8a307aca9a84ffefda2a9bc467aae517632073c3a0b980558ebb6519d759}} 
+B\+I\+N\+A\+RY&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespace_d_bo_w2_a8b204afc23807ec9a07127d36e88e07f}\label{namespace_d_bo_w2_a8b204afc23807ec9a07127d36e88e07f}} 
+\index{DBoW2@{DBoW2}!\_\_SCORING\_CLASS@{\_\_SCORING\_CLASS}}
+\index{\_\_SCORING\_CLASS@{\_\_SCORING\_CLASS}!DBoW2@{DBoW2}}
+\doxysubsubsection{\texorpdfstring{\_\_SCORING\_CLASS()}{\_\_SCORING\_CLASS()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily class D\+Bo\+W2\+::\+\_\+\+\_\+\+S\+C\+O\+R\+I\+N\+G\+\_\+\+C\+L\+A\+SS (\begin{DoxyParamCaption}\item[{Bhattacharyya\+Scoring}]{,  }\item[{true}]{,  }\item[{\mbox{\hyperlink{namespace_d_bo_w2_a53e9e0bcfc25c861815e413a7cf3fa51a94f5879ff083c0a8364805ae4f9c2d5c}{L1}}}]{ }\end{DoxyParamCaption})}
+
+
+
+Bhattacharyya Scoring object. 
+
+\mbox{\Hypertarget{namespace_d_bo_w2_a6f9c1118526ece0dc3ed4054266fbdda}\label{namespace_d_bo_w2_a6f9c1118526ece0dc3ed4054266fbdda}} 
+\index{DBoW2@{DBoW2}!\_\_SCORING\_CLASS@{\_\_SCORING\_CLASS}}
+\index{\_\_SCORING\_CLASS@{\_\_SCORING\_CLASS}!DBoW2@{DBoW2}}
+\doxysubsubsection{\texorpdfstring{\_\_SCORING\_CLASS()}{\_\_SCORING\_CLASS()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily class D\+Bo\+W2\+::\+\_\+\+\_\+\+S\+C\+O\+R\+I\+N\+G\+\_\+\+C\+L\+A\+SS (\begin{DoxyParamCaption}\item[{Chi\+Square\+Scoring}]{,  }\item[{true}]{,  }\item[{\mbox{\hyperlink{namespace_d_bo_w2_a53e9e0bcfc25c861815e413a7cf3fa51a94f5879ff083c0a8364805ae4f9c2d5c}{L1}}}]{ }\end{DoxyParamCaption})}
+
+
+
+Chi square Scoring object. 
+
+\mbox{\Hypertarget{namespace_d_bo_w2_ae07d9b48e6fefc0f0c01df371c17b3ca}\label{namespace_d_bo_w2_ae07d9b48e6fefc0f0c01df371c17b3ca}} 
+\index{DBoW2@{DBoW2}!\_\_SCORING\_CLASS@{\_\_SCORING\_CLASS}}
+\index{\_\_SCORING\_CLASS@{\_\_SCORING\_CLASS}!DBoW2@{DBoW2}}
+\doxysubsubsection{\texorpdfstring{\_\_SCORING\_CLASS()}{\_\_SCORING\_CLASS()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily class D\+Bo\+W2\+::\+\_\+\+\_\+\+S\+C\+O\+R\+I\+N\+G\+\_\+\+C\+L\+A\+SS (\begin{DoxyParamCaption}\item[{Dot\+Product\+Scoring}]{,  }\item[{false}]{,  }\item[{\mbox{\hyperlink{namespace_d_bo_w2_a53e9e0bcfc25c861815e413a7cf3fa51a94f5879ff083c0a8364805ae4f9c2d5c}{L1}}}]{ }\end{DoxyParamCaption})}
+
+
+
+Dot product Scoring object. 
+
+\mbox{\Hypertarget{namespace_d_bo_w2_ae19b56aa4101670a2f019358dc621693}\label{namespace_d_bo_w2_ae19b56aa4101670a2f019358dc621693}} 
+\index{DBoW2@{DBoW2}!\_\_SCORING\_CLASS@{\_\_SCORING\_CLASS}}
+\index{\_\_SCORING\_CLASS@{\_\_SCORING\_CLASS}!DBoW2@{DBoW2}}
+\doxysubsubsection{\texorpdfstring{\_\_SCORING\_CLASS()}{\_\_SCORING\_CLASS()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily class D\+Bo\+W2\+::\+\_\+\+\_\+\+S\+C\+O\+R\+I\+N\+G\+\_\+\+C\+L\+A\+SS (\begin{DoxyParamCaption}\item[{K\+L\+Scoring}]{,  }\item[{true}]{,  }\item[{\mbox{\hyperlink{namespace_d_bo_w2_a53e9e0bcfc25c861815e413a7cf3fa51a94f5879ff083c0a8364805ae4f9c2d5c}{L1}}}]{ }\end{DoxyParamCaption})}
+
+
+
+KL divergence Scoring object. 
+
+\mbox{\Hypertarget{namespace_d_bo_w2_a75539718457109a0efbd4778f7fa7369}\label{namespace_d_bo_w2_a75539718457109a0efbd4778f7fa7369}} 
+\index{DBoW2@{DBoW2}!\_\_SCORING\_CLASS@{\_\_SCORING\_CLASS}}
+\index{\_\_SCORING\_CLASS@{\_\_SCORING\_CLASS}!DBoW2@{DBoW2}}
+\doxysubsubsection{\texorpdfstring{\_\_SCORING\_CLASS()}{\_\_SCORING\_CLASS()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily class D\+Bo\+W2\+::\+\_\+\+\_\+\+S\+C\+O\+R\+I\+N\+G\+\_\+\+C\+L\+A\+SS (\begin{DoxyParamCaption}\item[{L1\+Scoring}]{,  }\item[{true}]{,  }\item[{\mbox{\hyperlink{namespace_d_bo_w2_a53e9e0bcfc25c861815e413a7cf3fa51a94f5879ff083c0a8364805ae4f9c2d5c}{L1}}}]{ }\end{DoxyParamCaption})}
+
+
+
+L1 Scoring object. 
+
+\mbox{\Hypertarget{namespace_d_bo_w2_ac7a02f9992dcadb8af97192765c6d9d3}\label{namespace_d_bo_w2_ac7a02f9992dcadb8af97192765c6d9d3}} 
+\index{DBoW2@{DBoW2}!\_\_SCORING\_CLASS@{\_\_SCORING\_CLASS}}
+\index{\_\_SCORING\_CLASS@{\_\_SCORING\_CLASS}!DBoW2@{DBoW2}}
+\doxysubsubsection{\texorpdfstring{\_\_SCORING\_CLASS()}{\_\_SCORING\_CLASS()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily class D\+Bo\+W2\+::\+\_\+\+\_\+\+S\+C\+O\+R\+I\+N\+G\+\_\+\+C\+L\+A\+SS (\begin{DoxyParamCaption}\item[{L2\+Scoring}]{,  }\item[{true}]{,  }\item[{\mbox{\hyperlink{namespace_d_bo_w2_a53e9e0bcfc25c861815e413a7cf3fa51aff96c9503798aa8504a954d3832e5eaa}{L2}}}]{ }\end{DoxyParamCaption})}
+
+
+
+L2 Scoring object. 
+
+\mbox{\Hypertarget{namespace_d_bo_w2_aecdf616fe16d2cf09f521a603b9d43f1}\label{namespace_d_bo_w2_aecdf616fe16d2cf09f521a603b9d43f1}} 
+\index{DBoW2@{DBoW2}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!DBoW2@{DBoW2}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$class T\+Descriptor , class F $>$ \\
+std\+::ostream\& D\+Bo\+W2\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{class_d_bo_w2_1_1_templated_vocabulary}{Templated\+Vocabulary}}$<$ T\+Descriptor, F $>$ \&}]{voc }\end{DoxyParamCaption})}
+
+Writes printable information of the vocabulary 
+\begin{DoxyParams}{Parameters}
+{\em os} & stream to write to \\
+\hline
+{\em voc} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespace_d_bo_w2_a06d2058b1bde1cdc49f277fec62073e2}\label{namespace_d_bo_w2_a06d2058b1bde1cdc49f277fec62073e2}} 
+\index{DBoW2@{DBoW2}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!DBoW2@{DBoW2}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily std\+::ostream\& D\+Bo\+W2\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out,  }\item[{const \mbox{\hyperlink{class_d_bo_w2_1_1_bow_vector}{Bow\+Vector}} \&}]{v }\end{DoxyParamCaption})}
+
+Prints the content of the bow vector 
+\begin{DoxyParams}{Parameters}
+{\em out} & stream \\
+\hline
+{\em v} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespace_d_bo_w2_ac65e2bfb945a77c5294d0300a4fed49c}\label{namespace_d_bo_w2_ac65e2bfb945a77c5294d0300a4fed49c}} 
+\index{DBoW2@{DBoW2}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!DBoW2@{DBoW2}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily std\+::ostream\& D\+Bo\+W2\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out,  }\item[{const \mbox{\hyperlink{class_d_bo_w2_1_1_feature_vector}{Feature\+Vector}} \&}]{v }\end{DoxyParamCaption})}
+
+Sends a string versions of the feature vector through the stream 
+\begin{DoxyParams}{Parameters}
+{\em out} & stream \\
+\hline
+{\em v} & feature vector \\
+\hline
+\end{DoxyParams}

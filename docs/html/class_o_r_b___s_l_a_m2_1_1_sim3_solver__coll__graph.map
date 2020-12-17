@@ -1,0 +1,12 @@
+<map id="ORB_SLAM2::Sim3Solver" name="ORB_SLAM2::Sim3Solver">
+<area shape="rect" id="node1" title=" " alt="" coords="1349,105,1533,132"/>
+<area shape="rect" id="node2" href="$class_o_r_b___s_l_a_m2_1_1_key_frame.html" title=" " alt="" coords="1076,105,1251,132"/>
+<area shape="rect" id="node3" href="$class_o_r_b___s_l_a_m2_1_1_key_frame_database.html" title=" " alt="" coords="681,55,919,81"/>
+<area shape="rect" id="node4" href="$class_d_bo_w2_1_1_templated_vocabulary.html" title="Generic Vocabulary." alt="" coords="357,10,576,51"/>
+<area shape="rect" id="node5" href="$class_d_bo_w2_1_1_general_scoring.html" title="Base class of scoring functions." alt="" coords="5,17,183,44"/>
+<area shape="rect" id="node6" href="$class_o_r_b___s_l_a_m2_1_1_map.html" title=" " alt="" coords="731,105,869,132"/>
+<area shape="rect" id="node7" href="$class_d_bo_w2_1_1_feature_vector.html" title="Vector of nodes with indexes of local features." alt="" coords="715,156,885,183"/>
+<area shape="rect" id="node8" title=" " alt="" coords="369,146,565,187"/>
+<area shape="rect" id="node9" href="$class_d_bo_w2_1_1_bow_vector.html" title="Vector of words to represent images." alt="" coords="726,208,874,235"/>
+<area shape="rect" id="node10" title=" " alt="" coords="349,212,584,239"/>
+</map>

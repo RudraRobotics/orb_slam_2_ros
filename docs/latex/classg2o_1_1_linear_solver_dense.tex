@@ -1,0 +1,128 @@
+\hypertarget{classg2o_1_1_linear_solver_dense}{}\doxysection{g2o\+::Linear\+Solver\+Dense$<$ Matrix\+Type $>$ Class Template Reference}
+\label{classg2o_1_1_linear_solver_dense}\index{g2o::LinearSolverDense$<$ MatrixType $>$@{g2o::LinearSolverDense$<$ MatrixType $>$}}
+
+
+linear solver using dense cholesky decomposition  
+
+
+
+
+{\ttfamily \#include $<$linear\+\_\+solver\+\_\+dense.\+h$>$}
+
+
+
+Inheritance diagram for g2o\+::Linear\+Solver\+Dense$<$ Matrix\+Type $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{classg2o_1_1_linear_solver_dense__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for g2o\+::Linear\+Solver\+Dense$<$ Matrix\+Type $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{classg2o_1_1_linear_solver_dense__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classg2o_1_1_linear_solver_dense_a25d8767ad60e944d8518348a136830da}{Linear\+Solver\+Dense}} ()
+\item 
+virtual \mbox{\hyperlink{classg2o_1_1_linear_solver_dense_a2b3cbb77fa958bf322b98e38ec3e29c2}{$\sim$\+Linear\+Solver\+Dense}} ()
+\item 
+virtual bool \mbox{\hyperlink{classg2o_1_1_linear_solver_dense_a24f68ecd4b022269dbfc4d990eb5c57b}{init}} ()
+\item 
+bool \mbox{\hyperlink{classg2o_1_1_linear_solver_dense_a8b6eafa6e53b9f705a4e8eb436eeb403}{solve}} (const \mbox{\hyperlink{classg2o_1_1_sparse_block_matrix}{Sparse\+Block\+Matrix}}$<$ Matrix\+Type $>$ \&A, double $\ast$x, double $\ast$b)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classg2o_1_1_linear_solver_dense_a2d82ac52c9c24501cccee3ef3cb575fe}{\+\_\+reset}}
+\item 
+Eigen\+::\+Matrix\+Xd \mbox{\hyperlink{classg2o_1_1_linear_solver_dense_a5ca6a1f2358ce0620dbdbae3fdc9fc99}{\+\_\+H}}
+\item 
+Eigen\+::\+L\+D\+LT$<$ Eigen\+::\+Matrix\+Xd $>$ \mbox{\hyperlink{classg2o_1_1_linear_solver_dense_a20fc35e2f25107a6e36211861034aae0}{\+\_\+cholesky}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename Matrix\+Type$>$\newline
+class g2o\+::\+Linear\+Solver\+Dense$<$ Matrix\+Type $>$}
+
+linear solver using dense cholesky decomposition 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classg2o_1_1_linear_solver_dense_a25d8767ad60e944d8518348a136830da}\label{classg2o_1_1_linear_solver_dense_a25d8767ad60e944d8518348a136830da}} 
+\index{g2o::LinearSolverDense$<$ MatrixType $>$@{g2o::LinearSolverDense$<$ MatrixType $>$}!LinearSolverDense@{LinearSolverDense}}
+\index{LinearSolverDense@{LinearSolverDense}!g2o::LinearSolverDense$<$ MatrixType $>$@{g2o::LinearSolverDense$<$ MatrixType $>$}}
+\doxysubsubsection{\texorpdfstring{LinearSolverDense()}{LinearSolverDense()}}
+{\footnotesize\ttfamily template$<$typename Matrix\+Type $>$ \\
+\mbox{\hyperlink{classg2o_1_1_linear_solver_dense}{g2o\+::\+Linear\+Solver\+Dense}}$<$ Matrix\+Type $>$\+::\mbox{\hyperlink{classg2o_1_1_linear_solver_dense}{Linear\+Solver\+Dense}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classg2o_1_1_linear_solver_dense_a2b3cbb77fa958bf322b98e38ec3e29c2}\label{classg2o_1_1_linear_solver_dense_a2b3cbb77fa958bf322b98e38ec3e29c2}} 
+\index{g2o::LinearSolverDense$<$ MatrixType $>$@{g2o::LinearSolverDense$<$ MatrixType $>$}!````~LinearSolverDense@{$\sim$LinearSolverDense}}
+\index{````~LinearSolverDense@{$\sim$LinearSolverDense}!g2o::LinearSolverDense$<$ MatrixType $>$@{g2o::LinearSolverDense$<$ MatrixType $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$LinearSolverDense()}{~LinearSolverDense()}}
+{\footnotesize\ttfamily template$<$typename Matrix\+Type $>$ \\
+virtual \mbox{\hyperlink{classg2o_1_1_linear_solver_dense}{g2o\+::\+Linear\+Solver\+Dense}}$<$ Matrix\+Type $>$\+::$\sim$\mbox{\hyperlink{classg2o_1_1_linear_solver_dense}{Linear\+Solver\+Dense}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classg2o_1_1_linear_solver_dense_a24f68ecd4b022269dbfc4d990eb5c57b}\label{classg2o_1_1_linear_solver_dense_a24f68ecd4b022269dbfc4d990eb5c57b}} 
+\index{g2o::LinearSolverDense$<$ MatrixType $>$@{g2o::LinearSolverDense$<$ MatrixType $>$}!init@{init}}
+\index{init@{init}!g2o::LinearSolverDense$<$ MatrixType $>$@{g2o::LinearSolverDense$<$ MatrixType $>$}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily template$<$typename Matrix\+Type $>$ \\
+virtual bool \mbox{\hyperlink{classg2o_1_1_linear_solver_dense}{g2o\+::\+Linear\+Solver\+Dense}}$<$ Matrix\+Type $>$\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+init for operating on matrices with a different non-\/zero pattern like before 
+
+Implements \mbox{\hyperlink{classg2o_1_1_linear_solver_aebd961a94ef6de1bc66d2ca41dd2b17b}{g2o\+::\+Linear\+Solver$<$ Matrix\+Type $>$}}.
+
+\mbox{\Hypertarget{classg2o_1_1_linear_solver_dense_a8b6eafa6e53b9f705a4e8eb436eeb403}\label{classg2o_1_1_linear_solver_dense_a8b6eafa6e53b9f705a4e8eb436eeb403}} 
+\index{g2o::LinearSolverDense$<$ MatrixType $>$@{g2o::LinearSolverDense$<$ MatrixType $>$}!solve@{solve}}
+\index{solve@{solve}!g2o::LinearSolverDense$<$ MatrixType $>$@{g2o::LinearSolverDense$<$ MatrixType $>$}}
+\doxysubsubsection{\texorpdfstring{solve()}{solve()}}
+{\footnotesize\ttfamily template$<$typename Matrix\+Type $>$ \\
+bool \mbox{\hyperlink{classg2o_1_1_linear_solver_dense}{g2o\+::\+Linear\+Solver\+Dense}}$<$ Matrix\+Type $>$\+::solve (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classg2o_1_1_sparse_block_matrix}{Sparse\+Block\+Matrix}}$<$ Matrix\+Type $>$ \&}]{A,  }\item[{double $\ast$}]{x,  }\item[{double $\ast$}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Assumes that A is the same matrix for several calls. Among other assumptions, the non-\/zero pattern does not change! If the matrix changes call \mbox{\hyperlink{classg2o_1_1_linear_solver_dense_a24f68ecd4b022269dbfc4d990eb5c57b}{init()}} before. solve system Ax = b, x and b have to allocated beforehand!! 
+
+Implements \mbox{\hyperlink{classg2o_1_1_linear_solver_aa44b40826d50203c8ce2ff258c34e030}{g2o\+::\+Linear\+Solver$<$ Matrix\+Type $>$}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classg2o_1_1_linear_solver_dense_a20fc35e2f25107a6e36211861034aae0}\label{classg2o_1_1_linear_solver_dense_a20fc35e2f25107a6e36211861034aae0}} 
+\index{g2o::LinearSolverDense$<$ MatrixType $>$@{g2o::LinearSolverDense$<$ MatrixType $>$}!\_cholesky@{\_cholesky}}
+\index{\_cholesky@{\_cholesky}!g2o::LinearSolverDense$<$ MatrixType $>$@{g2o::LinearSolverDense$<$ MatrixType $>$}}
+\doxysubsubsection{\texorpdfstring{\_cholesky}{\_cholesky}}
+{\footnotesize\ttfamily template$<$typename Matrix\+Type $>$ \\
+Eigen\+::\+L\+D\+LT$<$Eigen\+::\+Matrix\+Xd$>$ \mbox{\hyperlink{classg2o_1_1_linear_solver_dense}{g2o\+::\+Linear\+Solver\+Dense}}$<$ Matrix\+Type $>$\+::\+\_\+cholesky\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classg2o_1_1_linear_solver_dense_a5ca6a1f2358ce0620dbdbae3fdc9fc99}\label{classg2o_1_1_linear_solver_dense_a5ca6a1f2358ce0620dbdbae3fdc9fc99}} 
+\index{g2o::LinearSolverDense$<$ MatrixType $>$@{g2o::LinearSolverDense$<$ MatrixType $>$}!\_H@{\_H}}
+\index{\_H@{\_H}!g2o::LinearSolverDense$<$ MatrixType $>$@{g2o::LinearSolverDense$<$ MatrixType $>$}}
+\doxysubsubsection{\texorpdfstring{\_H}{\_H}}
+{\footnotesize\ttfamily template$<$typename Matrix\+Type $>$ \\
+Eigen\+::\+Matrix\+Xd \mbox{\hyperlink{classg2o_1_1_linear_solver_dense}{g2o\+::\+Linear\+Solver\+Dense}}$<$ Matrix\+Type $>$\+::\+\_\+H\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classg2o_1_1_linear_solver_dense_a2d82ac52c9c24501cccee3ef3cb575fe}\label{classg2o_1_1_linear_solver_dense_a2d82ac52c9c24501cccee3ef3cb575fe}} 
+\index{g2o::LinearSolverDense$<$ MatrixType $>$@{g2o::LinearSolverDense$<$ MatrixType $>$}!\_reset@{\_reset}}
+\index{\_reset@{\_reset}!g2o::LinearSolverDense$<$ MatrixType $>$@{g2o::LinearSolverDense$<$ MatrixType $>$}}
+\doxysubsubsection{\texorpdfstring{\_reset}{\_reset}}
+{\footnotesize\ttfamily template$<$typename Matrix\+Type $>$ \\
+bool \mbox{\hyperlink{classg2o_1_1_linear_solver_dense}{g2o\+::\+Linear\+Solver\+Dense}}$<$ Matrix\+Type $>$\+::\+\_\+reset\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+orb\+\_\+slam2/\+Thirdparty/g2o/g2o/solvers/\mbox{\hyperlink{linear__solver__dense_8h}{linear\+\_\+solver\+\_\+dense.\+h}}\end{DoxyCompactItemize}

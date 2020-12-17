@@ -1,0 +1,8 @@
+<map id="g2o::BaseMultiEdge&lt; D, E &gt;" name="g2o::BaseMultiEdge&lt; D, E &gt;">
+<area shape="rect" id="node1" title="base class to represent an edge connecting an arbitrary number of nodes" alt="" coords="174,352,325,393"/>
+<area shape="rect" id="node2" href="$classg2o_1_1_base_edge.html" title=" " alt="" coords="162,276,337,303"/>
+<area shape="rect" id="node3" href="$classg2o_1_1_optimizable_graph_1_1_edge.html" title=" " alt="" coords="163,185,335,227"/>
+<area shape="rect" id="node4" href="$classg2o_1_1_hyper_graph_1_1_edge.html" title=" " alt="" coords="29,96,201,123"/>
+<area shape="rect" id="node5" href="$structg2o_1_1_hyper_graph_1_1_hyper_graph_element.html" title=" " alt="" coords="5,5,224,47"/>
+<area shape="rect" id="node6" href="$classg2o_1_1_robust_kernel.html" title="base for all robust cost functions" alt="" coords="225,96,365,123"/>
+</map>

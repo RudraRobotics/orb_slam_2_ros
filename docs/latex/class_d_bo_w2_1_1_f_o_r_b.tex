@@ -1,0 +1,214 @@
+\hypertarget{class_d_bo_w2_1_1_f_o_r_b}{}\doxysection{D\+Bo\+W2\+::F\+O\+RB Class Reference}
+\label{class_d_bo_w2_1_1_f_o_r_b}\index{DBoW2::FORB@{DBoW2::FORB}}
+
+
+Functions to manipulate O\+RB descriptors.  
+
+
+
+
+{\ttfamily \#include $<$F\+O\+R\+B.\+h$>$}
+
+
+
+Inheritance diagram for D\+Bo\+W2\+::F\+O\+RB\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=171pt]{class_d_bo_w2_1_1_f_o_r_b__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for D\+Bo\+W2\+::F\+O\+RB\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=171pt]{class_d_bo_w2_1_1_f_o_r_b__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef cv\+::\+Mat \mbox{\hyperlink{class_d_bo_w2_1_1_f_o_r_b_aef9b966d0293836fab9f55f1799ce0ed}{T\+Descriptor}}
+\begin{DoxyCompactList}\small\item\em Descriptor type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_d_bo_w2_1_1_f_o_r_b_a9d78adf3c5c6fe8f2e8668e247acf5cc}{mean\+Value}} (const std\+::vector$<$ \mbox{\hyperlink{class_d_bo_w2_1_1_f_o_r_b_a9fc90a768115debb63c3612ba196e003}{p\+Descriptor}} $>$ \&descriptors, \mbox{\hyperlink{class_d_bo_w2_1_1_f_o_r_b_aef9b966d0293836fab9f55f1799ce0ed}{T\+Descriptor}} \&mean)
+\item 
+static int \mbox{\hyperlink{class_d_bo_w2_1_1_f_o_r_b_ac166ab6808abc7c385dbaabfacfed38c}{distance}} (const \mbox{\hyperlink{class_d_bo_w2_1_1_f_o_r_b_aef9b966d0293836fab9f55f1799ce0ed}{T\+Descriptor}} \&a, const \mbox{\hyperlink{class_d_bo_w2_1_1_f_o_r_b_aef9b966d0293836fab9f55f1799ce0ed}{T\+Descriptor}} \&b)
+\item 
+static std\+::string \mbox{\hyperlink{class_d_bo_w2_1_1_f_o_r_b_a3c0ce0fd04ecd52b25b97d253fb922ea}{to\+String}} (const \mbox{\hyperlink{class_d_bo_w2_1_1_f_o_r_b_aef9b966d0293836fab9f55f1799ce0ed}{T\+Descriptor}} \&a)
+\item 
+static void \mbox{\hyperlink{class_d_bo_w2_1_1_f_o_r_b_a4023e7775d0691b44f6708f865b6b8d7}{from\+String}} (\mbox{\hyperlink{class_d_bo_w2_1_1_f_o_r_b_aef9b966d0293836fab9f55f1799ce0ed}{T\+Descriptor}} \&a, const std\+::string \&s)
+\item 
+static void \mbox{\hyperlink{class_d_bo_w2_1_1_f_o_r_b_a67b90eaed01dd54e380237c78886635f}{to\+Mat32F}} (const std\+::vector$<$ \mbox{\hyperlink{class_d_bo_w2_1_1_f_o_r_b_aef9b966d0293836fab9f55f1799ce0ed}{T\+Descriptor}} $>$ \&descriptors, cv\+::\+Mat \&mat)
+\item 
+static void \mbox{\hyperlink{class_d_bo_w2_1_1_f_o_r_b_af0a9e2ea44336f2975a7f3324777330c}{to\+Mat8U}} (const std\+::vector$<$ \mbox{\hyperlink{class_d_bo_w2_1_1_f_o_r_b_aef9b966d0293836fab9f55f1799ce0ed}{T\+Descriptor}} $>$ \&descriptors, cv\+::\+Mat \&mat)
+\item 
+static void \mbox{\hyperlink{class_d_bo_w2_1_1_f_o_r_b_a14695e13f61b283ec7cd73e68121aed4}{to\+Array8U}} (const \mbox{\hyperlink{class_d_bo_w2_1_1_f_o_r_b_aef9b966d0293836fab9f55f1799ce0ed}{T\+Descriptor}} \&descriptors, unsigned char $\ast$array)
+\item 
+static void \mbox{\hyperlink{class_d_bo_w2_1_1_f_o_r_b_aa1965d4ada6ed1b9943edbf993b1d472}{from\+Array8U}} (\mbox{\hyperlink{class_d_bo_w2_1_1_f_o_r_b_aef9b966d0293836fab9f55f1799ce0ed}{T\+Descriptor}} \&descriptors, unsigned char $\ast$array)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const typedef \mbox{\hyperlink{class_d_bo_w2_1_1_f_o_r_b_aef9b966d0293836fab9f55f1799ce0ed}{T\+Descriptor}} $\ast$ \mbox{\hyperlink{class_d_bo_w2_1_1_f_o_r_b_a9fc90a768115debb63c3612ba196e003}{p\+Descriptor}}
+\begin{DoxyCompactList}\small\item\em Pointer to a single descriptor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int \mbox{\hyperlink{class_d_bo_w2_1_1_f_o_r_b_ad6ed07af4e042effc3c0b169aa5bdd1a}{L}} =32
+\begin{DoxyCompactList}\small\item\em Descriptor length (in bytes) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Functions to manipulate O\+RB descriptors. 
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_d_bo_w2_1_1_f_o_r_b_aef9b966d0293836fab9f55f1799ce0ed}\label{class_d_bo_w2_1_1_f_o_r_b_aef9b966d0293836fab9f55f1799ce0ed}} 
+\index{DBoW2::FORB@{DBoW2::FORB}!TDescriptor@{TDescriptor}}
+\index{TDescriptor@{TDescriptor}!DBoW2::FORB@{DBoW2::FORB}}
+\doxysubsubsection{\texorpdfstring{TDescriptor}{TDescriptor}}
+{\footnotesize\ttfamily typedef cv\+::\+Mat \mbox{\hyperlink{class_d_bo_w2_1_1_f_o_r_b_aef9b966d0293836fab9f55f1799ce0ed}{D\+Bo\+W2\+::\+F\+O\+R\+B\+::\+T\+Descriptor}}}
+
+
+
+Descriptor type. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_d_bo_w2_1_1_f_o_r_b_ac166ab6808abc7c385dbaabfacfed38c}\label{class_d_bo_w2_1_1_f_o_r_b_ac166ab6808abc7c385dbaabfacfed38c}} 
+\index{DBoW2::FORB@{DBoW2::FORB}!distance@{distance}}
+\index{distance@{distance}!DBoW2::FORB@{DBoW2::FORB}}
+\doxysubsubsection{\texorpdfstring{distance()}{distance()}}
+{\footnotesize\ttfamily int D\+Bo\+W2\+::\+F\+O\+R\+B\+::distance (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_d_bo_w2_1_1_f_o_r_b_aef9b966d0293836fab9f55f1799ce0ed}{T\+Descriptor}} \&}]{a,  }\item[{const \mbox{\hyperlink{class_d_bo_w2_1_1_f_o_r_b_aef9b966d0293836fab9f55f1799ce0ed}{T\+Descriptor}} \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Calculates the distance between two descriptors 
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em b} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+distance 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_d_bo_w2_1_1_f_o_r_b_aa1965d4ada6ed1b9943edbf993b1d472}\label{class_d_bo_w2_1_1_f_o_r_b_aa1965d4ada6ed1b9943edbf993b1d472}} 
+\index{DBoW2::FORB@{DBoW2::FORB}!fromArray8U@{fromArray8U}}
+\index{fromArray8U@{fromArray8U}!DBoW2::FORB@{DBoW2::FORB}}
+\doxysubsubsection{\texorpdfstring{fromArray8U()}{fromArray8U()}}
+{\footnotesize\ttfamily void D\+Bo\+W2\+::\+F\+O\+R\+B\+::from\+Array8U (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_d_bo_w2_1_1_f_o_r_b_aef9b966d0293836fab9f55f1799ce0ed}{T\+Descriptor}} \&}]{descriptors,  }\item[{unsigned char $\ast$}]{array }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Fills an descriptor with the values from an array 
+\begin{DoxyParams}{Parameters}
+{\em descriptors} & (out) descriptor \\
+\hline
+{\em array} & (in) unsigned char $\ast$ containing the values of the descriptor \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_d_bo_w2_1_1_f_o_r_b_a4023e7775d0691b44f6708f865b6b8d7}\label{class_d_bo_w2_1_1_f_o_r_b_a4023e7775d0691b44f6708f865b6b8d7}} 
+\index{DBoW2::FORB@{DBoW2::FORB}!fromString@{fromString}}
+\index{fromString@{fromString}!DBoW2::FORB@{DBoW2::FORB}}
+\doxysubsubsection{\texorpdfstring{fromString()}{fromString()}}
+{\footnotesize\ttfamily void D\+Bo\+W2\+::\+F\+O\+R\+B\+::from\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_d_bo_w2_1_1_f_o_r_b_aef9b966d0293836fab9f55f1799ce0ed}{F\+O\+R\+B\+::\+T\+Descriptor}} \&}]{a,  }\item[{const std\+::string \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns a descriptor from a string 
+\begin{DoxyParams}{Parameters}
+{\em a} & descriptor \\
+\hline
+{\em s} & string version \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_d_bo_w2_1_1_f_o_r_b_a9d78adf3c5c6fe8f2e8668e247acf5cc}\label{class_d_bo_w2_1_1_f_o_r_b_a9d78adf3c5c6fe8f2e8668e247acf5cc}} 
+\index{DBoW2::FORB@{DBoW2::FORB}!meanValue@{meanValue}}
+\index{meanValue@{meanValue}!DBoW2::FORB@{DBoW2::FORB}}
+\doxysubsubsection{\texorpdfstring{meanValue()}{meanValue()}}
+{\footnotesize\ttfamily void D\+Bo\+W2\+::\+F\+O\+R\+B\+::mean\+Value (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{class_d_bo_w2_1_1_f_o_r_b_a9fc90a768115debb63c3612ba196e003}{p\+Descriptor}} $>$ \&}]{descriptors,  }\item[{\mbox{\hyperlink{class_d_bo_w2_1_1_f_o_r_b_aef9b966d0293836fab9f55f1799ce0ed}{T\+Descriptor}} \&}]{mean }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Calculates the mean value of a set of descriptors 
+\begin{DoxyParams}{Parameters}
+{\em descriptors} & \\
+\hline
+{\em mean} & mean descriptor \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_d_bo_w2_1_1_f_o_r_b_a14695e13f61b283ec7cd73e68121aed4}\label{class_d_bo_w2_1_1_f_o_r_b_a14695e13f61b283ec7cd73e68121aed4}} 
+\index{DBoW2::FORB@{DBoW2::FORB}!toArray8U@{toArray8U}}
+\index{toArray8U@{toArray8U}!DBoW2::FORB@{DBoW2::FORB}}
+\doxysubsubsection{\texorpdfstring{toArray8U()}{toArray8U()}}
+{\footnotesize\ttfamily void D\+Bo\+W2\+::\+F\+O\+R\+B\+::to\+Array8U (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_d_bo_w2_1_1_f_o_r_b_aef9b966d0293836fab9f55f1799ce0ed}{T\+Descriptor}} \&}]{descriptors,  }\item[{unsigned char $\ast$}]{array }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Fills an array with the values from a descriptor 
+\begin{DoxyParams}{Parameters}
+{\em descriptors} & descriptor \\
+\hline
+{\em array} & (out) unsigned char $\ast$ to store the values of the descriptor \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_d_bo_w2_1_1_f_o_r_b_a67b90eaed01dd54e380237c78886635f}\label{class_d_bo_w2_1_1_f_o_r_b_a67b90eaed01dd54e380237c78886635f}} 
+\index{DBoW2::FORB@{DBoW2::FORB}!toMat32F@{toMat32F}}
+\index{toMat32F@{toMat32F}!DBoW2::FORB@{DBoW2::FORB}}
+\doxysubsubsection{\texorpdfstring{toMat32F()}{toMat32F()}}
+{\footnotesize\ttfamily void D\+Bo\+W2\+::\+F\+O\+R\+B\+::to\+Mat32F (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{class_d_bo_w2_1_1_f_o_r_b_aef9b966d0293836fab9f55f1799ce0ed}{T\+Descriptor}} $>$ \&}]{descriptors,  }\item[{cv\+::\+Mat \&}]{mat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns a mat with the descriptors in float format 
+\begin{DoxyParams}{Parameters}
+{\em descriptors} & \\
+\hline
+{\em mat} & (out) NxL 32F matrix \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_d_bo_w2_1_1_f_o_r_b_af0a9e2ea44336f2975a7f3324777330c}\label{class_d_bo_w2_1_1_f_o_r_b_af0a9e2ea44336f2975a7f3324777330c}} 
+\index{DBoW2::FORB@{DBoW2::FORB}!toMat8U@{toMat8U}}
+\index{toMat8U@{toMat8U}!DBoW2::FORB@{DBoW2::FORB}}
+\doxysubsubsection{\texorpdfstring{toMat8U()}{toMat8U()}}
+{\footnotesize\ttfamily void D\+Bo\+W2\+::\+F\+O\+R\+B\+::to\+Mat8U (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{class_d_bo_w2_1_1_f_o_r_b_aef9b966d0293836fab9f55f1799ce0ed}{T\+Descriptor}} $>$ \&}]{descriptors,  }\item[{cv\+::\+Mat \&}]{mat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_d_bo_w2_1_1_f_o_r_b_a3c0ce0fd04ecd52b25b97d253fb922ea}\label{class_d_bo_w2_1_1_f_o_r_b_a3c0ce0fd04ecd52b25b97d253fb922ea}} 
+\index{DBoW2::FORB@{DBoW2::FORB}!toString@{toString}}
+\index{toString@{toString}!DBoW2::FORB@{DBoW2::FORB}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily std\+::string D\+Bo\+W2\+::\+F\+O\+R\+B\+::to\+String (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_d_bo_w2_1_1_f_o_r_b_aef9b966d0293836fab9f55f1799ce0ed}{T\+Descriptor}} \&}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns a string version of the descriptor 
+\begin{DoxyParams}{Parameters}
+{\em a} & descriptor \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string version 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_d_bo_w2_1_1_f_o_r_b_ad6ed07af4e042effc3c0b169aa5bdd1a}\label{class_d_bo_w2_1_1_f_o_r_b_ad6ed07af4e042effc3c0b169aa5bdd1a}} 
+\index{DBoW2::FORB@{DBoW2::FORB}!L@{L}}
+\index{L@{L}!DBoW2::FORB@{DBoW2::FORB}}
+\doxysubsubsection{\texorpdfstring{L}{L}}
+{\footnotesize\ttfamily const int D\+Bo\+W2\+::\+F\+O\+R\+B\+::L =32\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Descriptor length (in bytes) 
+
+\mbox{\Hypertarget{class_d_bo_w2_1_1_f_o_r_b_a9fc90a768115debb63c3612ba196e003}\label{class_d_bo_w2_1_1_f_o_r_b_a9fc90a768115debb63c3612ba196e003}} 
+\index{DBoW2::FORB@{DBoW2::FORB}!pDescriptor@{pDescriptor}}
+\index{pDescriptor@{pDescriptor}!DBoW2::FORB@{DBoW2::FORB}}
+\doxysubsubsection{\texorpdfstring{pDescriptor}{pDescriptor}}
+{\footnotesize\ttfamily const typedef \mbox{\hyperlink{class_d_bo_w2_1_1_f_o_r_b_aef9b966d0293836fab9f55f1799ce0ed}{T\+Descriptor}}$\ast$ D\+Bo\+W2\+::\+F\+O\+R\+B\+::p\+Descriptor}
+
+
+
+Pointer to a single descriptor. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+orb\+\_\+slam2/\+Thirdparty/\+D\+Bo\+W2/\+D\+Bo\+W2/\mbox{\hyperlink{_f_o_r_b_8h}{F\+O\+R\+B.\+h}}\item 
+orb\+\_\+slam2/\+Thirdparty/\+D\+Bo\+W2/\+D\+Bo\+W2/\mbox{\hyperlink{_f_o_r_b_8cpp}{F\+O\+R\+B.\+cpp}}\end{DoxyCompactItemize}

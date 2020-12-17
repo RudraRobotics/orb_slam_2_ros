@@ -1,0 +1,14 @@
+<map id="g2o::CacheContainer" name="g2o::CacheContainer">
+<area shape="rect" id="node1" title=" " alt="" coords="686,284,843,311"/>
+<area shape="rect" id="node3" href="$classg2o_1_1_optimizable_graph_1_1_vertex.html" title="A general case Vertex for optimization." alt="" coords="1051,177,1223,218"/>
+<area shape="rect" id="node2" title=" " alt="" coords="272,277,483,318"/>
+<area shape="rect" id="node4" href="$classg2o_1_1_hyper_graph_1_1_vertex.html" title="abstract Vertex, your types must derive from that one" alt="" coords="673,5,856,32"/>
+<area shape="rect" id="node5" href="$structg2o_1_1_hyper_graph_1_1_hyper_graph_element.html" title=" " alt="" coords="268,26,487,67"/>
+<area shape="rect" id="node12" href="$classg2o_1_1_optimizable_graph_1_1_data.html" title="data packet for a vertex. Extend this class to store in the vertices the potential additional informa..." alt="" coords="679,95,851,137"/>
+<area shape="rect" id="node6" href="$structg2o_1_1_optimizable_graph.html" title=" " alt="" coords="679,161,851,188"/>
+<area shape="rect" id="node7" href="$classg2o_1_1_hyper_graph.html" title=" " alt="" coords="311,111,443,137"/>
+<area shape="rect" id="node8" href="$classg2o_1_1_jacobian_workspace.html" title="provide memory workspace for computing the Jacobians" alt="" coords="287,161,468,188"/>
+<area shape="rect" id="node9" href="$classg2o_1_1_parameter_container.html" title="map id to parameters" alt="" coords="285,212,470,239"/>
+<area shape="rect" id="node10" title=" " alt="" coords="5,212,219,239"/>
+<area shape="rect" id="node11" href="$classg2o_1_1_open_m_p_mutex.html" title=" " alt="" coords="690,212,839,239"/>
+</map>

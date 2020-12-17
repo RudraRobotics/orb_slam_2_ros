@@ -1,0 +1,204 @@
+\hypertarget{class_o_r_b___s_l_a_m2_1_1_o_r_bmatcher}{}\doxysection{O\+R\+B\+\_\+\+S\+L\+A\+M2\+::O\+R\+Bmatcher Class Reference}
+\label{class_o_r_b___s_l_a_m2_1_1_o_r_bmatcher}\index{ORB\_SLAM2::ORBmatcher@{ORB\_SLAM2::ORBmatcher}}
+
+
+{\ttfamily \#include $<$O\+R\+Bmatcher.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_o_r_bmatcher_a6ca536b80e44da0f56fcd35ff8c6a833}{O\+R\+Bmatcher}} (float nnratio=0.\+6, bool check\+Ori=true)
+\item 
+int \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_o_r_bmatcher_a27c18d6977e8ec20b196e0b2fa6043cd}{Search\+By\+Projection}} (\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_frame}{Frame}} \&F, const std\+::vector$<$ \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point}{Map\+Point}} $\ast$ $>$ \&vp\+Map\+Points, const float th=3)
+\item 
+int \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_o_r_bmatcher_a0dba0b2bed7d16ca56e27ff4df00f557}{Search\+By\+Projection}} (\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_frame}{Frame}} \&Current\+Frame, const \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_frame}{Frame}} \&Last\+Frame, const float th, const bool b\+Mono)
+\item 
+int \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_o_r_bmatcher_a8cc723f3364b90ac6b68b969dca0cabe}{Search\+By\+Projection}} (\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_frame}{Frame}} \&Current\+Frame, \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame}{Key\+Frame}} $\ast$p\+KF, const \mbox{\hyperlink{orb__slam2_2_thirdparty_2_d_bo_w2_2_c_make_lists_8txt_a39557813ea16c34d3078235ee3b722da}{std\+::set}}$<$ \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point}{Map\+Point}} $\ast$ $>$ \&s\+Already\+Found, const float th, const int O\+R\+Bdist)
+\item 
+int \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_o_r_bmatcher_a110a51a849fcc485b18987e069f58c84}{Search\+By\+Projection}} (\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame}{Key\+Frame}} $\ast$p\+KF, cv\+::\+Mat Scw, const std\+::vector$<$ \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point}{Map\+Point}} $\ast$ $>$ \&vp\+Points, std\+::vector$<$ \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point}{Map\+Point}} $\ast$ $>$ \&vp\+Matched, int th)
+\item 
+int \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_o_r_bmatcher_ab38a8d3f3803e398c173ef45b25e66d8}{Search\+By\+BoW}} (\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame}{Key\+Frame}} $\ast$p\+KF, \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_frame}{Frame}} \&F, std\+::vector$<$ \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point}{Map\+Point}} $\ast$ $>$ \&vp\+Map\+Point\+Matches)
+\item 
+int \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_o_r_bmatcher_a7508b39750df8f6f70dab0d2252b9d42}{Search\+By\+BoW}} (\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame}{Key\+Frame}} $\ast$p\+K\+F1, \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame}{Key\+Frame}} $\ast$p\+K\+F2, std\+::vector$<$ \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point}{Map\+Point}} $\ast$ $>$ \&vp\+Matches12)
+\item 
+int \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_o_r_bmatcher_aff9b6dde7878d59e334ed5ad2ddd04eb}{Search\+For\+Initialization}} (\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_frame}{Frame}} \&F1, \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_frame}{Frame}} \&F2, std\+::vector$<$ cv\+::\+Point2f $>$ \&vb\+Prev\+Matched, std\+::vector$<$ int $>$ \&vn\+Matches12, int window\+Size=10)
+\item 
+int \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_o_r_bmatcher_a0ecb7f018e9184c67c4a48ad8616217d}{Search\+For\+Triangulation}} (\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame}{Key\+Frame}} $\ast$p\+K\+F1, \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame}{Key\+Frame}} $\ast$p\+K\+F2, cv\+::\+Mat F12, std\+::vector$<$ pair$<$ size\+\_\+t, size\+\_\+t $>$ $>$ \&v\+Matched\+Pairs, const bool b\+Only\+Stereo)
+\item 
+int \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_o_r_bmatcher_aa8ab1e3785aad3fa26855a4efccfa565}{Search\+By\+Sim3}} (\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame}{Key\+Frame}} $\ast$p\+K\+F1, \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame}{Key\+Frame}} $\ast$p\+K\+F2, std\+::vector$<$ \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point}{Map\+Point}} $\ast$ $>$ \&vp\+Matches12, const float \&s12, const cv\+::\+Mat \&R12, const cv\+::\+Mat \&t12, const float th)
+\item 
+int \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_o_r_bmatcher_a0b63d334ccbb34fc7dda0eed2b96320e}{Fuse}} (\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame}{Key\+Frame}} $\ast$p\+KF, const vector$<$ \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point}{Map\+Point}} $\ast$ $>$ \&vp\+Map\+Points, const float th=3.\+0)
+\item 
+int \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_o_r_bmatcher_a3062482add2618408bc4c222f833781e}{Fuse}} (\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame}{Key\+Frame}} $\ast$p\+KF, cv\+::\+Mat Scw, const std\+::vector$<$ \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point}{Map\+Point}} $\ast$ $>$ \&vp\+Points, float th, vector$<$ \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point}{Map\+Point}} $\ast$ $>$ \&vp\+Replace\+Point)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_o_r_bmatcher_a63ff10561753f23220c2bfcea9b599f3}{Descriptor\+Distance}} (const cv\+::\+Mat \&a, const cv\+::\+Mat \&b)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_o_r_bmatcher_a810252607722e100efe4c4e941ae00a6}{T\+H\+\_\+\+L\+OW}} = 50
+\item 
+static const int \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_o_r_bmatcher_aeb28265794388e19763e9a3dabd51473}{T\+H\+\_\+\+H\+I\+GH}} = 100
+\item 
+static const int \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_o_r_bmatcher_aa2f2d9094b4f31db4f65c93778f71494}{H\+I\+S\+T\+O\+\_\+\+L\+E\+N\+G\+TH}} = 30
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_o_r_bmatcher_a10df000eeb05466a5bbfd7b40c7db45d}{Check\+Dist\+Epipolar\+Line}} (const cv\+::\+Key\+Point \&kp1, const cv\+::\+Key\+Point \&kp2, const cv\+::\+Mat \&F12, const \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame}{Key\+Frame}} $\ast$p\+KF)
+\item 
+float \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_o_r_bmatcher_ae6ae0904b9919f1141ef4a790cd34bfe}{Radius\+By\+Viewing\+Cos}} (const float \&view\+Cos)
+\item 
+void \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_o_r_bmatcher_ad6613e26706798c507b5266cdd101311}{Compute\+Three\+Maxima}} (std\+::vector$<$ int $>$ $\ast$histo, const int L, int \&ind1, int \&ind2, int \&ind3)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_o_r_bmatcher_a08f6ee66568fa5a79600ed5ad8443893}{mf\+N\+Nratio}}
+\item 
+bool \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_o_r_bmatcher_a996a27217749aa15d2210c6dc6228495}{mb\+Check\+Orientation}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_o_r_bmatcher_a6ca536b80e44da0f56fcd35ff8c6a833}\label{class_o_r_b___s_l_a_m2_1_1_o_r_bmatcher_a6ca536b80e44da0f56fcd35ff8c6a833}} 
+\index{ORB\_SLAM2::ORBmatcher@{ORB\_SLAM2::ORBmatcher}!ORBmatcher@{ORBmatcher}}
+\index{ORBmatcher@{ORBmatcher}!ORB\_SLAM2::ORBmatcher@{ORB\_SLAM2::ORBmatcher}}
+\doxysubsubsection{\texorpdfstring{ORBmatcher()}{ORBmatcher()}}
+{\footnotesize\ttfamily O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+O\+R\+Bmatcher\+::\+O\+R\+Bmatcher (\begin{DoxyParamCaption}\item[{float}]{nnratio = {\ttfamily 0.6},  }\item[{bool}]{check\+Ori = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_o_r_bmatcher_a10df000eeb05466a5bbfd7b40c7db45d}\label{class_o_r_b___s_l_a_m2_1_1_o_r_bmatcher_a10df000eeb05466a5bbfd7b40c7db45d}} 
+\index{ORB\_SLAM2::ORBmatcher@{ORB\_SLAM2::ORBmatcher}!CheckDistEpipolarLine@{CheckDistEpipolarLine}}
+\index{CheckDistEpipolarLine@{CheckDistEpipolarLine}!ORB\_SLAM2::ORBmatcher@{ORB\_SLAM2::ORBmatcher}}
+\doxysubsubsection{\texorpdfstring{CheckDistEpipolarLine()}{CheckDistEpipolarLine()}}
+{\footnotesize\ttfamily bool O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+O\+R\+Bmatcher\+::\+Check\+Dist\+Epipolar\+Line (\begin{DoxyParamCaption}\item[{const cv\+::\+Key\+Point \&}]{kp1,  }\item[{const cv\+::\+Key\+Point \&}]{kp2,  }\item[{const cv\+::\+Mat \&}]{F12,  }\item[{const \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame}{Key\+Frame}} $\ast$}]{p\+KF }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_o_r_bmatcher_ad6613e26706798c507b5266cdd101311}\label{class_o_r_b___s_l_a_m2_1_1_o_r_bmatcher_ad6613e26706798c507b5266cdd101311}} 
+\index{ORB\_SLAM2::ORBmatcher@{ORB\_SLAM2::ORBmatcher}!ComputeThreeMaxima@{ComputeThreeMaxima}}
+\index{ComputeThreeMaxima@{ComputeThreeMaxima}!ORB\_SLAM2::ORBmatcher@{ORB\_SLAM2::ORBmatcher}}
+\doxysubsubsection{\texorpdfstring{ComputeThreeMaxima()}{ComputeThreeMaxima()}}
+{\footnotesize\ttfamily void O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+O\+R\+Bmatcher\+::\+Compute\+Three\+Maxima (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$ $\ast$}]{histo,  }\item[{const int}]{L,  }\item[{int \&}]{ind1,  }\item[{int \&}]{ind2,  }\item[{int \&}]{ind3 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_o_r_bmatcher_a63ff10561753f23220c2bfcea9b599f3}\label{class_o_r_b___s_l_a_m2_1_1_o_r_bmatcher_a63ff10561753f23220c2bfcea9b599f3}} 
+\index{ORB\_SLAM2::ORBmatcher@{ORB\_SLAM2::ORBmatcher}!DescriptorDistance@{DescriptorDistance}}
+\index{DescriptorDistance@{DescriptorDistance}!ORB\_SLAM2::ORBmatcher@{ORB\_SLAM2::ORBmatcher}}
+\doxysubsubsection{\texorpdfstring{DescriptorDistance()}{DescriptorDistance()}}
+{\footnotesize\ttfamily int O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+O\+R\+Bmatcher\+::\+Descriptor\+Distance (\begin{DoxyParamCaption}\item[{const cv\+::\+Mat \&}]{a,  }\item[{const cv\+::\+Mat \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_o_r_bmatcher_a0b63d334ccbb34fc7dda0eed2b96320e}\label{class_o_r_b___s_l_a_m2_1_1_o_r_bmatcher_a0b63d334ccbb34fc7dda0eed2b96320e}} 
+\index{ORB\_SLAM2::ORBmatcher@{ORB\_SLAM2::ORBmatcher}!Fuse@{Fuse}}
+\index{Fuse@{Fuse}!ORB\_SLAM2::ORBmatcher@{ORB\_SLAM2::ORBmatcher}}
+\doxysubsubsection{\texorpdfstring{Fuse()}{Fuse()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+O\+R\+Bmatcher\+::\+Fuse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame}{Key\+Frame}} $\ast$}]{p\+KF,  }\item[{const vector$<$ \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point}{Map\+Point}} $\ast$ $>$ \&}]{vp\+Map\+Points,  }\item[{const float}]{th = {\ttfamily 3.0} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_o_r_bmatcher_a3062482add2618408bc4c222f833781e}\label{class_o_r_b___s_l_a_m2_1_1_o_r_bmatcher_a3062482add2618408bc4c222f833781e}} 
+\index{ORB\_SLAM2::ORBmatcher@{ORB\_SLAM2::ORBmatcher}!Fuse@{Fuse}}
+\index{Fuse@{Fuse}!ORB\_SLAM2::ORBmatcher@{ORB\_SLAM2::ORBmatcher}}
+\doxysubsubsection{\texorpdfstring{Fuse()}{Fuse()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+O\+R\+Bmatcher\+::\+Fuse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame}{Key\+Frame}} $\ast$}]{p\+KF,  }\item[{cv\+::\+Mat}]{Scw,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point}{Map\+Point}} $\ast$ $>$ \&}]{vp\+Points,  }\item[{float}]{th,  }\item[{vector$<$ \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point}{Map\+Point}} $\ast$ $>$ \&}]{vp\+Replace\+Point }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_o_r_bmatcher_ae6ae0904b9919f1141ef4a790cd34bfe}\label{class_o_r_b___s_l_a_m2_1_1_o_r_bmatcher_ae6ae0904b9919f1141ef4a790cd34bfe}} 
+\index{ORB\_SLAM2::ORBmatcher@{ORB\_SLAM2::ORBmatcher}!RadiusByViewingCos@{RadiusByViewingCos}}
+\index{RadiusByViewingCos@{RadiusByViewingCos}!ORB\_SLAM2::ORBmatcher@{ORB\_SLAM2::ORBmatcher}}
+\doxysubsubsection{\texorpdfstring{RadiusByViewingCos()}{RadiusByViewingCos()}}
+{\footnotesize\ttfamily float O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+O\+R\+Bmatcher\+::\+Radius\+By\+Viewing\+Cos (\begin{DoxyParamCaption}\item[{const float \&}]{view\+Cos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_o_r_bmatcher_ab38a8d3f3803e398c173ef45b25e66d8}\label{class_o_r_b___s_l_a_m2_1_1_o_r_bmatcher_ab38a8d3f3803e398c173ef45b25e66d8}} 
+\index{ORB\_SLAM2::ORBmatcher@{ORB\_SLAM2::ORBmatcher}!SearchByBoW@{SearchByBoW}}
+\index{SearchByBoW@{SearchByBoW}!ORB\_SLAM2::ORBmatcher@{ORB\_SLAM2::ORBmatcher}}
+\doxysubsubsection{\texorpdfstring{SearchByBoW()}{SearchByBoW()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+O\+R\+Bmatcher\+::\+Search\+By\+BoW (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame}{Key\+Frame}} $\ast$}]{p\+KF,  }\item[{\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_frame}{Frame}} \&}]{F,  }\item[{std\+::vector$<$ \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point}{Map\+Point}} $\ast$ $>$ \&}]{vp\+Map\+Point\+Matches }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_o_r_bmatcher_a7508b39750df8f6f70dab0d2252b9d42}\label{class_o_r_b___s_l_a_m2_1_1_o_r_bmatcher_a7508b39750df8f6f70dab0d2252b9d42}} 
+\index{ORB\_SLAM2::ORBmatcher@{ORB\_SLAM2::ORBmatcher}!SearchByBoW@{SearchByBoW}}
+\index{SearchByBoW@{SearchByBoW}!ORB\_SLAM2::ORBmatcher@{ORB\_SLAM2::ORBmatcher}}
+\doxysubsubsection{\texorpdfstring{SearchByBoW()}{SearchByBoW()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+O\+R\+Bmatcher\+::\+Search\+By\+BoW (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame}{Key\+Frame}} $\ast$}]{p\+K\+F1,  }\item[{\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame}{Key\+Frame}} $\ast$}]{p\+K\+F2,  }\item[{std\+::vector$<$ \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point}{Map\+Point}} $\ast$ $>$ \&}]{vp\+Matches12 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_o_r_bmatcher_a0dba0b2bed7d16ca56e27ff4df00f557}\label{class_o_r_b___s_l_a_m2_1_1_o_r_bmatcher_a0dba0b2bed7d16ca56e27ff4df00f557}} 
+\index{ORB\_SLAM2::ORBmatcher@{ORB\_SLAM2::ORBmatcher}!SearchByProjection@{SearchByProjection}}
+\index{SearchByProjection@{SearchByProjection}!ORB\_SLAM2::ORBmatcher@{ORB\_SLAM2::ORBmatcher}}
+\doxysubsubsection{\texorpdfstring{SearchByProjection()}{SearchByProjection()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily int O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+O\+R\+Bmatcher\+::\+Search\+By\+Projection (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_frame}{Frame}} \&}]{Current\+Frame,  }\item[{const \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_frame}{Frame}} \&}]{Last\+Frame,  }\item[{const float}]{th,  }\item[{const bool}]{b\+Mono }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_o_r_bmatcher_a8cc723f3364b90ac6b68b969dca0cabe}\label{class_o_r_b___s_l_a_m2_1_1_o_r_bmatcher_a8cc723f3364b90ac6b68b969dca0cabe}} 
+\index{ORB\_SLAM2::ORBmatcher@{ORB\_SLAM2::ORBmatcher}!SearchByProjection@{SearchByProjection}}
+\index{SearchByProjection@{SearchByProjection}!ORB\_SLAM2::ORBmatcher@{ORB\_SLAM2::ORBmatcher}}
+\doxysubsubsection{\texorpdfstring{SearchByProjection()}{SearchByProjection()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily int O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+O\+R\+Bmatcher\+::\+Search\+By\+Projection (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_frame}{Frame}} \&}]{Current\+Frame,  }\item[{\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame}{Key\+Frame}} $\ast$}]{p\+KF,  }\item[{const \mbox{\hyperlink{orb__slam2_2_thirdparty_2_d_bo_w2_2_c_make_lists_8txt_a39557813ea16c34d3078235ee3b722da}{std\+::set}}$<$ \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point}{Map\+Point}} $\ast$ $>$ \&}]{s\+Already\+Found,  }\item[{const float}]{th,  }\item[{const int}]{O\+R\+Bdist }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_o_r_bmatcher_a27c18d6977e8ec20b196e0b2fa6043cd}\label{class_o_r_b___s_l_a_m2_1_1_o_r_bmatcher_a27c18d6977e8ec20b196e0b2fa6043cd}} 
+\index{ORB\_SLAM2::ORBmatcher@{ORB\_SLAM2::ORBmatcher}!SearchByProjection@{SearchByProjection}}
+\index{SearchByProjection@{SearchByProjection}!ORB\_SLAM2::ORBmatcher@{ORB\_SLAM2::ORBmatcher}}
+\doxysubsubsection{\texorpdfstring{SearchByProjection()}{SearchByProjection()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily int O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+O\+R\+Bmatcher\+::\+Search\+By\+Projection (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_frame}{Frame}} \&}]{F,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point}{Map\+Point}} $\ast$ $>$ \&}]{vp\+Map\+Points,  }\item[{const float}]{th = {\ttfamily 3} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_o_r_bmatcher_a110a51a849fcc485b18987e069f58c84}\label{class_o_r_b___s_l_a_m2_1_1_o_r_bmatcher_a110a51a849fcc485b18987e069f58c84}} 
+\index{ORB\_SLAM2::ORBmatcher@{ORB\_SLAM2::ORBmatcher}!SearchByProjection@{SearchByProjection}}
+\index{SearchByProjection@{SearchByProjection}!ORB\_SLAM2::ORBmatcher@{ORB\_SLAM2::ORBmatcher}}
+\doxysubsubsection{\texorpdfstring{SearchByProjection()}{SearchByProjection()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily int O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+O\+R\+Bmatcher\+::\+Search\+By\+Projection (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame}{Key\+Frame}} $\ast$}]{p\+KF,  }\item[{cv\+::\+Mat}]{Scw,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point}{Map\+Point}} $\ast$ $>$ \&}]{vp\+Points,  }\item[{std\+::vector$<$ \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point}{Map\+Point}} $\ast$ $>$ \&}]{vp\+Matched,  }\item[{int}]{th }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_o_r_bmatcher_aa8ab1e3785aad3fa26855a4efccfa565}\label{class_o_r_b___s_l_a_m2_1_1_o_r_bmatcher_aa8ab1e3785aad3fa26855a4efccfa565}} 
+\index{ORB\_SLAM2::ORBmatcher@{ORB\_SLAM2::ORBmatcher}!SearchBySim3@{SearchBySim3}}
+\index{SearchBySim3@{SearchBySim3}!ORB\_SLAM2::ORBmatcher@{ORB\_SLAM2::ORBmatcher}}
+\doxysubsubsection{\texorpdfstring{SearchBySim3()}{SearchBySim3()}}
+{\footnotesize\ttfamily int O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+O\+R\+Bmatcher\+::\+Search\+By\+Sim3 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame}{Key\+Frame}} $\ast$}]{p\+K\+F1,  }\item[{\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame}{Key\+Frame}} $\ast$}]{p\+K\+F2,  }\item[{std\+::vector$<$ \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point}{Map\+Point}} $\ast$ $>$ \&}]{vp\+Matches12,  }\item[{const float \&}]{s12,  }\item[{const cv\+::\+Mat \&}]{R12,  }\item[{const cv\+::\+Mat \&}]{t12,  }\item[{const float}]{th }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_o_r_bmatcher_aff9b6dde7878d59e334ed5ad2ddd04eb}\label{class_o_r_b___s_l_a_m2_1_1_o_r_bmatcher_aff9b6dde7878d59e334ed5ad2ddd04eb}} 
+\index{ORB\_SLAM2::ORBmatcher@{ORB\_SLAM2::ORBmatcher}!SearchForInitialization@{SearchForInitialization}}
+\index{SearchForInitialization@{SearchForInitialization}!ORB\_SLAM2::ORBmatcher@{ORB\_SLAM2::ORBmatcher}}
+\doxysubsubsection{\texorpdfstring{SearchForInitialization()}{SearchForInitialization()}}
+{\footnotesize\ttfamily int O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+O\+R\+Bmatcher\+::\+Search\+For\+Initialization (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_frame}{Frame}} \&}]{F1,  }\item[{\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_frame}{Frame}} \&}]{F2,  }\item[{std\+::vector$<$ cv\+::\+Point2f $>$ \&}]{vb\+Prev\+Matched,  }\item[{std\+::vector$<$ int $>$ \&}]{vn\+Matches12,  }\item[{int}]{window\+Size = {\ttfamily 10} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_o_r_bmatcher_a0ecb7f018e9184c67c4a48ad8616217d}\label{class_o_r_b___s_l_a_m2_1_1_o_r_bmatcher_a0ecb7f018e9184c67c4a48ad8616217d}} 
+\index{ORB\_SLAM2::ORBmatcher@{ORB\_SLAM2::ORBmatcher}!SearchForTriangulation@{SearchForTriangulation}}
+\index{SearchForTriangulation@{SearchForTriangulation}!ORB\_SLAM2::ORBmatcher@{ORB\_SLAM2::ORBmatcher}}
+\doxysubsubsection{\texorpdfstring{SearchForTriangulation()}{SearchForTriangulation()}}
+{\footnotesize\ttfamily int O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+O\+R\+Bmatcher\+::\+Search\+For\+Triangulation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame}{Key\+Frame}} $\ast$}]{p\+K\+F1,  }\item[{\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame}{Key\+Frame}} $\ast$}]{p\+K\+F2,  }\item[{cv\+::\+Mat}]{F12,  }\item[{std\+::vector$<$ pair$<$ size\+\_\+t, size\+\_\+t $>$ $>$ \&}]{v\+Matched\+Pairs,  }\item[{const bool}]{b\+Only\+Stereo }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_o_r_bmatcher_aa2f2d9094b4f31db4f65c93778f71494}\label{class_o_r_b___s_l_a_m2_1_1_o_r_bmatcher_aa2f2d9094b4f31db4f65c93778f71494}} 
+\index{ORB\_SLAM2::ORBmatcher@{ORB\_SLAM2::ORBmatcher}!HISTO\_LENGTH@{HISTO\_LENGTH}}
+\index{HISTO\_LENGTH@{HISTO\_LENGTH}!ORB\_SLAM2::ORBmatcher@{ORB\_SLAM2::ORBmatcher}}
+\doxysubsubsection{\texorpdfstring{HISTO\_LENGTH}{HISTO\_LENGTH}}
+{\footnotesize\ttfamily const int O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+O\+R\+Bmatcher\+::\+H\+I\+S\+T\+O\+\_\+\+L\+E\+N\+G\+TH = 30\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_o_r_bmatcher_a996a27217749aa15d2210c6dc6228495}\label{class_o_r_b___s_l_a_m2_1_1_o_r_bmatcher_a996a27217749aa15d2210c6dc6228495}} 
+\index{ORB\_SLAM2::ORBmatcher@{ORB\_SLAM2::ORBmatcher}!mbCheckOrientation@{mbCheckOrientation}}
+\index{mbCheckOrientation@{mbCheckOrientation}!ORB\_SLAM2::ORBmatcher@{ORB\_SLAM2::ORBmatcher}}
+\doxysubsubsection{\texorpdfstring{mbCheckOrientation}{mbCheckOrientation}}
+{\footnotesize\ttfamily bool O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+O\+R\+Bmatcher\+::mb\+Check\+Orientation\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_o_r_bmatcher_a08f6ee66568fa5a79600ed5ad8443893}\label{class_o_r_b___s_l_a_m2_1_1_o_r_bmatcher_a08f6ee66568fa5a79600ed5ad8443893}} 
+\index{ORB\_SLAM2::ORBmatcher@{ORB\_SLAM2::ORBmatcher}!mfNNratio@{mfNNratio}}
+\index{mfNNratio@{mfNNratio}!ORB\_SLAM2::ORBmatcher@{ORB\_SLAM2::ORBmatcher}}
+\doxysubsubsection{\texorpdfstring{mfNNratio}{mfNNratio}}
+{\footnotesize\ttfamily float O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+O\+R\+Bmatcher\+::mf\+N\+Nratio\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_o_r_bmatcher_aeb28265794388e19763e9a3dabd51473}\label{class_o_r_b___s_l_a_m2_1_1_o_r_bmatcher_aeb28265794388e19763e9a3dabd51473}} 
+\index{ORB\_SLAM2::ORBmatcher@{ORB\_SLAM2::ORBmatcher}!TH\_HIGH@{TH\_HIGH}}
+\index{TH\_HIGH@{TH\_HIGH}!ORB\_SLAM2::ORBmatcher@{ORB\_SLAM2::ORBmatcher}}
+\doxysubsubsection{\texorpdfstring{TH\_HIGH}{TH\_HIGH}}
+{\footnotesize\ttfamily const int O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+O\+R\+Bmatcher\+::\+T\+H\+\_\+\+H\+I\+GH = 100\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_o_r_bmatcher_a810252607722e100efe4c4e941ae00a6}\label{class_o_r_b___s_l_a_m2_1_1_o_r_bmatcher_a810252607722e100efe4c4e941ae00a6}} 
+\index{ORB\_SLAM2::ORBmatcher@{ORB\_SLAM2::ORBmatcher}!TH\_LOW@{TH\_LOW}}
+\index{TH\_LOW@{TH\_LOW}!ORB\_SLAM2::ORBmatcher@{ORB\_SLAM2::ORBmatcher}}
+\doxysubsubsection{\texorpdfstring{TH\_LOW}{TH\_LOW}}
+{\footnotesize\ttfamily const int O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+O\+R\+Bmatcher\+::\+T\+H\+\_\+\+L\+OW = 50\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+orb\+\_\+slam2/include/\mbox{\hyperlink{_o_r_bmatcher_8h}{O\+R\+Bmatcher.\+h}}\item 
+orb\+\_\+slam2/src/\mbox{\hyperlink{_o_r_bmatcher_8cc}{O\+R\+Bmatcher.\+cc}}\end{DoxyCompactItemize}

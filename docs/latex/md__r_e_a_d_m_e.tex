@@ -1,0 +1,188 @@
+{\bfseries{O\+R\+B-\/\+S\+L\+A\+M2 Authors\+:}} \href{http://webdiis.unizar.es/~raulmur/}{\texttt{ Raul Mur-\/\+Artal}}, \href{http://webdiis.unizar.es/~jdtardos/}{\texttt{ Juan D. Tardos}}, \href{http://webdiis.unizar.es/~josemari/}{\texttt{ J. M. M. Montiel}} and \href{http://doriangalvez.com/}{\texttt{ Dorian Galvez-\/\+Lopez}} (\href{https://github.com/dorian3d/DBoW2}{\texttt{ D\+Bo\+W2}}). The original implementation can be found \href{https://github.com/raulmur/ORB_SLAM2.git}{\texttt{ here}}.\hypertarget{md__r_e_a_d_m_e_autotoc_md6}{}\doxysection{O\+R\+B-\/\+S\+L\+A\+M2 R\+O\+S node}\label{md__r_e_a_d_m_e_autotoc_md6}
+This is the R\+OS implementation of the O\+R\+B-\/\+S\+L\+A\+M2 real-\/time S\+L\+AM library for {\bfseries{Monocular}}, {\bfseries{Stereo}} and {\bfseries{R\+G\+B-\/D}} cameras that computes the camera trajectory and a sparse 3D reconstruction (in the stereo and R\+G\+B-\/D case with true scale). It is able to detect loops and relocalize the camera in real time. This implementation removes the Pangolin dependency, and the original viewer. All data I/O is handled via R\+OS topics. For vizualization you can use R\+Viz. This repository is maintained by \href{http://lennarthaller.de}{\texttt{ Lennart Haller}} on behalf of \href{http://appliedai.de}{\texttt{ applied\+AI}}. \hypertarget{md__r_e_a_d_m_e_autotoc_md7}{}\doxysubsection{Features}\label{md__r_e_a_d_m_e_autotoc_md7}
+
+\begin{DoxyItemize}
+\item Full R\+OS compatibility
+\item Supports a lot of cameras out of the box, such as the Intel Real\+Sense family. See the run section for a list
+\item Data I/O via R\+OS topics
+\item Parameters can be set with the rqt\+\_\+reconfigure gui during runtime
+\item Very quick startup through considerably sped up vocab file loading
+\item Full Map save and load functionality based on \href{https://github.com/raulmur/ORB_SLAM2/pull/381}{\texttt{ this PR}}.
+\item Loading of all parameters via launch file
+\item Supports loading cam parameters from cam\+\_\+info topic
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md8}{}\doxysubsubsection{Related Publications\+:}\label{md__r_e_a_d_m_e_autotoc_md8}
+\mbox{[}Monocular\mbox{]} Raúl Mur-\/\+Artal, J. M. M. Montiel and Juan D. Tardós. {\bfseries{O\+R\+B-\/\+S\+L\+AM\+: A Versatile and Accurate Monocular S\+L\+AM System}}. {\itshape I\+E\+EE Transactions on Robotics,} vol. 31, no. 5, pp. 1147-\/1163, 2015. ({\bfseries{2015 I\+E\+EE Transactions on Robotics Best Paper Award}}). {\bfseries{\href{http://webdiis.unizar.es/~raulmur/MurMontielTardosTRO15.pdf}{\texttt{ P\+DF}}}}.
+
+\mbox{[}Stereo and R\+G\+B-\/D\mbox{]} Raúl Mur-\/\+Artal and Juan D. Tardós. {\bfseries{O\+R\+B-\/\+S\+L\+A\+M2\+: an Open-\/\+Source S\+L\+AM System for Monocular, Stereo and R\+G\+B-\/D Cameras}}. {\itshape I\+E\+EE Transactions on Robotics,} vol. 33, no. 5, pp. 1255-\/1262, 2017. {\bfseries{\href{https://128.84.21.199/pdf/1610.06475.pdf}{\texttt{ P\+DF}}}}.
+
+\mbox{[}\mbox{\hyperlink{namespace_d_bo_w2}{D\+Bo\+W2}} Place Recognizer\mbox{]} Dorian Gálvez-\/\+López and Juan D. Tardós. {\bfseries{Bags of Binary Words for Fast Place Recognition in Image Sequences}}. {\itshape I\+E\+EE Transactions on Robotics,} vol. 28, no. 5, pp. 1188-\/1197, 2012. {\bfseries{\href{http://doriangalvez.com/php/dl.php?dlp=GalvezTRO12.pdf}{\texttt{ P\+DF}}}}\hypertarget{md__r_e_a_d_m_e_autotoc_md9}{}\doxysection{1. License}\label{md__r_e_a_d_m_e_autotoc_md9}
+O\+R\+B-\/\+S\+L\+A\+M2 is released under a \href{https://github.com/aaide/ORB_SLAM2_ROS/blob/master/License-gpl.txt}{\texttt{ G\+P\+Lv3 license}}. For a list of all code/library dependencies (and associated licenses), please see \href{https://github.com/aaide/ORB_SLAM2_ROS/blob/master/Dependencies.md}{\texttt{ Dependencies.\+md}}.
+
+For a closed-\/source version of O\+R\+B-\/\+S\+L\+A\+M2 for commercial purposes, please contact the authors\+: orbslam (at) unizar (dot) es.
+
+If you use O\+R\+B-\/\+S\+L\+A\+M2 (Monocular) in an academic work, please cite\+: \begin{DoxyVerb}@article{murTRO2015,
+  title={{ORB-SLAM}: a Versatile and Accurate Monocular {SLAM} System},
+  author={Mur-Artal, Ra\'ul, Montiel, J. M. M. and Tard\'os, Juan D.},
+  journal={IEEE Transactions on Robotics},
+  volume={31},
+  number={5},
+  pages={1147--1163},
+  doi = {10.1109/TRO.2015.2463671},
+  year={2015}
+ }
+\end{DoxyVerb}
+
+
+if you use O\+R\+B-\/\+S\+L\+A\+M2 (Stereo or R\+G\+B-\/D) in an academic work, please cite\+: \begin{DoxyVerb}@article{murORB2,
+  title={{ORB-SLAM2}: an Open-Source {SLAM} System for Monocular, Stereo and {RGB-D} Cameras},
+  author={Mur-Artal, Ra\'ul and Tard\'os, Juan D.},
+  journal={IEEE Transactions on Robotics},
+  volume={33},
+  number={5},
+  pages={1255--1262},
+  doi = {10.1109/TRO.2017.2705103},
+  year={2017}
+ }
+\end{DoxyVerb}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md10}{}\doxysection{2. Building orb\+\_\+slam2\+\_\+ros}\label{md__r_e_a_d_m_e_autotoc_md10}
+We have tested the library in {\bfseries{Ubuntu 16.\+04}} with {\bfseries{R\+OS Kinetic}} and {\bfseries{Ubuntu 18.\+04}} with {\bfseries{R\+OS Melodic}}. A powerful computer (e.\+g. i7) will ensure real-\/time performance and provide more stable and accurate results. A C++11 compiler is needed.\hypertarget{md__r_e_a_d_m_e_autotoc_md11}{}\doxysubsection{Getting the code}\label{md__r_e_a_d_m_e_autotoc_md11}
+Clone the repository into your catkin workspace\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{git clone https://github.com/appliedAI-\/Initiative/orb\_slam\_2\_ros.git}
+\end{DoxyCode}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md12}{}\doxysubsection{R\+OS}\label{md__r_e_a_d_m_e_autotoc_md12}
+This R\+OS node requires catkin\+\_\+make\+\_\+isolated or catkin build to build. This package depends on a number of other R\+OS packages which ship with the default installation of R\+OS. If they are not installed use \href{http://wiki.ros.org/rosdep}{\texttt{ rosdep}} to install them. In your catkin folder run 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{sudo rosdep init}
+\DoxyCodeLine{rosdep update}
+\DoxyCodeLine{rosdep install -\/-\/from-\/paths src -\/-\/ignore-\/src -\/r -\/y}
+\end{DoxyCode}
+
+
+to install all dependencies for all packages. If you already initialized rosdep you get a warning which you can ignore.\hypertarget{md__r_e_a_d_m_e_autotoc_md13}{}\doxysubsection{Eigen3}\label{md__r_e_a_d_m_e_autotoc_md13}
+Required by \mbox{\hyperlink{namespaceg2o}{g2o}}. Download and install instructions can be found \href{http://eigen.tuxfamily.org}{\texttt{ here}}. Otherwise Eigen can be installed as a binary with\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{sudo apt install libeigen3-\/dev}
+\end{DoxyCode}
+
+
+{\bfseries{Required at least Eigen 3.\+1.\+0}}.\hypertarget{md__r_e_a_d_m_e_autotoc_md14}{}\doxysubsection{Building}\label{md__r_e_a_d_m_e_autotoc_md14}
+To build the node run 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{catkin build}
+\end{DoxyCode}
+
+
+in your catkin folder.\hypertarget{md__r_e_a_d_m_e_autotoc_md15}{}\doxysection{3. Configuration}\label{md__r_e_a_d_m_e_autotoc_md15}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md16}{}\doxysubsection{Vocab file}\label{md__r_e_a_d_m_e_autotoc_md16}
+To run the algorithm expects both a vocabulary file (see the paper) which ships with this repository.\hypertarget{md__r_e_a_d_m_e_autotoc_md17}{}\doxysection{Config}\label{md__r_e_a_d_m_e_autotoc_md17}
+The config files for camera calibration and tracking hyper paramters from the original implementation are replaced with ros paramters which get set from a launch file.\hypertarget{md__r_e_a_d_m_e_autotoc_md18}{}\doxysubsection{R\+O\+S parameters, topics and services}\label{md__r_e_a_d_m_e_autotoc_md18}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md19}{}\doxysubsubsection{Parameters}\label{md__r_e_a_d_m_e_autotoc_md19}
+There are three types of parameters right now\+: static-\/ and dynamic ros parameters and camera settings. The static parameters are send to the R\+OS parameter server at startup and are not supposed to change. They are set in the launch files which are located at ros/launch. The parameters are\+:
+
+
+\begin{DoxyItemize}
+\item {\bfseries{load\+\_\+map}}\+: Bool. If set to true, the node will try to load the map provided with map\+\_\+file at startup.
+\item {\bfseries{map\+\_\+file}}\+: String. The name of the file the map is loaded from.
+\item {\bfseries{voc\+\_\+file}}\+: String. The location of config vocanulary file mentioned above.
+\item {\bfseries{publish\+\_\+pointcloud}}\+: Bool. If the pointcloud containing all key points (the map) should be published.
+\item {\bfseries{publish\+\_\+pose}}\+: Bool. If a Pose\+Stamped message should be published. Even if this is false the tf will still be published.
+\item {\bfseries{pointcloud\+\_\+frame\+\_\+id}}\+: String. The Frame id of the Pointcloud/map.
+\item {\bfseries{camera\+\_\+frame\+\_\+id}}\+: String. The Frame id of the camera position.
+\item {\bfseries{load\+\_\+calibration\+\_\+from\+\_\+cam}}\+: Bool. If true, camera calibration is read from a {\ttfamily camera\+\_\+info} topic. Otherwise it is read from launch file params.
+\end{DoxyItemize}
+
+Dynamic parameters can be changed at runtime. Either by updating them directly via the command line or by using \href{http://wiki.ros.org/rqt_reconfigure}{\texttt{ rqt\+\_\+reconfigure}} which is the recommended way. The parameters are\+:
+
+
+\begin{DoxyItemize}
+\item {\bfseries{localize\+\_\+only}}\+: Bool. Toggle from/to only localization. The S\+L\+AM will then no longer add no new points to the map.
+\item {\bfseries{reset\+\_\+map}}\+: Bool. Set to true to erase the map and start new. After reset the parameter will automatically update back to false.
+\item {\bfseries{min\+\_\+num\+\_\+kf\+\_\+in\+\_\+map}}\+: Int. Number of key frames a map has to have to not get reset after tracking is lost.
+\item {\bfseries{min\+\_\+observations\+\_\+for\+\_\+ros\+\_\+map}}\+: Int. Number of minimal observations a key point must have to be published in the point cloud. This doesn\textquotesingle{}t influence the behavior of the S\+L\+AM itself at all.
+\end{DoxyItemize}
+
+Finally, the intrinsic camera calibration parameters along with some hyperparameters can be found in the specific yaml files in orb\+\_\+slam2/config.\hypertarget{md__r_e_a_d_m_e_autotoc_md20}{}\doxysubsubsection{Published topics}\label{md__r_e_a_d_m_e_autotoc_md20}
+The following topics are being published and subscribed to by the nodes\+:
+\begin{DoxyItemize}
+\item All nodes publish (given the settings) a {\bfseries{Point\+Cloud2}} containing all key points of the map.
+\item Also all nodes publish (given the settings) a {\bfseries{Pose\+Stamped}} with the current pose of the camera.
+\item Live {\bfseries{image}} from the camera containing the currently found key points and a status text.
+\item A {\bfseries{tf}} from the pointcloud frame id to the camera frame id (the position).
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md21}{}\doxysubsubsection{Subscribed topics}\label{md__r_e_a_d_m_e_autotoc_md21}
+
+\begin{DoxyItemize}
+\item The mono node subscribes to\+:
+\begin{DoxyItemize}
+\item $\ast$$\ast$/camera/image\+\_\+raw$\ast$$\ast$ for the input image
+\item $\ast$$\ast$/camera/camera\+\_\+info$\ast$$\ast$ for camera calibration (if {\ttfamily load\+\_\+calibration\+\_\+from\+\_\+cam}) is {\ttfamily true}
+\end{DoxyItemize}
+\item The R\+G\+BD node subscribes to\+:
+\begin{DoxyItemize}
+\item $\ast$$\ast$/camera/rgb/image\+\_\+raw$\ast$$\ast$ for the R\+GB image
+\item $\ast$$\ast$/camera/depth\+\_\+registered/image\+\_\+raw$\ast$$\ast$ for the depth information
+\item $\ast$$\ast$/camera/rgb/camera\+\_\+info$\ast$$\ast$ for camera calibration (if {\ttfamily load\+\_\+calibration\+\_\+from\+\_\+cam}) is {\ttfamily true}
+\end{DoxyItemize}
+\item The stereo node subscribes to\+:
+\begin{DoxyItemize}
+\item {\bfseries{image\+\_\+left/image\+\_\+color\+\_\+rect}} and
+\item {\bfseries{image\+\_\+right/image\+\_\+color\+\_\+rect}} for corresponding images
+\item {\bfseries{image\+\_\+left/camera\+\_\+info}} for camera calibration (if {\ttfamily load\+\_\+calibration\+\_\+from\+\_\+cam}) is {\ttfamily true}
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md22}{}\doxysection{4. Services}\label{md__r_e_a_d_m_e_autotoc_md22}
+All nodes offer the possibility to save the map via the service node\+\_\+type/save\+\_\+map. So the save\+\_\+map services are\+:
+\begin{DoxyItemize}
+\item $\ast$$\ast$/orb\+\_\+slam2\+\_\+rgbd/save\+\_\+map$\ast$$\ast$
+\item $\ast$$\ast$/orb\+\_\+slam2\+\_\+mono/save\+\_\+map$\ast$$\ast$
+\item $\ast$$\ast$/orb\+\_\+slam2\+\_\+stereo/save\+\_\+map$\ast$$\ast$
+\end{DoxyItemize}
+
+The save\+\_\+map service expects the name of the file the map should be saved at as input.
+
+At the moment, while the save to file takes place, the S\+L\+AM is inactive.\hypertarget{md__r_e_a_d_m_e_autotoc_md23}{}\doxysection{5. Run}\label{md__r_e_a_d_m_e_autotoc_md23}
+After sourcing your setup bash using 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{source devel/setup.bash}
+\end{DoxyCode}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md24}{}\doxysubsection{Suported cameras}\label{md__r_e_a_d_m_e_autotoc_md24}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{4}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Camera }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Mono }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Stereo }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ R\+G\+BD  }\\\cline{1-4}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Camera }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Mono }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Stereo }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ R\+G\+BD  }\\\cline{1-4}
+\endhead
+Intel Real\+Sense r200 &{\ttfamily roslaunch orb\+\_\+slam2\+\_\+ros orb\+\_\+slam2\+\_\+r200\+\_\+mono.\+launch} &{\ttfamily roslaunch orb\+\_\+slam2\+\_\+ros orb\+\_\+slam2\+\_\+r200\+\_\+stereo.\+launch} &{\ttfamily roslaunch orb\+\_\+slam2\+\_\+ros orb\+\_\+slam2\+\_\+r200\+\_\+rgbd.\+launch}  \\\cline{1-4}
+Intel Real\+Sense d435 &{\ttfamily roslaunch orb\+\_\+slam2\+\_\+ros orb\+\_\+slam2\+\_\+d435\+\_\+mono.\+launch} &-\/ &{\ttfamily roslaunch orb\+\_\+slam2\+\_\+ros orb\+\_\+slam2\+\_\+d435\+\_\+rgbd.\+launch}  \\\cline{1-4}
+\end{longtabu}
+$\vert$ Mynteye S $\vert$ {\ttfamily roslaunch orb\+\_\+slam2\+\_\+ros orb\+\_\+slam2\+\_\+mynteye\+\_\+s\+\_\+mono.\+launch} $\vert$ {\ttfamily roslaunch orb\+\_\+slam2\+\_\+ros orb\+\_\+slam2\+\_\+mynteye\+\_\+s\+\_\+stereo.\+launch} $\vert$ -\/ $\vert$ $\vert$ $\vert$ $\vert$ $\vert$
+
+Use the command from the corresponding cell for your camera to launch orb\+\_\+slam2\+\_\+ros with the right parameters for your setup.\hypertarget{md__r_e_a_d_m_e_autotoc_md25}{}\doxysection{6. Docker}\label{md__r_e_a_d_m_e_autotoc_md25}
+An easy way is to use orb\+\_\+slam2\+\_\+ros with Docker. This repository ships with a Dockerfile based on R\+OS kinetic. The container includes orb\+\_\+slam2\+\_\+ros as well as the Intel Real\+Sense package for quick testing and data collection.\hypertarget{md__r_e_a_d_m_e_autotoc_md26}{}\doxysection{7. F\+AQ}\label{md__r_e_a_d_m_e_autotoc_md26}
+Here are some answers to frequently asked questions. \hypertarget{md__r_e_a_d_m_e_autotoc_md27}{}\doxysubsubsection{How to save the map}\label{md__r_e_a_d_m_e_autotoc_md27}
+To save the map with a simple command line command run one the commands (matching to your node running)\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{rosservice call /orb\_slam2\_rgbd/save\_map map.bin}
+\DoxyCodeLine{rosservice call /orb\_slam2\_stereo/save\_map map.bin}
+\DoxyCodeLine{rosservice call /orb\_slam2\_mono/save\_map map.bin}
+\end{DoxyCode}
+
+
+You can replace \char`\"{}map.\+bin\char`\"{} with any file name you want. The file will be saved at R\+O\+S\+\_\+\+H\+O\+ME which is by default $\sim$/.ros
+
+{\bfseries{Note}} that you need to source your catkin workspace in your terminal in order for the services to become available.\hypertarget{md__r_e_a_d_m_e_autotoc_md28}{}\doxysubsubsection{Using a new / different camera}\label{md__r_e_a_d_m_e_autotoc_md28}
+You can use this S\+L\+AM with almost any mono, stereo or R\+G\+BD cam you want. In order to use this with a different camera you need to supply a set of paramters to the algorithm. They are loaded from a launch file from the ros/launch folder. 1) You need the {\bfseries{camera intrinsics and some configurations}}. \href{https://docs.opencv.org/3.1.0/dc/dbb/tutorial_py_calibration.html}{\texttt{ Here}} you can read about what the camera calibration parameters mean. Use \href{http://wiki.ros.org/camera_calibration}{\texttt{ this}} ros node to obtain them for your camera. If you use a stereo or R\+G\+BD cam in addition to the calibration and resolution you also need to adjust three other parameters\+: Camera.\+bf, Th\+Depth and Depth\+Map\+Factor. 2) {\bfseries{The ros launch file}} which is at ros/launch needs to have the correct topics to subscribe to from the new camera. {\bfseries{N\+O\+TE}} If your camera supports this, orb\+\_\+slam\+\_\+2\+\_\+ros can subscribe to the camera\+\_\+info topic and read the camera calibration parameters from there.\hypertarget{md__r_e_a_d_m_e_autotoc_md29}{}\doxysubsubsection{Problem running the realsense node}\label{md__r_e_a_d_m_e_autotoc_md29}
+The node for the Real\+Sense fails to launch when running 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{roslaunch realsense2\_camera rs\_rgbd.launch}
+\end{DoxyCode}
+
+
+to get the depth stream. {\bfseries{Solution\+:}} install the rgbd-\/launch package with the command (make sure to adjust the R\+OS distro if needed)\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{sudo apt install ros-\/melodic-\/rgbd-\/launch}
+\end{DoxyCode}
+ 

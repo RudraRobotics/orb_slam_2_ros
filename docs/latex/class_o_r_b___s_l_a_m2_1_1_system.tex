@@ -1,0 +1,204 @@
+\hypertarget{class_o_r_b___s_l_a_m2_1_1_system}{}\doxysection{O\+R\+B\+\_\+\+S\+L\+A\+M2\+::System Class Reference}
+\label{class_o_r_b___s_l_a_m2_1_1_system}\index{ORB\_SLAM2::System@{ORB\_SLAM2::System}}
+
+
+{\ttfamily \#include $<$System.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_system_a3f14b84bb9663e1129e649e592bd14cf}{e\+Sensor}} \{ \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_system_a3f14b84bb9663e1129e649e592bd14cfad1e5840d6aeaa77d25724ea0b27437cd}{M\+O\+N\+O\+C\+U\+L\+AR}} =0, 
+\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_system_a3f14b84bb9663e1129e649e592bd14cfa6d4fa33f59566841b81a92625419c177}{S\+T\+E\+R\+EO}} =1, 
+\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_system_a3f14b84bb9663e1129e649e592bd14cfa1c8a78c1a9b7ac931a73f230687b2c7c}{R\+G\+BD}} =2
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_system_aa3d7b2905b7497a51ddfa34495ef8e94}{System}} (const string str\+Voc\+File, const \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_system_a3f14b84bb9663e1129e649e592bd14cf}{e\+Sensor}} sensor, \mbox{\hyperlink{struct_o_r_b___s_l_a_m2_1_1_o_r_b_parameters}{O\+R\+B\+Parameters}} \&parameters, const std\+::string \&map\+\_\+file=\char`\"{}\char`\"{}, bool load\+\_\+map=false)
+\item 
+void \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_system_a8fa919baf96d780265a45991e340694c}{Track\+Stereo}} (const cv\+::\+Mat \&im\+Left, const cv\+::\+Mat \&im\+Right, const double \&timestamp)
+\item 
+void \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_system_ac70570b3c443b3e7643bdd60e930f84a}{Track\+R\+G\+BD}} (const cv\+::\+Mat \&im, const cv\+::\+Mat \&depthmap, const double \&timestamp)
+\item 
+void \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_system_a2c7df543072cacd831c890158e392473}{Track\+Monocular}} (const cv\+::\+Mat \&im, const double \&timestamp)
+\item 
+bool \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_system_ae39dbc27eae5df975637a68032bce5dd}{Map\+Changed}} ()
+\item 
+void \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_system_a33f5eb6f33d14cdda2a889fe06d6619e}{Reset}} ()
+\item 
+void \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_system_aa934876a230dfa99e123f62b4b54d0cb}{Shutdown}} ()
+\item 
+void \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_system_a118df14a34bac039f9880c886ee3678f}{Save\+Trajectory\+T\+UM}} (const string \&filename)
+\item 
+void \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_system_a6435a029f66a34103c434aa16e80eae3}{Save\+Key\+Frame\+Trajectory\+T\+UM}} (const string \&filename)
+\item 
+void \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_system_a3a28b57ac7267d5c51d3b8492d2f5d5c}{Save\+Trajectory\+K\+I\+T\+TI}} (const string \&filename)
+\item 
+void \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_system_a91c9c9296f4677f08052196a33ec06d7}{Enable\+Localization\+Only}} (bool localize\+\_\+only)
+\item 
+void \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_system_a948f6f3c3c16d57cac9361a3b3a8260e}{Set\+Minimum\+Key\+Frames}} (int min\+\_\+num\+\_\+kf)
+\item 
+bool \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_system_a36c9e244b6ad65ec5cc90f5d9d1e2f04}{Save\+Map}} (const string \&filename)
+\item 
+cv\+::\+Mat \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_system_acd0142b768d16d617a761eaa82e6eed8}{Get\+Current\+Position}} ()
+\item 
+int \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_system_a729c75cd1dca4f178f6315d34ee44436}{Get\+Tracking\+State}} ()
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point}{Map\+Point}} $\ast$ $>$ \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_system_a10cf5e7645e0abfd05db4d999e8371d3}{Get\+Tracked\+Map\+Points}} ()
+\item 
+std\+::vector$<$ cv\+::\+Key\+Point $>$ \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_system_a4ec373183fa16ae82f2c14f86ace5cfa}{Get\+Tracked\+Key\+Points\+Un}} ()
+\item 
+cv\+::\+Mat \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_system_a9f594ee749a532397e691db4db5024ec}{Draw\+Current\+Frame}} ()
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point}{Map\+Point}} $\ast$ $>$ \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_system_a780f7def352541dbc81e32d6d23d5e14}{Get\+All\+Map\+Points}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_system_a3f14b84bb9663e1129e649e592bd14cf}\label{class_o_r_b___s_l_a_m2_1_1_system_a3f14b84bb9663e1129e649e592bd14cf}} 
+\index{ORB\_SLAM2::System@{ORB\_SLAM2::System}!eSensor@{eSensor}}
+\index{eSensor@{eSensor}!ORB\_SLAM2::System@{ORB\_SLAM2::System}}
+\doxysubsubsection{\texorpdfstring{eSensor}{eSensor}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_system_a3f14b84bb9663e1129e649e592bd14cf}{O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+System\+::e\+Sensor}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MONOCULAR@{MONOCULAR}!ORB\_SLAM2::System@{ORB\_SLAM2::System}}\index{ORB\_SLAM2::System@{ORB\_SLAM2::System}!MONOCULAR@{MONOCULAR}}}\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_system_a3f14b84bb9663e1129e649e592bd14cfad1e5840d6aeaa77d25724ea0b27437cd}\label{class_o_r_b___s_l_a_m2_1_1_system_a3f14b84bb9663e1129e649e592bd14cfad1e5840d6aeaa77d25724ea0b27437cd}} 
+M\+O\+N\+O\+C\+U\+L\+AR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{STEREO@{STEREO}!ORB\_SLAM2::System@{ORB\_SLAM2::System}}\index{ORB\_SLAM2::System@{ORB\_SLAM2::System}!STEREO@{STEREO}}}\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_system_a3f14b84bb9663e1129e649e592bd14cfa6d4fa33f59566841b81a92625419c177}\label{class_o_r_b___s_l_a_m2_1_1_system_a3f14b84bb9663e1129e649e592bd14cfa6d4fa33f59566841b81a92625419c177}} 
+S\+T\+E\+R\+EO&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RGBD@{RGBD}!ORB\_SLAM2::System@{ORB\_SLAM2::System}}\index{ORB\_SLAM2::System@{ORB\_SLAM2::System}!RGBD@{RGBD}}}\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_system_a3f14b84bb9663e1129e649e592bd14cfa1c8a78c1a9b7ac931a73f230687b2c7c}\label{class_o_r_b___s_l_a_m2_1_1_system_a3f14b84bb9663e1129e649e592bd14cfa1c8a78c1a9b7ac931a73f230687b2c7c}} 
+R\+G\+BD&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_system_aa3d7b2905b7497a51ddfa34495ef8e94}\label{class_o_r_b___s_l_a_m2_1_1_system_aa3d7b2905b7497a51ddfa34495ef8e94}} 
+\index{ORB\_SLAM2::System@{ORB\_SLAM2::System}!System@{System}}
+\index{System@{System}!ORB\_SLAM2::System@{ORB\_SLAM2::System}}
+\doxysubsubsection{\texorpdfstring{System()}{System()}}
+{\footnotesize\ttfamily O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+System\+::\+System (\begin{DoxyParamCaption}\item[{const string}]{str\+Voc\+File,  }\item[{const \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_system_a3f14b84bb9663e1129e649e592bd14cf}{e\+Sensor}}}]{sensor,  }\item[{\mbox{\hyperlink{struct_o_r_b___s_l_a_m2_1_1_o_r_b_parameters}{O\+R\+B\+Parameters}} \&}]{parameters,  }\item[{const std\+::string \&}]{map\+\_\+file = {\ttfamily \char`\"{}\char`\"{}},  }\item[{bool}]{load\+\_\+map = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_system_a9f594ee749a532397e691db4db5024ec}\label{class_o_r_b___s_l_a_m2_1_1_system_a9f594ee749a532397e691db4db5024ec}} 
+\index{ORB\_SLAM2::System@{ORB\_SLAM2::System}!DrawCurrentFrame@{DrawCurrentFrame}}
+\index{DrawCurrentFrame@{DrawCurrentFrame}!ORB\_SLAM2::System@{ORB\_SLAM2::System}}
+\doxysubsubsection{\texorpdfstring{DrawCurrentFrame()}{DrawCurrentFrame()}}
+{\footnotesize\ttfamily cv\+::\+Mat O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+System\+::\+Draw\+Current\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_system_a91c9c9296f4677f08052196a33ec06d7}\label{class_o_r_b___s_l_a_m2_1_1_system_a91c9c9296f4677f08052196a33ec06d7}} 
+\index{ORB\_SLAM2::System@{ORB\_SLAM2::System}!EnableLocalizationOnly@{EnableLocalizationOnly}}
+\index{EnableLocalizationOnly@{EnableLocalizationOnly}!ORB\_SLAM2::System@{ORB\_SLAM2::System}}
+\doxysubsubsection{\texorpdfstring{EnableLocalizationOnly()}{EnableLocalizationOnly()}}
+{\footnotesize\ttfamily void O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+System\+::\+Enable\+Localization\+Only (\begin{DoxyParamCaption}\item[{bool}]{localize\+\_\+only }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_system_a780f7def352541dbc81e32d6d23d5e14}\label{class_o_r_b___s_l_a_m2_1_1_system_a780f7def352541dbc81e32d6d23d5e14}} 
+\index{ORB\_SLAM2::System@{ORB\_SLAM2::System}!GetAllMapPoints@{GetAllMapPoints}}
+\index{GetAllMapPoints@{GetAllMapPoints}!ORB\_SLAM2::System@{ORB\_SLAM2::System}}
+\doxysubsubsection{\texorpdfstring{GetAllMapPoints()}{GetAllMapPoints()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point}{Map\+Point}} $\ast$ $>$ O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+System\+::\+Get\+All\+Map\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_system_acd0142b768d16d617a761eaa82e6eed8}\label{class_o_r_b___s_l_a_m2_1_1_system_acd0142b768d16d617a761eaa82e6eed8}} 
+\index{ORB\_SLAM2::System@{ORB\_SLAM2::System}!GetCurrentPosition@{GetCurrentPosition}}
+\index{GetCurrentPosition@{GetCurrentPosition}!ORB\_SLAM2::System@{ORB\_SLAM2::System}}
+\doxysubsubsection{\texorpdfstring{GetCurrentPosition()}{GetCurrentPosition()}}
+{\footnotesize\ttfamily cv\+::\+Mat O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+System\+::\+Get\+Current\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_system_a4ec373183fa16ae82f2c14f86ace5cfa}\label{class_o_r_b___s_l_a_m2_1_1_system_a4ec373183fa16ae82f2c14f86ace5cfa}} 
+\index{ORB\_SLAM2::System@{ORB\_SLAM2::System}!GetTrackedKeyPointsUn@{GetTrackedKeyPointsUn}}
+\index{GetTrackedKeyPointsUn@{GetTrackedKeyPointsUn}!ORB\_SLAM2::System@{ORB\_SLAM2::System}}
+\doxysubsubsection{\texorpdfstring{GetTrackedKeyPointsUn()}{GetTrackedKeyPointsUn()}}
+{\footnotesize\ttfamily vector$<$ cv\+::\+Key\+Point $>$ O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+System\+::\+Get\+Tracked\+Key\+Points\+Un (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_system_a10cf5e7645e0abfd05db4d999e8371d3}\label{class_o_r_b___s_l_a_m2_1_1_system_a10cf5e7645e0abfd05db4d999e8371d3}} 
+\index{ORB\_SLAM2::System@{ORB\_SLAM2::System}!GetTrackedMapPoints@{GetTrackedMapPoints}}
+\index{GetTrackedMapPoints@{GetTrackedMapPoints}!ORB\_SLAM2::System@{ORB\_SLAM2::System}}
+\doxysubsubsection{\texorpdfstring{GetTrackedMapPoints()}{GetTrackedMapPoints()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point}{Map\+Point}} $\ast$ $>$ O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+System\+::\+Get\+Tracked\+Map\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_system_a729c75cd1dca4f178f6315d34ee44436}\label{class_o_r_b___s_l_a_m2_1_1_system_a729c75cd1dca4f178f6315d34ee44436}} 
+\index{ORB\_SLAM2::System@{ORB\_SLAM2::System}!GetTrackingState@{GetTrackingState}}
+\index{GetTrackingState@{GetTrackingState}!ORB\_SLAM2::System@{ORB\_SLAM2::System}}
+\doxysubsubsection{\texorpdfstring{GetTrackingState()}{GetTrackingState()}}
+{\footnotesize\ttfamily int O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+System\+::\+Get\+Tracking\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_system_ae39dbc27eae5df975637a68032bce5dd}\label{class_o_r_b___s_l_a_m2_1_1_system_ae39dbc27eae5df975637a68032bce5dd}} 
+\index{ORB\_SLAM2::System@{ORB\_SLAM2::System}!MapChanged@{MapChanged}}
+\index{MapChanged@{MapChanged}!ORB\_SLAM2::System@{ORB\_SLAM2::System}}
+\doxysubsubsection{\texorpdfstring{MapChanged()}{MapChanged()}}
+{\footnotesize\ttfamily bool O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+System\+::\+Map\+Changed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_system_a33f5eb6f33d14cdda2a889fe06d6619e}\label{class_o_r_b___s_l_a_m2_1_1_system_a33f5eb6f33d14cdda2a889fe06d6619e}} 
+\index{ORB\_SLAM2::System@{ORB\_SLAM2::System}!Reset@{Reset}}
+\index{Reset@{Reset}!ORB\_SLAM2::System@{ORB\_SLAM2::System}}
+\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily void O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+System\+::\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_system_a6435a029f66a34103c434aa16e80eae3}\label{class_o_r_b___s_l_a_m2_1_1_system_a6435a029f66a34103c434aa16e80eae3}} 
+\index{ORB\_SLAM2::System@{ORB\_SLAM2::System}!SaveKeyFrameTrajectoryTUM@{SaveKeyFrameTrajectoryTUM}}
+\index{SaveKeyFrameTrajectoryTUM@{SaveKeyFrameTrajectoryTUM}!ORB\_SLAM2::System@{ORB\_SLAM2::System}}
+\doxysubsubsection{\texorpdfstring{SaveKeyFrameTrajectoryTUM()}{SaveKeyFrameTrajectoryTUM()}}
+{\footnotesize\ttfamily void O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+System\+::\+Save\+Key\+Frame\+Trajectory\+T\+UM (\begin{DoxyParamCaption}\item[{const string \&}]{filename }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_system_a36c9e244b6ad65ec5cc90f5d9d1e2f04}\label{class_o_r_b___s_l_a_m2_1_1_system_a36c9e244b6ad65ec5cc90f5d9d1e2f04}} 
+\index{ORB\_SLAM2::System@{ORB\_SLAM2::System}!SaveMap@{SaveMap}}
+\index{SaveMap@{SaveMap}!ORB\_SLAM2::System@{ORB\_SLAM2::System}}
+\doxysubsubsection{\texorpdfstring{SaveMap()}{SaveMap()}}
+{\footnotesize\ttfamily bool O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+System\+::\+Save\+Map (\begin{DoxyParamCaption}\item[{const string \&}]{filename }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_system_a3a28b57ac7267d5c51d3b8492d2f5d5c}\label{class_o_r_b___s_l_a_m2_1_1_system_a3a28b57ac7267d5c51d3b8492d2f5d5c}} 
+\index{ORB\_SLAM2::System@{ORB\_SLAM2::System}!SaveTrajectoryKITTI@{SaveTrajectoryKITTI}}
+\index{SaveTrajectoryKITTI@{SaveTrajectoryKITTI}!ORB\_SLAM2::System@{ORB\_SLAM2::System}}
+\doxysubsubsection{\texorpdfstring{SaveTrajectoryKITTI()}{SaveTrajectoryKITTI()}}
+{\footnotesize\ttfamily void O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+System\+::\+Save\+Trajectory\+K\+I\+T\+TI (\begin{DoxyParamCaption}\item[{const string \&}]{filename }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_system_a118df14a34bac039f9880c886ee3678f}\label{class_o_r_b___s_l_a_m2_1_1_system_a118df14a34bac039f9880c886ee3678f}} 
+\index{ORB\_SLAM2::System@{ORB\_SLAM2::System}!SaveTrajectoryTUM@{SaveTrajectoryTUM}}
+\index{SaveTrajectoryTUM@{SaveTrajectoryTUM}!ORB\_SLAM2::System@{ORB\_SLAM2::System}}
+\doxysubsubsection{\texorpdfstring{SaveTrajectoryTUM()}{SaveTrajectoryTUM()}}
+{\footnotesize\ttfamily void O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+System\+::\+Save\+Trajectory\+T\+UM (\begin{DoxyParamCaption}\item[{const string \&}]{filename }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_system_a948f6f3c3c16d57cac9361a3b3a8260e}\label{class_o_r_b___s_l_a_m2_1_1_system_a948f6f3c3c16d57cac9361a3b3a8260e}} 
+\index{ORB\_SLAM2::System@{ORB\_SLAM2::System}!SetMinimumKeyFrames@{SetMinimumKeyFrames}}
+\index{SetMinimumKeyFrames@{SetMinimumKeyFrames}!ORB\_SLAM2::System@{ORB\_SLAM2::System}}
+\doxysubsubsection{\texorpdfstring{SetMinimumKeyFrames()}{SetMinimumKeyFrames()}}
+{\footnotesize\ttfamily void O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+System\+::\+Set\+Minimum\+Key\+Frames (\begin{DoxyParamCaption}\item[{int}]{min\+\_\+num\+\_\+kf }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_system_aa934876a230dfa99e123f62b4b54d0cb}\label{class_o_r_b___s_l_a_m2_1_1_system_aa934876a230dfa99e123f62b4b54d0cb}} 
+\index{ORB\_SLAM2::System@{ORB\_SLAM2::System}!Shutdown@{Shutdown}}
+\index{Shutdown@{Shutdown}!ORB\_SLAM2::System@{ORB\_SLAM2::System}}
+\doxysubsubsection{\texorpdfstring{Shutdown()}{Shutdown()}}
+{\footnotesize\ttfamily void O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+System\+::\+Shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_system_a2c7df543072cacd831c890158e392473}\label{class_o_r_b___s_l_a_m2_1_1_system_a2c7df543072cacd831c890158e392473}} 
+\index{ORB\_SLAM2::System@{ORB\_SLAM2::System}!TrackMonocular@{TrackMonocular}}
+\index{TrackMonocular@{TrackMonocular}!ORB\_SLAM2::System@{ORB\_SLAM2::System}}
+\doxysubsubsection{\texorpdfstring{TrackMonocular()}{TrackMonocular()}}
+{\footnotesize\ttfamily void O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+System\+::\+Track\+Monocular (\begin{DoxyParamCaption}\item[{const cv\+::\+Mat \&}]{im,  }\item[{const double \&}]{timestamp }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_system_ac70570b3c443b3e7643bdd60e930f84a}\label{class_o_r_b___s_l_a_m2_1_1_system_ac70570b3c443b3e7643bdd60e930f84a}} 
+\index{ORB\_SLAM2::System@{ORB\_SLAM2::System}!TrackRGBD@{TrackRGBD}}
+\index{TrackRGBD@{TrackRGBD}!ORB\_SLAM2::System@{ORB\_SLAM2::System}}
+\doxysubsubsection{\texorpdfstring{TrackRGBD()}{TrackRGBD()}}
+{\footnotesize\ttfamily void O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+System\+::\+Track\+R\+G\+BD (\begin{DoxyParamCaption}\item[{const cv\+::\+Mat \&}]{im,  }\item[{const cv\+::\+Mat \&}]{depthmap,  }\item[{const double \&}]{timestamp }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_system_a8fa919baf96d780265a45991e340694c}\label{class_o_r_b___s_l_a_m2_1_1_system_a8fa919baf96d780265a45991e340694c}} 
+\index{ORB\_SLAM2::System@{ORB\_SLAM2::System}!TrackStereo@{TrackStereo}}
+\index{TrackStereo@{TrackStereo}!ORB\_SLAM2::System@{ORB\_SLAM2::System}}
+\doxysubsubsection{\texorpdfstring{TrackStereo()}{TrackStereo()}}
+{\footnotesize\ttfamily void O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+System\+::\+Track\+Stereo (\begin{DoxyParamCaption}\item[{const cv\+::\+Mat \&}]{im\+Left,  }\item[{const cv\+::\+Mat \&}]{im\+Right,  }\item[{const double \&}]{timestamp }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+orb\+\_\+slam2/include/\mbox{\hyperlink{_system_8h}{System.\+h}}\item 
+orb\+\_\+slam2/src/\mbox{\hyperlink{_system_8cc}{System.\+cc}}\end{DoxyCompactItemize}

@@ -1,0 +1,194 @@
+\hypertarget{classg2o_1_1_sparse_block_matrix_diagonal}{}\doxysection{g2o\+::Sparse\+Block\+Matrix\+Diagonal$<$ Matrix\+Type $>$ Class Template Reference}
+\label{classg2o_1_1_sparse_block_matrix_diagonal}\index{g2o::SparseBlockMatrixDiagonal$<$ MatrixType $>$@{g2o::SparseBlockMatrixDiagonal$<$ MatrixType $>$}}
+
+
+Sparse matrix which uses blocks on the diagonal.  
+
+
+
+
+{\ttfamily \#include $<$sparse\+\_\+block\+\_\+matrix\+\_\+diagonal.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Matrix\+Type \mbox{\hyperlink{classg2o_1_1_sparse_block_matrix_diagonal_a93a57bc93d5b099fcd424ba1fc1a0585}{Sparse\+Matrix\+Block}}
+\begin{DoxyCompactList}\small\item\em this is the type of the elementary block, it is an Eigen\+::\+Matrix. \end{DoxyCompactList}\item 
+typedef std\+::vector$<$ Matrix\+Type, Eigen\+::aligned\+\_\+allocator$<$ Matrix\+Type $>$ $>$ \mbox{\hyperlink{classg2o_1_1_sparse_block_matrix_diagonal_a2eb7fc4130fac5c499b57f3bec855812}{Diagonal\+Vector}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classg2o_1_1_sparse_block_matrix_diagonal_a625a8a22392617f6007520c28fdf9eb7}{cols}} () const
+\begin{DoxyCompactList}\small\item\em columns of the matrix \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classg2o_1_1_sparse_block_matrix_diagonal_af87f005cff6800ef0ce640d23fb651f8}{rows}} () const
+\begin{DoxyCompactList}\small\item\em rows of the matrix \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classg2o_1_1_sparse_block_matrix_diagonal_a0e01566c4ff881af058f366672291b27}{Sparse\+Block\+Matrix\+Diagonal}} (const std\+::vector$<$ int $>$ \&\mbox{\hyperlink{classg2o_1_1_sparse_block_matrix_diagonal_aa900034ca8db34a7e2d2d51973cfceff}{block\+Indices}})
+\item 
+int \mbox{\hyperlink{classg2o_1_1_sparse_block_matrix_diagonal_a04163c0b9be5658ef9e8be4ccc949e5f}{dim\+Of\+Block}} (int r) const
+\begin{DoxyCompactList}\small\item\em how many rows/cols does the block at block-\/row / block-\/column r has? \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classg2o_1_1_sparse_block_matrix_diagonal_a4cc17dfc19f065595dd2b09de0440df5}{base\+Of\+Block}} (int r) const
+\begin{DoxyCompactList}\small\item\em where does the row /col at block-\/row / block-\/column r starts? \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{classg2o_1_1_sparse_block_matrix_diagonal_a2eb7fc4130fac5c499b57f3bec855812}{Diagonal\+Vector}} \& \mbox{\hyperlink{classg2o_1_1_sparse_block_matrix_diagonal_a9da10533727d4bd9312a591d2e1d9361}{diagonal}} () const
+\begin{DoxyCompactList}\small\item\em the block matrices per block-\/column \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classg2o_1_1_sparse_block_matrix_diagonal_a2eb7fc4130fac5c499b57f3bec855812}{Diagonal\+Vector}} \& \mbox{\hyperlink{classg2o_1_1_sparse_block_matrix_diagonal_af75593896065195f7dc2342132c565cc}{diagonal}} ()
+\item 
+const std\+::vector$<$ int $>$ \& \mbox{\hyperlink{classg2o_1_1_sparse_block_matrix_diagonal_aa900034ca8db34a7e2d2d51973cfceff}{block\+Indices}} () const
+\begin{DoxyCompactList}\small\item\em indices of the row blocks \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classg2o_1_1_sparse_block_matrix_diagonal_ae7d969c12506cdcd1b7d54128f3b6985}{multiply}} (double $\ast$\&dest, const double $\ast$src) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const std\+::vector$<$ int $>$ \& \mbox{\hyperlink{classg2o_1_1_sparse_block_matrix_diagonal_a12ca3362997c3ca21c8b2a203177485e}{\+\_\+block\+Indices}}
+\begin{DoxyCompactList}\small\item\em vector of the indices of the blocks along the diagonal \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classg2o_1_1_sparse_block_matrix_diagonal_a2eb7fc4130fac5c499b57f3bec855812}{Diagonal\+Vector}} \mbox{\hyperlink{classg2o_1_1_sparse_block_matrix_diagonal_a0679df785f9e7b79a1e9dfe623af5341}{\+\_\+diagonal}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class Matrix\+Type$>$\newline
+class g2o\+::\+Sparse\+Block\+Matrix\+Diagonal$<$ Matrix\+Type $>$}
+
+Sparse matrix which uses blocks on the diagonal. 
+
+This class is used as a const view on a \mbox{\hyperlink{classg2o_1_1_sparse_block_matrix}{Sparse\+Block\+Matrix}} which allows a faster iteration over the elements of the matrix. 
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classg2o_1_1_sparse_block_matrix_diagonal_a2eb7fc4130fac5c499b57f3bec855812}\label{classg2o_1_1_sparse_block_matrix_diagonal_a2eb7fc4130fac5c499b57f3bec855812}} 
+\index{g2o::SparseBlockMatrixDiagonal$<$ MatrixType $>$@{g2o::SparseBlockMatrixDiagonal$<$ MatrixType $>$}!DiagonalVector@{DiagonalVector}}
+\index{DiagonalVector@{DiagonalVector}!g2o::SparseBlockMatrixDiagonal$<$ MatrixType $>$@{g2o::SparseBlockMatrixDiagonal$<$ MatrixType $>$}}
+\doxysubsubsection{\texorpdfstring{DiagonalVector}{DiagonalVector}}
+{\footnotesize\ttfamily template$<$class Matrix\+Type $>$ \\
+typedef std\+::vector$<$Matrix\+Type, Eigen\+::aligned\+\_\+allocator$<$Matrix\+Type$>$ $>$ \mbox{\hyperlink{classg2o_1_1_sparse_block_matrix_diagonal}{g2o\+::\+Sparse\+Block\+Matrix\+Diagonal}}$<$ Matrix\+Type $>$\+::\mbox{\hyperlink{classg2o_1_1_sparse_block_matrix_diagonal_a2eb7fc4130fac5c499b57f3bec855812}{Diagonal\+Vector}}}
+
+\mbox{\Hypertarget{classg2o_1_1_sparse_block_matrix_diagonal_a93a57bc93d5b099fcd424ba1fc1a0585}\label{classg2o_1_1_sparse_block_matrix_diagonal_a93a57bc93d5b099fcd424ba1fc1a0585}} 
+\index{g2o::SparseBlockMatrixDiagonal$<$ MatrixType $>$@{g2o::SparseBlockMatrixDiagonal$<$ MatrixType $>$}!SparseMatrixBlock@{SparseMatrixBlock}}
+\index{SparseMatrixBlock@{SparseMatrixBlock}!g2o::SparseBlockMatrixDiagonal$<$ MatrixType $>$@{g2o::SparseBlockMatrixDiagonal$<$ MatrixType $>$}}
+\doxysubsubsection{\texorpdfstring{SparseMatrixBlock}{SparseMatrixBlock}}
+{\footnotesize\ttfamily template$<$class Matrix\+Type $>$ \\
+typedef Matrix\+Type \mbox{\hyperlink{classg2o_1_1_sparse_block_matrix_diagonal}{g2o\+::\+Sparse\+Block\+Matrix\+Diagonal}}$<$ Matrix\+Type $>$\+::\mbox{\hyperlink{classg2o_1_1_sparse_block_matrix_diagonal_a93a57bc93d5b099fcd424ba1fc1a0585}{Sparse\+Matrix\+Block}}}
+
+
+
+this is the type of the elementary block, it is an Eigen\+::\+Matrix. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classg2o_1_1_sparse_block_matrix_diagonal_a0e01566c4ff881af058f366672291b27}\label{classg2o_1_1_sparse_block_matrix_diagonal_a0e01566c4ff881af058f366672291b27}} 
+\index{g2o::SparseBlockMatrixDiagonal$<$ MatrixType $>$@{g2o::SparseBlockMatrixDiagonal$<$ MatrixType $>$}!SparseBlockMatrixDiagonal@{SparseBlockMatrixDiagonal}}
+\index{SparseBlockMatrixDiagonal@{SparseBlockMatrixDiagonal}!g2o::SparseBlockMatrixDiagonal$<$ MatrixType $>$@{g2o::SparseBlockMatrixDiagonal$<$ MatrixType $>$}}
+\doxysubsubsection{\texorpdfstring{SparseBlockMatrixDiagonal()}{SparseBlockMatrixDiagonal()}}
+{\footnotesize\ttfamily template$<$class Matrix\+Type $>$ \\
+\mbox{\hyperlink{classg2o_1_1_sparse_block_matrix_diagonal}{g2o\+::\+Sparse\+Block\+Matrix\+Diagonal}}$<$ Matrix\+Type $>$\+::\mbox{\hyperlink{classg2o_1_1_sparse_block_matrix_diagonal}{Sparse\+Block\+Matrix\+Diagonal}} (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int $>$ \&}]{block\+Indices }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classg2o_1_1_sparse_block_matrix_diagonal_a4cc17dfc19f065595dd2b09de0440df5}\label{classg2o_1_1_sparse_block_matrix_diagonal_a4cc17dfc19f065595dd2b09de0440df5}} 
+\index{g2o::SparseBlockMatrixDiagonal$<$ MatrixType $>$@{g2o::SparseBlockMatrixDiagonal$<$ MatrixType $>$}!baseOfBlock@{baseOfBlock}}
+\index{baseOfBlock@{baseOfBlock}!g2o::SparseBlockMatrixDiagonal$<$ MatrixType $>$@{g2o::SparseBlockMatrixDiagonal$<$ MatrixType $>$}}
+\doxysubsubsection{\texorpdfstring{baseOfBlock()}{baseOfBlock()}}
+{\footnotesize\ttfamily template$<$class Matrix\+Type $>$ \\
+int \mbox{\hyperlink{classg2o_1_1_sparse_block_matrix_diagonal}{g2o\+::\+Sparse\+Block\+Matrix\+Diagonal}}$<$ Matrix\+Type $>$\+::base\+Of\+Block (\begin{DoxyParamCaption}\item[{int}]{r }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+where does the row /col at block-\/row / block-\/column r starts? 
+
+\mbox{\Hypertarget{classg2o_1_1_sparse_block_matrix_diagonal_aa900034ca8db34a7e2d2d51973cfceff}\label{classg2o_1_1_sparse_block_matrix_diagonal_aa900034ca8db34a7e2d2d51973cfceff}} 
+\index{g2o::SparseBlockMatrixDiagonal$<$ MatrixType $>$@{g2o::SparseBlockMatrixDiagonal$<$ MatrixType $>$}!blockIndices@{blockIndices}}
+\index{blockIndices@{blockIndices}!g2o::SparseBlockMatrixDiagonal$<$ MatrixType $>$@{g2o::SparseBlockMatrixDiagonal$<$ MatrixType $>$}}
+\doxysubsubsection{\texorpdfstring{blockIndices()}{blockIndices()}}
+{\footnotesize\ttfamily template$<$class Matrix\+Type $>$ \\
+const std\+::vector$<$int$>$\& \mbox{\hyperlink{classg2o_1_1_sparse_block_matrix_diagonal}{g2o\+::\+Sparse\+Block\+Matrix\+Diagonal}}$<$ Matrix\+Type $>$\+::block\+Indices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+indices of the row blocks 
+
+\mbox{\Hypertarget{classg2o_1_1_sparse_block_matrix_diagonal_a625a8a22392617f6007520c28fdf9eb7}\label{classg2o_1_1_sparse_block_matrix_diagonal_a625a8a22392617f6007520c28fdf9eb7}} 
+\index{g2o::SparseBlockMatrixDiagonal$<$ MatrixType $>$@{g2o::SparseBlockMatrixDiagonal$<$ MatrixType $>$}!cols@{cols}}
+\index{cols@{cols}!g2o::SparseBlockMatrixDiagonal$<$ MatrixType $>$@{g2o::SparseBlockMatrixDiagonal$<$ MatrixType $>$}}
+\doxysubsubsection{\texorpdfstring{cols()}{cols()}}
+{\footnotesize\ttfamily template$<$class Matrix\+Type $>$ \\
+int \mbox{\hyperlink{classg2o_1_1_sparse_block_matrix_diagonal}{g2o\+::\+Sparse\+Block\+Matrix\+Diagonal}}$<$ Matrix\+Type $>$\+::cols (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+columns of the matrix 
+
+\mbox{\Hypertarget{classg2o_1_1_sparse_block_matrix_diagonal_af75593896065195f7dc2342132c565cc}\label{classg2o_1_1_sparse_block_matrix_diagonal_af75593896065195f7dc2342132c565cc}} 
+\index{g2o::SparseBlockMatrixDiagonal$<$ MatrixType $>$@{g2o::SparseBlockMatrixDiagonal$<$ MatrixType $>$}!diagonal@{diagonal}}
+\index{diagonal@{diagonal}!g2o::SparseBlockMatrixDiagonal$<$ MatrixType $>$@{g2o::SparseBlockMatrixDiagonal$<$ MatrixType $>$}}
+\doxysubsubsection{\texorpdfstring{diagonal()}{diagonal()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Matrix\+Type $>$ \\
+\mbox{\hyperlink{classg2o_1_1_sparse_block_matrix_diagonal_a2eb7fc4130fac5c499b57f3bec855812}{Diagonal\+Vector}}\& \mbox{\hyperlink{classg2o_1_1_sparse_block_matrix_diagonal}{g2o\+::\+Sparse\+Block\+Matrix\+Diagonal}}$<$ Matrix\+Type $>$\+::diagonal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classg2o_1_1_sparse_block_matrix_diagonal_a9da10533727d4bd9312a591d2e1d9361}\label{classg2o_1_1_sparse_block_matrix_diagonal_a9da10533727d4bd9312a591d2e1d9361}} 
+\index{g2o::SparseBlockMatrixDiagonal$<$ MatrixType $>$@{g2o::SparseBlockMatrixDiagonal$<$ MatrixType $>$}!diagonal@{diagonal}}
+\index{diagonal@{diagonal}!g2o::SparseBlockMatrixDiagonal$<$ MatrixType $>$@{g2o::SparseBlockMatrixDiagonal$<$ MatrixType $>$}}
+\doxysubsubsection{\texorpdfstring{diagonal()}{diagonal()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Matrix\+Type $>$ \\
+const \mbox{\hyperlink{classg2o_1_1_sparse_block_matrix_diagonal_a2eb7fc4130fac5c499b57f3bec855812}{Diagonal\+Vector}}\& \mbox{\hyperlink{classg2o_1_1_sparse_block_matrix_diagonal}{g2o\+::\+Sparse\+Block\+Matrix\+Diagonal}}$<$ Matrix\+Type $>$\+::diagonal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+the block matrices per block-\/column 
+
+\mbox{\Hypertarget{classg2o_1_1_sparse_block_matrix_diagonal_a04163c0b9be5658ef9e8be4ccc949e5f}\label{classg2o_1_1_sparse_block_matrix_diagonal_a04163c0b9be5658ef9e8be4ccc949e5f}} 
+\index{g2o::SparseBlockMatrixDiagonal$<$ MatrixType $>$@{g2o::SparseBlockMatrixDiagonal$<$ MatrixType $>$}!dimOfBlock@{dimOfBlock}}
+\index{dimOfBlock@{dimOfBlock}!g2o::SparseBlockMatrixDiagonal$<$ MatrixType $>$@{g2o::SparseBlockMatrixDiagonal$<$ MatrixType $>$}}
+\doxysubsubsection{\texorpdfstring{dimOfBlock()}{dimOfBlock()}}
+{\footnotesize\ttfamily template$<$class Matrix\+Type $>$ \\
+int \mbox{\hyperlink{classg2o_1_1_sparse_block_matrix_diagonal}{g2o\+::\+Sparse\+Block\+Matrix\+Diagonal}}$<$ Matrix\+Type $>$\+::dim\+Of\+Block (\begin{DoxyParamCaption}\item[{int}]{r }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+how many rows/cols does the block at block-\/row / block-\/column r has? 
+
+\mbox{\Hypertarget{classg2o_1_1_sparse_block_matrix_diagonal_ae7d969c12506cdcd1b7d54128f3b6985}\label{classg2o_1_1_sparse_block_matrix_diagonal_ae7d969c12506cdcd1b7d54128f3b6985}} 
+\index{g2o::SparseBlockMatrixDiagonal$<$ MatrixType $>$@{g2o::SparseBlockMatrixDiagonal$<$ MatrixType $>$}!multiply@{multiply}}
+\index{multiply@{multiply}!g2o::SparseBlockMatrixDiagonal$<$ MatrixType $>$@{g2o::SparseBlockMatrixDiagonal$<$ MatrixType $>$}}
+\doxysubsubsection{\texorpdfstring{multiply()}{multiply()}}
+{\footnotesize\ttfamily template$<$class Matrix\+Type $>$ \\
+void \mbox{\hyperlink{classg2o_1_1_sparse_block_matrix_diagonal}{g2o\+::\+Sparse\+Block\+Matrix\+Diagonal}}$<$ Matrix\+Type $>$\+::multiply (\begin{DoxyParamCaption}\item[{double $\ast$\&}]{dest,  }\item[{const double $\ast$}]{src }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classg2o_1_1_sparse_block_matrix_diagonal_af87f005cff6800ef0ce640d23fb651f8}\label{classg2o_1_1_sparse_block_matrix_diagonal_af87f005cff6800ef0ce640d23fb651f8}} 
+\index{g2o::SparseBlockMatrixDiagonal$<$ MatrixType $>$@{g2o::SparseBlockMatrixDiagonal$<$ MatrixType $>$}!rows@{rows}}
+\index{rows@{rows}!g2o::SparseBlockMatrixDiagonal$<$ MatrixType $>$@{g2o::SparseBlockMatrixDiagonal$<$ MatrixType $>$}}
+\doxysubsubsection{\texorpdfstring{rows()}{rows()}}
+{\footnotesize\ttfamily template$<$class Matrix\+Type $>$ \\
+int \mbox{\hyperlink{classg2o_1_1_sparse_block_matrix_diagonal}{g2o\+::\+Sparse\+Block\+Matrix\+Diagonal}}$<$ Matrix\+Type $>$\+::rows (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+rows of the matrix 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classg2o_1_1_sparse_block_matrix_diagonal_a12ca3362997c3ca21c8b2a203177485e}\label{classg2o_1_1_sparse_block_matrix_diagonal_a12ca3362997c3ca21c8b2a203177485e}} 
+\index{g2o::SparseBlockMatrixDiagonal$<$ MatrixType $>$@{g2o::SparseBlockMatrixDiagonal$<$ MatrixType $>$}!\_blockIndices@{\_blockIndices}}
+\index{\_blockIndices@{\_blockIndices}!g2o::SparseBlockMatrixDiagonal$<$ MatrixType $>$@{g2o::SparseBlockMatrixDiagonal$<$ MatrixType $>$}}
+\doxysubsubsection{\texorpdfstring{\_blockIndices}{\_blockIndices}}
+{\footnotesize\ttfamily template$<$class Matrix\+Type $>$ \\
+const std\+::vector$<$int$>$\& \mbox{\hyperlink{classg2o_1_1_sparse_block_matrix_diagonal}{g2o\+::\+Sparse\+Block\+Matrix\+Diagonal}}$<$ Matrix\+Type $>$\+::\+\_\+block\+Indices\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+vector of the indices of the blocks along the diagonal 
+
+\mbox{\Hypertarget{classg2o_1_1_sparse_block_matrix_diagonal_a0679df785f9e7b79a1e9dfe623af5341}\label{classg2o_1_1_sparse_block_matrix_diagonal_a0679df785f9e7b79a1e9dfe623af5341}} 
+\index{g2o::SparseBlockMatrixDiagonal$<$ MatrixType $>$@{g2o::SparseBlockMatrixDiagonal$<$ MatrixType $>$}!\_diagonal@{\_diagonal}}
+\index{\_diagonal@{\_diagonal}!g2o::SparseBlockMatrixDiagonal$<$ MatrixType $>$@{g2o::SparseBlockMatrixDiagonal$<$ MatrixType $>$}}
+\doxysubsubsection{\texorpdfstring{\_diagonal}{\_diagonal}}
+{\footnotesize\ttfamily template$<$class Matrix\+Type $>$ \\
+\mbox{\hyperlink{classg2o_1_1_sparse_block_matrix_diagonal_a2eb7fc4130fac5c499b57f3bec855812}{Diagonal\+Vector}} \mbox{\hyperlink{classg2o_1_1_sparse_block_matrix_diagonal}{g2o\+::\+Sparse\+Block\+Matrix\+Diagonal}}$<$ Matrix\+Type $>$\+::\+\_\+diagonal\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+orb\+\_\+slam2/\+Thirdparty/g2o/g2o/core/\mbox{\hyperlink{sparse__block__matrix__diagonal_8h}{sparse\+\_\+block\+\_\+matrix\+\_\+diagonal.\+h}}\end{DoxyCompactItemize}

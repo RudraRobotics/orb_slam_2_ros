@@ -1,0 +1,49 @@
+\hypertarget{_boost_archiver_8h}{}\doxysection{orb\+\_\+slam2/include/\+Boost\+Archiver.h File Reference}
+\label{_boost_archiver_8h}\index{orb\_slam2/include/BoostArchiver.h@{orb\_slam2/include/BoostArchiver.h}}
+{\ttfamily \#include $<$boost/serialization/list.\+hpp$>$}\newline
+{\ttfamily \#include $<$boost/serialization/vector.\+hpp$>$}\newline
+{\ttfamily \#include $<$boost/serialization/set.\+hpp$>$}\newline
+{\ttfamily \#include $<$boost/serialization/map.\+hpp$>$}\newline
+{\ttfamily \#include $<$boost/archive/binary\+\_\+oarchive.\+hpp$>$}\newline
+{\ttfamily \#include $<$boost/archive/binary\+\_\+iarchive.\+hpp$>$}\newline
+{\ttfamily \#include $<$boost/serialization/split\+\_\+free.\+hpp$>$}\newline
+{\ttfamily \#include $<$boost/serialization/base\+\_\+object.\+hpp$>$}\newline
+{\ttfamily \#include $<$opencv2/core/core.\+hpp$>$}\newline
+{\ttfamily \#include \char`\"{}Thirdparty/\+D\+Bo\+W2/\+D\+Bo\+W2/\+Bow\+Vector.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Thirdparty/\+D\+Bo\+W2/\+D\+Bo\+W2/\+Feature\+Vector.\+h\char`\"{}}\newline
+Include dependency graph for Boost\+Archiver.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_boost_archiver_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_boost_archiver_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaceboost}{boost}}
+\item 
+ \mbox{\hyperlink{namespaceboost_1_1serialization}{boost\+::serialization}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \mbox{\hyperlink{namespaceboost_1_1serialization_a8d640b245fcdcc5deb8b0931736b651d}{boost\+::serialization\+::serialize}} (Archive \&ar, \mbox{\hyperlink{class_d_bo_w2_1_1_bow_vector}{D\+Bo\+W2\+::\+Bow\+Vector}} \&Bow\+Vec, const unsigned int file\+\_\+version)
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \mbox{\hyperlink{namespaceboost_1_1serialization_addada510a9a5864d23b1cb21390b4017}{boost\+::serialization\+::serialize}} (Archive \&ar, \mbox{\hyperlink{class_d_bo_w2_1_1_feature_vector}{D\+Bo\+W2\+::\+Feature\+Vector}} \&Feat\+Vec, const unsigned int file\+\_\+version)
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \mbox{\hyperlink{namespaceboost_1_1serialization_a9abd3c6d9015cb3ba537bbd43db47481}{boost\+::serialization\+::serialize}} (Archive \&ar, \+::cv\+::\+Key\+Point \&kf, const unsigned int file\+\_\+version)
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \mbox{\hyperlink{namespaceboost_1_1serialization_a2e65112b9e4f312e27e002277a89aef2}{boost\+::serialization\+::save}} (Archive \&ar, const \+::cv\+::\+Mat \&m, const unsigned int file\+\_\+version)
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \mbox{\hyperlink{namespaceboost_1_1serialization_a8f2eb183bf258e6d6cf94377d38decfc}{boost\+::serialization\+::load}} (Archive \&ar, \+::cv\+::\+Mat \&m, const unsigned int version)
+\end{DoxyCompactItemize}

@@ -1,0 +1,122 @@
+\hypertarget{class_o_r_b___s_l_a_m2_1_1_converter}{}\doxysection{O\+R\+B\+\_\+\+S\+L\+A\+M2\+::Converter Class Reference}
+\label{class_o_r_b___s_l_a_m2_1_1_converter}\index{ORB\_SLAM2::Converter@{ORB\_SLAM2::Converter}}
+
+
+{\ttfamily \#include $<$Converter.\+h$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::vector$<$ cv\+::\+Mat $>$ \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_converter_abef47701eefdbc74c2c1625c140963fd}{to\+Descriptor\+Vector}} (const cv\+::\+Mat \&Descriptors)
+\item 
+static \mbox{\hyperlink{classg2o_1_1_s_e3_quat}{g2o\+::\+S\+E3\+Quat}} \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_converter_a0b73791a3e2d90b4de41aed0ece2d0a2}{to\+S\+E3\+Quat}} (const cv\+::\+Mat \&cvT)
+\item 
+static \mbox{\hyperlink{classg2o_1_1_s_e3_quat}{g2o\+::\+S\+E3\+Quat}} \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_converter_ac76ddd3b4d9a7e364e5cc72cfe483247}{to\+S\+E3\+Quat}} (const \mbox{\hyperlink{structg2o_1_1_sim3}{g2o\+::\+Sim3}} \&g\+Sim3)
+\item 
+static cv\+::\+Mat \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_converter_ac9d5a9ea7de26d34047aa0afddaa2091}{to\+Cv\+Mat}} (const \mbox{\hyperlink{classg2o_1_1_s_e3_quat}{g2o\+::\+S\+E3\+Quat}} \&S\+E3)
+\item 
+static cv\+::\+Mat \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_converter_a4bc1702afbd33a5d90d39f1940157e08}{to\+Cv\+Mat}} (const \mbox{\hyperlink{structg2o_1_1_sim3}{g2o\+::\+Sim3}} \&Sim3)
+\item 
+static cv\+::\+Mat \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_converter_a93055164116a8f35ecc5a9a5dcad1ca0}{to\+Cv\+Mat}} (const Eigen\+::\+Matrix$<$ double, 4, 4 $>$ \&m)
+\item 
+static cv\+::\+Mat \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_converter_a7558c9fde7b818582bee8b4a4ff00793}{to\+Cv\+Mat}} (const Eigen\+::\+Matrix3d \&m)
+\item 
+static cv\+::\+Mat \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_converter_a6748f1ecb782efc7741c1d2f6fbbed22}{to\+Cv\+Mat}} (const Eigen\+::\+Matrix$<$ double, 3, 1 $>$ \&m)
+\item 
+static cv\+::\+Mat \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_converter_a0972ca8f56ea15c1814f51be3804978f}{to\+Cv\+S\+E3}} (const Eigen\+::\+Matrix$<$ double, 3, 3 $>$ \&R, const Eigen\+::\+Matrix$<$ double, 3, 1 $>$ \&t)
+\item 
+static Eigen\+::\+Matrix$<$ double, 3, 1 $>$ \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_converter_a65fccab585e29d1acbf4c23e5ce69bdc}{to\+Vector3d}} (const cv\+::\+Mat \&cv\+Vector)
+\item 
+static Eigen\+::\+Matrix$<$ double, 3, 1 $>$ \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_converter_af7b71b64b74fd45b39b9a7f47ee80145}{to\+Vector3d}} (const cv\+::\+Point3f \&cv\+Point)
+\item 
+static Eigen\+::\+Matrix$<$ double, 3, 3 $>$ \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_converter_a000a7971e46afdc95d6692a70006182b}{to\+Matrix3d}} (const cv\+::\+Mat \&cv\+Mat3)
+\item 
+static std\+::vector$<$ float $>$ \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_converter_a16b54bd921d9cdc83d289cfd1598fb3c}{to\+Quaternion}} (const cv\+::\+Mat \&M)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_converter_a7558c9fde7b818582bee8b4a4ff00793}\label{class_o_r_b___s_l_a_m2_1_1_converter_a7558c9fde7b818582bee8b4a4ff00793}} 
+\index{ORB\_SLAM2::Converter@{ORB\_SLAM2::Converter}!toCvMat@{toCvMat}}
+\index{toCvMat@{toCvMat}!ORB\_SLAM2::Converter@{ORB\_SLAM2::Converter}}
+\doxysubsubsection{\texorpdfstring{toCvMat()}{toCvMat()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily cv\+::\+Mat O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Converter\+::to\+Cv\+Mat (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Matrix3d \&}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_converter_a6748f1ecb782efc7741c1d2f6fbbed22}\label{class_o_r_b___s_l_a_m2_1_1_converter_a6748f1ecb782efc7741c1d2f6fbbed22}} 
+\index{ORB\_SLAM2::Converter@{ORB\_SLAM2::Converter}!toCvMat@{toCvMat}}
+\index{toCvMat@{toCvMat}!ORB\_SLAM2::Converter@{ORB\_SLAM2::Converter}}
+\doxysubsubsection{\texorpdfstring{toCvMat()}{toCvMat()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily cv\+::\+Mat O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Converter\+::to\+Cv\+Mat (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Matrix$<$ double, 3, 1 $>$ \&}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_converter_a93055164116a8f35ecc5a9a5dcad1ca0}\label{class_o_r_b___s_l_a_m2_1_1_converter_a93055164116a8f35ecc5a9a5dcad1ca0}} 
+\index{ORB\_SLAM2::Converter@{ORB\_SLAM2::Converter}!toCvMat@{toCvMat}}
+\index{toCvMat@{toCvMat}!ORB\_SLAM2::Converter@{ORB\_SLAM2::Converter}}
+\doxysubsubsection{\texorpdfstring{toCvMat()}{toCvMat()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily cv\+::\+Mat O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Converter\+::to\+Cv\+Mat (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Matrix$<$ double, 4, 4 $>$ \&}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_converter_ac9d5a9ea7de26d34047aa0afddaa2091}\label{class_o_r_b___s_l_a_m2_1_1_converter_ac9d5a9ea7de26d34047aa0afddaa2091}} 
+\index{ORB\_SLAM2::Converter@{ORB\_SLAM2::Converter}!toCvMat@{toCvMat}}
+\index{toCvMat@{toCvMat}!ORB\_SLAM2::Converter@{ORB\_SLAM2::Converter}}
+\doxysubsubsection{\texorpdfstring{toCvMat()}{toCvMat()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily cv\+::\+Mat O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Converter\+::to\+Cv\+Mat (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classg2o_1_1_s_e3_quat}{g2o\+::\+S\+E3\+Quat}} \&}]{S\+E3 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_converter_a4bc1702afbd33a5d90d39f1940157e08}\label{class_o_r_b___s_l_a_m2_1_1_converter_a4bc1702afbd33a5d90d39f1940157e08}} 
+\index{ORB\_SLAM2::Converter@{ORB\_SLAM2::Converter}!toCvMat@{toCvMat}}
+\index{toCvMat@{toCvMat}!ORB\_SLAM2::Converter@{ORB\_SLAM2::Converter}}
+\doxysubsubsection{\texorpdfstring{toCvMat()}{toCvMat()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily cv\+::\+Mat O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Converter\+::to\+Cv\+Mat (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structg2o_1_1_sim3}{g2o\+::\+Sim3}} \&}]{Sim3 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_converter_a0972ca8f56ea15c1814f51be3804978f}\label{class_o_r_b___s_l_a_m2_1_1_converter_a0972ca8f56ea15c1814f51be3804978f}} 
+\index{ORB\_SLAM2::Converter@{ORB\_SLAM2::Converter}!toCvSE3@{toCvSE3}}
+\index{toCvSE3@{toCvSE3}!ORB\_SLAM2::Converter@{ORB\_SLAM2::Converter}}
+\doxysubsubsection{\texorpdfstring{toCvSE3()}{toCvSE3()}}
+{\footnotesize\ttfamily cv\+::\+Mat O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Converter\+::to\+Cv\+S\+E3 (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Matrix$<$ double, 3, 3 $>$ \&}]{R,  }\item[{const Eigen\+::\+Matrix$<$ double, 3, 1 $>$ \&}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_converter_abef47701eefdbc74c2c1625c140963fd}\label{class_o_r_b___s_l_a_m2_1_1_converter_abef47701eefdbc74c2c1625c140963fd}} 
+\index{ORB\_SLAM2::Converter@{ORB\_SLAM2::Converter}!toDescriptorVector@{toDescriptorVector}}
+\index{toDescriptorVector@{toDescriptorVector}!ORB\_SLAM2::Converter@{ORB\_SLAM2::Converter}}
+\doxysubsubsection{\texorpdfstring{toDescriptorVector()}{toDescriptorVector()}}
+{\footnotesize\ttfamily std\+::vector$<$ cv\+::\+Mat $>$ O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Converter\+::to\+Descriptor\+Vector (\begin{DoxyParamCaption}\item[{const cv\+::\+Mat \&}]{Descriptors }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_converter_a000a7971e46afdc95d6692a70006182b}\label{class_o_r_b___s_l_a_m2_1_1_converter_a000a7971e46afdc95d6692a70006182b}} 
+\index{ORB\_SLAM2::Converter@{ORB\_SLAM2::Converter}!toMatrix3d@{toMatrix3d}}
+\index{toMatrix3d@{toMatrix3d}!ORB\_SLAM2::Converter@{ORB\_SLAM2::Converter}}
+\doxysubsubsection{\texorpdfstring{toMatrix3d()}{toMatrix3d()}}
+{\footnotesize\ttfamily Eigen\+::\+Matrix$<$ double, 3, 3 $>$ O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Converter\+::to\+Matrix3d (\begin{DoxyParamCaption}\item[{const cv\+::\+Mat \&}]{cv\+Mat3 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_converter_a16b54bd921d9cdc83d289cfd1598fb3c}\label{class_o_r_b___s_l_a_m2_1_1_converter_a16b54bd921d9cdc83d289cfd1598fb3c}} 
+\index{ORB\_SLAM2::Converter@{ORB\_SLAM2::Converter}!toQuaternion@{toQuaternion}}
+\index{toQuaternion@{toQuaternion}!ORB\_SLAM2::Converter@{ORB\_SLAM2::Converter}}
+\doxysubsubsection{\texorpdfstring{toQuaternion()}{toQuaternion()}}
+{\footnotesize\ttfamily std\+::vector$<$ float $>$ O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Converter\+::to\+Quaternion (\begin{DoxyParamCaption}\item[{const cv\+::\+Mat \&}]{M }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_converter_a0b73791a3e2d90b4de41aed0ece2d0a2}\label{class_o_r_b___s_l_a_m2_1_1_converter_a0b73791a3e2d90b4de41aed0ece2d0a2}} 
+\index{ORB\_SLAM2::Converter@{ORB\_SLAM2::Converter}!toSE3Quat@{toSE3Quat}}
+\index{toSE3Quat@{toSE3Quat}!ORB\_SLAM2::Converter@{ORB\_SLAM2::Converter}}
+\doxysubsubsection{\texorpdfstring{toSE3Quat()}{toSE3Quat()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classg2o_1_1_s_e3_quat}{g2o\+::\+S\+E3\+Quat}} O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Converter\+::to\+S\+E3\+Quat (\begin{DoxyParamCaption}\item[{const cv\+::\+Mat \&}]{cvT }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_converter_ac76ddd3b4d9a7e364e5cc72cfe483247}\label{class_o_r_b___s_l_a_m2_1_1_converter_ac76ddd3b4d9a7e364e5cc72cfe483247}} 
+\index{ORB\_SLAM2::Converter@{ORB\_SLAM2::Converter}!toSE3Quat@{toSE3Quat}}
+\index{toSE3Quat@{toSE3Quat}!ORB\_SLAM2::Converter@{ORB\_SLAM2::Converter}}
+\doxysubsubsection{\texorpdfstring{toSE3Quat()}{toSE3Quat()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classg2o_1_1_s_e3_quat}{g2o\+::\+S\+E3\+Quat}} O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Converter\+::to\+S\+E3\+Quat (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structg2o_1_1_sim3}{g2o\+::\+Sim3}} \&}]{g\+Sim3 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_converter_a65fccab585e29d1acbf4c23e5ce69bdc}\label{class_o_r_b___s_l_a_m2_1_1_converter_a65fccab585e29d1acbf4c23e5ce69bdc}} 
+\index{ORB\_SLAM2::Converter@{ORB\_SLAM2::Converter}!toVector3d@{toVector3d}}
+\index{toVector3d@{toVector3d}!ORB\_SLAM2::Converter@{ORB\_SLAM2::Converter}}
+\doxysubsubsection{\texorpdfstring{toVector3d()}{toVector3d()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Eigen\+::\+Matrix$<$ double, 3, 1 $>$ O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Converter\+::to\+Vector3d (\begin{DoxyParamCaption}\item[{const cv\+::\+Mat \&}]{cv\+Vector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_converter_af7b71b64b74fd45b39b9a7f47ee80145}\label{class_o_r_b___s_l_a_m2_1_1_converter_af7b71b64b74fd45b39b9a7f47ee80145}} 
+\index{ORB\_SLAM2::Converter@{ORB\_SLAM2::Converter}!toVector3d@{toVector3d}}
+\index{toVector3d@{toVector3d}!ORB\_SLAM2::Converter@{ORB\_SLAM2::Converter}}
+\doxysubsubsection{\texorpdfstring{toVector3d()}{toVector3d()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Eigen\+::\+Matrix$<$ double, 3, 1 $>$ O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Converter\+::to\+Vector3d (\begin{DoxyParamCaption}\item[{const cv\+::\+Point3f \&}]{cv\+Point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+orb\+\_\+slam2/include/\mbox{\hyperlink{_converter_8h}{Converter.\+h}}\item 
+orb\+\_\+slam2/src/\mbox{\hyperlink{_converter_8cc}{Converter.\+cc}}\end{DoxyCompactItemize}

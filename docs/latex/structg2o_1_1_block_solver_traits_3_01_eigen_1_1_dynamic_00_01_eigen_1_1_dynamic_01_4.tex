@@ -1,0 +1,119 @@
+\hypertarget{structg2o_1_1_block_solver_traits_3_01_eigen_1_1_dynamic_00_01_eigen_1_1_dynamic_01_4}{}\doxysection{g2o\+::Block\+Solver\+Traits$<$ Eigen\+::Dynamic, Eigen\+::Dynamic $>$ Struct Reference}
+\label{structg2o_1_1_block_solver_traits_3_01_eigen_1_1_dynamic_00_01_eigen_1_1_dynamic_01_4}\index{g2o::BlockSolverTraits$<$ Eigen::Dynamic, Eigen::Dynamic $>$@{g2o::BlockSolverTraits$<$ Eigen::Dynamic, Eigen::Dynamic $>$}}
+
+
+traits to summarize the properties of the dynamic size optimization problem  
+
+
+
+
+{\ttfamily \#include $<$block\+\_\+solver.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Matrix\+Xd \mbox{\hyperlink{structg2o_1_1_block_solver_traits_3_01_eigen_1_1_dynamic_00_01_eigen_1_1_dynamic_01_4_a11131d4b2d25cea90eef0d3687eb6dc1}{Pose\+Matrix\+Type}}
+\item 
+typedef Matrix\+Xd \mbox{\hyperlink{structg2o_1_1_block_solver_traits_3_01_eigen_1_1_dynamic_00_01_eigen_1_1_dynamic_01_4_a4409de5074b3458f33ba2015e2fa6891}{Landmark\+Matrix\+Type}}
+\item 
+typedef Matrix\+Xd \mbox{\hyperlink{structg2o_1_1_block_solver_traits_3_01_eigen_1_1_dynamic_00_01_eigen_1_1_dynamic_01_4_ab81ac9673971ec5c896f4b431ae30f0b}{Pose\+Landmark\+Matrix\+Type}}
+\item 
+typedef Vector\+Xd \mbox{\hyperlink{structg2o_1_1_block_solver_traits_3_01_eigen_1_1_dynamic_00_01_eigen_1_1_dynamic_01_4_ae8ae50131f5aeaf97c844e20960ebaf3}{Pose\+Vector\+Type}}
+\item 
+typedef Vector\+Xd \mbox{\hyperlink{structg2o_1_1_block_solver_traits_3_01_eigen_1_1_dynamic_00_01_eigen_1_1_dynamic_01_4_aaff14917064b8670c918e571fcdc4666}{Landmark\+Vector\+Type}}
+\item 
+typedef \mbox{\hyperlink{classg2o_1_1_sparse_block_matrix}{Sparse\+Block\+Matrix}}$<$ \mbox{\hyperlink{structg2o_1_1_block_solver_traits_3_01_eigen_1_1_dynamic_00_01_eigen_1_1_dynamic_01_4_a11131d4b2d25cea90eef0d3687eb6dc1}{Pose\+Matrix\+Type}} $>$ \mbox{\hyperlink{structg2o_1_1_block_solver_traits_3_01_eigen_1_1_dynamic_00_01_eigen_1_1_dynamic_01_4_a380bde2a88f9b257142dd3419422e5a3}{Pose\+Hessian\+Type}}
+\item 
+typedef \mbox{\hyperlink{classg2o_1_1_sparse_block_matrix}{Sparse\+Block\+Matrix}}$<$ \mbox{\hyperlink{structg2o_1_1_block_solver_traits_3_01_eigen_1_1_dynamic_00_01_eigen_1_1_dynamic_01_4_a4409de5074b3458f33ba2015e2fa6891}{Landmark\+Matrix\+Type}} $>$ \mbox{\hyperlink{structg2o_1_1_block_solver_traits_3_01_eigen_1_1_dynamic_00_01_eigen_1_1_dynamic_01_4_a73a81a0aeabd1216ae3a8f5700666ac4}{Landmark\+Hessian\+Type}}
+\item 
+typedef \mbox{\hyperlink{classg2o_1_1_sparse_block_matrix}{Sparse\+Block\+Matrix}}$<$ \mbox{\hyperlink{structg2o_1_1_block_solver_traits_3_01_eigen_1_1_dynamic_00_01_eigen_1_1_dynamic_01_4_ab81ac9673971ec5c896f4b431ae30f0b}{Pose\+Landmark\+Matrix\+Type}} $>$ \mbox{\hyperlink{structg2o_1_1_block_solver_traits_3_01_eigen_1_1_dynamic_00_01_eigen_1_1_dynamic_01_4_aa6f67fd6ba29156f6d1069db0c3b5d11}{Pose\+Landmark\+Hessian\+Type}}
+\item 
+typedef \mbox{\hyperlink{classg2o_1_1_linear_solver}{Linear\+Solver}}$<$ \mbox{\hyperlink{structg2o_1_1_block_solver_traits_3_01_eigen_1_1_dynamic_00_01_eigen_1_1_dynamic_01_4_a11131d4b2d25cea90eef0d3687eb6dc1}{Pose\+Matrix\+Type}} $>$ \mbox{\hyperlink{structg2o_1_1_block_solver_traits_3_01_eigen_1_1_dynamic_00_01_eigen_1_1_dynamic_01_4_ad062ca3c21bf3a3e08d5350174d93d6d}{Linear\+Solver\+Type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int \mbox{\hyperlink{structg2o_1_1_block_solver_traits_3_01_eigen_1_1_dynamic_00_01_eigen_1_1_dynamic_01_4_a04a2cc2de80563b4b21f815150c3b0ec}{Pose\+Dim}} = Eigen\+::\+Dynamic
+\item 
+static const int \mbox{\hyperlink{structg2o_1_1_block_solver_traits_3_01_eigen_1_1_dynamic_00_01_eigen_1_1_dynamic_01_4_aa8f7b7c3fc1ce4a7d61e925e3067e196}{Landmark\+Dim}} = Eigen\+::\+Dynamic
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+traits to summarize the properties of the dynamic size optimization problem 
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structg2o_1_1_block_solver_traits_3_01_eigen_1_1_dynamic_00_01_eigen_1_1_dynamic_01_4_a73a81a0aeabd1216ae3a8f5700666ac4}\label{structg2o_1_1_block_solver_traits_3_01_eigen_1_1_dynamic_00_01_eigen_1_1_dynamic_01_4_a73a81a0aeabd1216ae3a8f5700666ac4}} 
+\index{g2o::BlockSolverTraits$<$ Eigen::Dynamic, Eigen::Dynamic $>$@{g2o::BlockSolverTraits$<$ Eigen::Dynamic, Eigen::Dynamic $>$}!LandmarkHessianType@{LandmarkHessianType}}
+\index{LandmarkHessianType@{LandmarkHessianType}!g2o::BlockSolverTraits$<$ Eigen::Dynamic, Eigen::Dynamic $>$@{g2o::BlockSolverTraits$<$ Eigen::Dynamic, Eigen::Dynamic $>$}}
+\doxysubsubsection{\texorpdfstring{LandmarkHessianType}{LandmarkHessianType}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classg2o_1_1_sparse_block_matrix}{Sparse\+Block\+Matrix}}$<$\mbox{\hyperlink{structg2o_1_1_block_solver_traits_3_01_eigen_1_1_dynamic_00_01_eigen_1_1_dynamic_01_4_a4409de5074b3458f33ba2015e2fa6891}{Landmark\+Matrix\+Type}}$>$ \mbox{\hyperlink{structg2o_1_1_block_solver_traits}{g2o\+::\+Block\+Solver\+Traits}}$<$ Eigen\+::\+Dynamic, Eigen\+::\+Dynamic $>$\+::\mbox{\hyperlink{structg2o_1_1_block_solver_traits_3_01_eigen_1_1_dynamic_00_01_eigen_1_1_dynamic_01_4_a73a81a0aeabd1216ae3a8f5700666ac4}{Landmark\+Hessian\+Type}}}
+
+\mbox{\Hypertarget{structg2o_1_1_block_solver_traits_3_01_eigen_1_1_dynamic_00_01_eigen_1_1_dynamic_01_4_a4409de5074b3458f33ba2015e2fa6891}\label{structg2o_1_1_block_solver_traits_3_01_eigen_1_1_dynamic_00_01_eigen_1_1_dynamic_01_4_a4409de5074b3458f33ba2015e2fa6891}} 
+\index{g2o::BlockSolverTraits$<$ Eigen::Dynamic, Eigen::Dynamic $>$@{g2o::BlockSolverTraits$<$ Eigen::Dynamic, Eigen::Dynamic $>$}!LandmarkMatrixType@{LandmarkMatrixType}}
+\index{LandmarkMatrixType@{LandmarkMatrixType}!g2o::BlockSolverTraits$<$ Eigen::Dynamic, Eigen::Dynamic $>$@{g2o::BlockSolverTraits$<$ Eigen::Dynamic, Eigen::Dynamic $>$}}
+\doxysubsubsection{\texorpdfstring{LandmarkMatrixType}{LandmarkMatrixType}}
+{\footnotesize\ttfamily typedef Matrix\+Xd \mbox{\hyperlink{structg2o_1_1_block_solver_traits}{g2o\+::\+Block\+Solver\+Traits}}$<$ Eigen\+::\+Dynamic, Eigen\+::\+Dynamic $>$\+::\mbox{\hyperlink{structg2o_1_1_block_solver_traits_3_01_eigen_1_1_dynamic_00_01_eigen_1_1_dynamic_01_4_a4409de5074b3458f33ba2015e2fa6891}{Landmark\+Matrix\+Type}}}
+
+\mbox{\Hypertarget{structg2o_1_1_block_solver_traits_3_01_eigen_1_1_dynamic_00_01_eigen_1_1_dynamic_01_4_aaff14917064b8670c918e571fcdc4666}\label{structg2o_1_1_block_solver_traits_3_01_eigen_1_1_dynamic_00_01_eigen_1_1_dynamic_01_4_aaff14917064b8670c918e571fcdc4666}} 
+\index{g2o::BlockSolverTraits$<$ Eigen::Dynamic, Eigen::Dynamic $>$@{g2o::BlockSolverTraits$<$ Eigen::Dynamic, Eigen::Dynamic $>$}!LandmarkVectorType@{LandmarkVectorType}}
+\index{LandmarkVectorType@{LandmarkVectorType}!g2o::BlockSolverTraits$<$ Eigen::Dynamic, Eigen::Dynamic $>$@{g2o::BlockSolverTraits$<$ Eigen::Dynamic, Eigen::Dynamic $>$}}
+\doxysubsubsection{\texorpdfstring{LandmarkVectorType}{LandmarkVectorType}}
+{\footnotesize\ttfamily typedef Vector\+Xd \mbox{\hyperlink{structg2o_1_1_block_solver_traits}{g2o\+::\+Block\+Solver\+Traits}}$<$ Eigen\+::\+Dynamic, Eigen\+::\+Dynamic $>$\+::\mbox{\hyperlink{structg2o_1_1_block_solver_traits_3_01_eigen_1_1_dynamic_00_01_eigen_1_1_dynamic_01_4_aaff14917064b8670c918e571fcdc4666}{Landmark\+Vector\+Type}}}
+
+\mbox{\Hypertarget{structg2o_1_1_block_solver_traits_3_01_eigen_1_1_dynamic_00_01_eigen_1_1_dynamic_01_4_ad062ca3c21bf3a3e08d5350174d93d6d}\label{structg2o_1_1_block_solver_traits_3_01_eigen_1_1_dynamic_00_01_eigen_1_1_dynamic_01_4_ad062ca3c21bf3a3e08d5350174d93d6d}} 
+\index{g2o::BlockSolverTraits$<$ Eigen::Dynamic, Eigen::Dynamic $>$@{g2o::BlockSolverTraits$<$ Eigen::Dynamic, Eigen::Dynamic $>$}!LinearSolverType@{LinearSolverType}}
+\index{LinearSolverType@{LinearSolverType}!g2o::BlockSolverTraits$<$ Eigen::Dynamic, Eigen::Dynamic $>$@{g2o::BlockSolverTraits$<$ Eigen::Dynamic, Eigen::Dynamic $>$}}
+\doxysubsubsection{\texorpdfstring{LinearSolverType}{LinearSolverType}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classg2o_1_1_linear_solver}{Linear\+Solver}}$<$\mbox{\hyperlink{structg2o_1_1_block_solver_traits_3_01_eigen_1_1_dynamic_00_01_eigen_1_1_dynamic_01_4_a11131d4b2d25cea90eef0d3687eb6dc1}{Pose\+Matrix\+Type}}$>$ \mbox{\hyperlink{structg2o_1_1_block_solver_traits}{g2o\+::\+Block\+Solver\+Traits}}$<$ Eigen\+::\+Dynamic, Eigen\+::\+Dynamic $>$\+::\mbox{\hyperlink{structg2o_1_1_block_solver_traits_3_01_eigen_1_1_dynamic_00_01_eigen_1_1_dynamic_01_4_ad062ca3c21bf3a3e08d5350174d93d6d}{Linear\+Solver\+Type}}}
+
+\mbox{\Hypertarget{structg2o_1_1_block_solver_traits_3_01_eigen_1_1_dynamic_00_01_eigen_1_1_dynamic_01_4_a380bde2a88f9b257142dd3419422e5a3}\label{structg2o_1_1_block_solver_traits_3_01_eigen_1_1_dynamic_00_01_eigen_1_1_dynamic_01_4_a380bde2a88f9b257142dd3419422e5a3}} 
+\index{g2o::BlockSolverTraits$<$ Eigen::Dynamic, Eigen::Dynamic $>$@{g2o::BlockSolverTraits$<$ Eigen::Dynamic, Eigen::Dynamic $>$}!PoseHessianType@{PoseHessianType}}
+\index{PoseHessianType@{PoseHessianType}!g2o::BlockSolverTraits$<$ Eigen::Dynamic, Eigen::Dynamic $>$@{g2o::BlockSolverTraits$<$ Eigen::Dynamic, Eigen::Dynamic $>$}}
+\doxysubsubsection{\texorpdfstring{PoseHessianType}{PoseHessianType}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classg2o_1_1_sparse_block_matrix}{Sparse\+Block\+Matrix}}$<$\mbox{\hyperlink{structg2o_1_1_block_solver_traits_3_01_eigen_1_1_dynamic_00_01_eigen_1_1_dynamic_01_4_a11131d4b2d25cea90eef0d3687eb6dc1}{Pose\+Matrix\+Type}}$>$ \mbox{\hyperlink{structg2o_1_1_block_solver_traits}{g2o\+::\+Block\+Solver\+Traits}}$<$ Eigen\+::\+Dynamic, Eigen\+::\+Dynamic $>$\+::\mbox{\hyperlink{structg2o_1_1_block_solver_traits_3_01_eigen_1_1_dynamic_00_01_eigen_1_1_dynamic_01_4_a380bde2a88f9b257142dd3419422e5a3}{Pose\+Hessian\+Type}}}
+
+\mbox{\Hypertarget{structg2o_1_1_block_solver_traits_3_01_eigen_1_1_dynamic_00_01_eigen_1_1_dynamic_01_4_aa6f67fd6ba29156f6d1069db0c3b5d11}\label{structg2o_1_1_block_solver_traits_3_01_eigen_1_1_dynamic_00_01_eigen_1_1_dynamic_01_4_aa6f67fd6ba29156f6d1069db0c3b5d11}} 
+\index{g2o::BlockSolverTraits$<$ Eigen::Dynamic, Eigen::Dynamic $>$@{g2o::BlockSolverTraits$<$ Eigen::Dynamic, Eigen::Dynamic $>$}!PoseLandmarkHessianType@{PoseLandmarkHessianType}}
+\index{PoseLandmarkHessianType@{PoseLandmarkHessianType}!g2o::BlockSolverTraits$<$ Eigen::Dynamic, Eigen::Dynamic $>$@{g2o::BlockSolverTraits$<$ Eigen::Dynamic, Eigen::Dynamic $>$}}
+\doxysubsubsection{\texorpdfstring{PoseLandmarkHessianType}{PoseLandmarkHessianType}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classg2o_1_1_sparse_block_matrix}{Sparse\+Block\+Matrix}}$<$\mbox{\hyperlink{structg2o_1_1_block_solver_traits_3_01_eigen_1_1_dynamic_00_01_eigen_1_1_dynamic_01_4_ab81ac9673971ec5c896f4b431ae30f0b}{Pose\+Landmark\+Matrix\+Type}}$>$ \mbox{\hyperlink{structg2o_1_1_block_solver_traits}{g2o\+::\+Block\+Solver\+Traits}}$<$ Eigen\+::\+Dynamic, Eigen\+::\+Dynamic $>$\+::\mbox{\hyperlink{structg2o_1_1_block_solver_traits_3_01_eigen_1_1_dynamic_00_01_eigen_1_1_dynamic_01_4_aa6f67fd6ba29156f6d1069db0c3b5d11}{Pose\+Landmark\+Hessian\+Type}}}
+
+\mbox{\Hypertarget{structg2o_1_1_block_solver_traits_3_01_eigen_1_1_dynamic_00_01_eigen_1_1_dynamic_01_4_ab81ac9673971ec5c896f4b431ae30f0b}\label{structg2o_1_1_block_solver_traits_3_01_eigen_1_1_dynamic_00_01_eigen_1_1_dynamic_01_4_ab81ac9673971ec5c896f4b431ae30f0b}} 
+\index{g2o::BlockSolverTraits$<$ Eigen::Dynamic, Eigen::Dynamic $>$@{g2o::BlockSolverTraits$<$ Eigen::Dynamic, Eigen::Dynamic $>$}!PoseLandmarkMatrixType@{PoseLandmarkMatrixType}}
+\index{PoseLandmarkMatrixType@{PoseLandmarkMatrixType}!g2o::BlockSolverTraits$<$ Eigen::Dynamic, Eigen::Dynamic $>$@{g2o::BlockSolverTraits$<$ Eigen::Dynamic, Eigen::Dynamic $>$}}
+\doxysubsubsection{\texorpdfstring{PoseLandmarkMatrixType}{PoseLandmarkMatrixType}}
+{\footnotesize\ttfamily typedef Matrix\+Xd \mbox{\hyperlink{structg2o_1_1_block_solver_traits}{g2o\+::\+Block\+Solver\+Traits}}$<$ Eigen\+::\+Dynamic, Eigen\+::\+Dynamic $>$\+::\mbox{\hyperlink{structg2o_1_1_block_solver_traits_3_01_eigen_1_1_dynamic_00_01_eigen_1_1_dynamic_01_4_ab81ac9673971ec5c896f4b431ae30f0b}{Pose\+Landmark\+Matrix\+Type}}}
+
+\mbox{\Hypertarget{structg2o_1_1_block_solver_traits_3_01_eigen_1_1_dynamic_00_01_eigen_1_1_dynamic_01_4_a11131d4b2d25cea90eef0d3687eb6dc1}\label{structg2o_1_1_block_solver_traits_3_01_eigen_1_1_dynamic_00_01_eigen_1_1_dynamic_01_4_a11131d4b2d25cea90eef0d3687eb6dc1}} 
+\index{g2o::BlockSolverTraits$<$ Eigen::Dynamic, Eigen::Dynamic $>$@{g2o::BlockSolverTraits$<$ Eigen::Dynamic, Eigen::Dynamic $>$}!PoseMatrixType@{PoseMatrixType}}
+\index{PoseMatrixType@{PoseMatrixType}!g2o::BlockSolverTraits$<$ Eigen::Dynamic, Eigen::Dynamic $>$@{g2o::BlockSolverTraits$<$ Eigen::Dynamic, Eigen::Dynamic $>$}}
+\doxysubsubsection{\texorpdfstring{PoseMatrixType}{PoseMatrixType}}
+{\footnotesize\ttfamily typedef Matrix\+Xd \mbox{\hyperlink{structg2o_1_1_block_solver_traits}{g2o\+::\+Block\+Solver\+Traits}}$<$ Eigen\+::\+Dynamic, Eigen\+::\+Dynamic $>$\+::\mbox{\hyperlink{structg2o_1_1_block_solver_traits_3_01_eigen_1_1_dynamic_00_01_eigen_1_1_dynamic_01_4_a11131d4b2d25cea90eef0d3687eb6dc1}{Pose\+Matrix\+Type}}}
+
+\mbox{\Hypertarget{structg2o_1_1_block_solver_traits_3_01_eigen_1_1_dynamic_00_01_eigen_1_1_dynamic_01_4_ae8ae50131f5aeaf97c844e20960ebaf3}\label{structg2o_1_1_block_solver_traits_3_01_eigen_1_1_dynamic_00_01_eigen_1_1_dynamic_01_4_ae8ae50131f5aeaf97c844e20960ebaf3}} 
+\index{g2o::BlockSolverTraits$<$ Eigen::Dynamic, Eigen::Dynamic $>$@{g2o::BlockSolverTraits$<$ Eigen::Dynamic, Eigen::Dynamic $>$}!PoseVectorType@{PoseVectorType}}
+\index{PoseVectorType@{PoseVectorType}!g2o::BlockSolverTraits$<$ Eigen::Dynamic, Eigen::Dynamic $>$@{g2o::BlockSolverTraits$<$ Eigen::Dynamic, Eigen::Dynamic $>$}}
+\doxysubsubsection{\texorpdfstring{PoseVectorType}{PoseVectorType}}
+{\footnotesize\ttfamily typedef Vector\+Xd \mbox{\hyperlink{structg2o_1_1_block_solver_traits}{g2o\+::\+Block\+Solver\+Traits}}$<$ Eigen\+::\+Dynamic, Eigen\+::\+Dynamic $>$\+::\mbox{\hyperlink{structg2o_1_1_block_solver_traits_3_01_eigen_1_1_dynamic_00_01_eigen_1_1_dynamic_01_4_ae8ae50131f5aeaf97c844e20960ebaf3}{Pose\+Vector\+Type}}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structg2o_1_1_block_solver_traits_3_01_eigen_1_1_dynamic_00_01_eigen_1_1_dynamic_01_4_aa8f7b7c3fc1ce4a7d61e925e3067e196}\label{structg2o_1_1_block_solver_traits_3_01_eigen_1_1_dynamic_00_01_eigen_1_1_dynamic_01_4_aa8f7b7c3fc1ce4a7d61e925e3067e196}} 
+\index{g2o::BlockSolverTraits$<$ Eigen::Dynamic, Eigen::Dynamic $>$@{g2o::BlockSolverTraits$<$ Eigen::Dynamic, Eigen::Dynamic $>$}!LandmarkDim@{LandmarkDim}}
+\index{LandmarkDim@{LandmarkDim}!g2o::BlockSolverTraits$<$ Eigen::Dynamic, Eigen::Dynamic $>$@{g2o::BlockSolverTraits$<$ Eigen::Dynamic, Eigen::Dynamic $>$}}
+\doxysubsubsection{\texorpdfstring{LandmarkDim}{LandmarkDim}}
+{\footnotesize\ttfamily const int \mbox{\hyperlink{structg2o_1_1_block_solver_traits}{g2o\+::\+Block\+Solver\+Traits}}$<$ Eigen\+::\+Dynamic, Eigen\+::\+Dynamic $>$\+::Landmark\+Dim = Eigen\+::\+Dynamic\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{structg2o_1_1_block_solver_traits_3_01_eigen_1_1_dynamic_00_01_eigen_1_1_dynamic_01_4_a04a2cc2de80563b4b21f815150c3b0ec}\label{structg2o_1_1_block_solver_traits_3_01_eigen_1_1_dynamic_00_01_eigen_1_1_dynamic_01_4_a04a2cc2de80563b4b21f815150c3b0ec}} 
+\index{g2o::BlockSolverTraits$<$ Eigen::Dynamic, Eigen::Dynamic $>$@{g2o::BlockSolverTraits$<$ Eigen::Dynamic, Eigen::Dynamic $>$}!PoseDim@{PoseDim}}
+\index{PoseDim@{PoseDim}!g2o::BlockSolverTraits$<$ Eigen::Dynamic, Eigen::Dynamic $>$@{g2o::BlockSolverTraits$<$ Eigen::Dynamic, Eigen::Dynamic $>$}}
+\doxysubsubsection{\texorpdfstring{PoseDim}{PoseDim}}
+{\footnotesize\ttfamily const int \mbox{\hyperlink{structg2o_1_1_block_solver_traits}{g2o\+::\+Block\+Solver\+Traits}}$<$ Eigen\+::\+Dynamic, Eigen\+::\+Dynamic $>$\+::Pose\+Dim = Eigen\+::\+Dynamic\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+orb\+\_\+slam2/\+Thirdparty/g2o/g2o/core/\mbox{\hyperlink{block__solver_8h}{block\+\_\+solver.\+h}}\end{DoxyCompactItemize}

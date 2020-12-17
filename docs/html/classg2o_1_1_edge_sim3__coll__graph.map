@@ -1,0 +1,10 @@
+<map id="g2o::EdgeSim3" name="g2o::EdgeSim3">
+<area shape="rect" id="node1" title="7D edge between two Vertex7" alt="" coords="259,471,378,497"/>
+<area shape="rect" id="node2" href="$classg2o_1_1_base_binary_edge.html" title=" " alt="" coords="205,365,432,421"/>
+<area shape="rect" id="node3" href="$classg2o_1_1_base_edge.html" title=" " alt="" coords="219,289,418,316"/>
+<area shape="rect" id="node4" href="$classg2o_1_1_optimizable_graph_1_1_edge.html" title=" " alt="" coords="118,185,290,227"/>
+<area shape="rect" id="node5" href="$classg2o_1_1_hyper_graph_1_1_edge.html" title=" " alt="" coords="29,96,201,123"/>
+<area shape="rect" id="node6" href="$structg2o_1_1_hyper_graph_1_1_hyper_graph_element.html" title=" " alt="" coords="5,5,224,47"/>
+<area shape="rect" id="node7" href="$classg2o_1_1_robust_kernel.html" title="base for all robust cost functions" alt="" coords="225,96,365,123"/>
+<area shape="rect" id="node8" href="$structg2o_1_1_sim3.html" title=" " alt="" coords="314,193,401,219"/>
+</map>

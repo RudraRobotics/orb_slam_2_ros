@@ -1,0 +1,259 @@
+\hypertarget{classg2o_1_1_linear_solver_eigen}{}\doxysection{g2o\+::Linear\+Solver\+Eigen$<$ Matrix\+Type $>$ Class Template Reference}
+\label{classg2o_1_1_linear_solver_eigen}\index{g2o::LinearSolverEigen$<$ MatrixType $>$@{g2o::LinearSolverEigen$<$ MatrixType $>$}}
+
+
+linear solver which uses the sparse Cholesky solver from Eigen  
+
+
+
+
+{\ttfamily \#include $<$linear\+\_\+solver\+\_\+eigen.\+h$>$}
+
+
+
+Inheritance diagram for g2o\+::Linear\+Solver\+Eigen$<$ Matrix\+Type $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classg2o_1_1_linear_solver_eigen__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for g2o\+::Linear\+Solver\+Eigen$<$ Matrix\+Type $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1_linear_solver_eigen__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classg2o_1_1_linear_solver_eigen_1_1_cholesky_decomposition}{Cholesky\+Decomposition}}
+\begin{DoxyCompactList}\small\item\em Sub-\/classing Eigen\textquotesingle{}s Simplicial\+L\+D\+LT to perform ordering with a given ordering. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Eigen\+::\+Sparse\+Matrix$<$ double, Eigen\+::\+Col\+Major $>$ \mbox{\hyperlink{classg2o_1_1_linear_solver_eigen_aeb7e2400bed3a249b5f29ce7cc00cd33}{Sparse\+Matrix}}
+\item 
+typedef Eigen\+::\+Triplet$<$ double $>$ \mbox{\hyperlink{classg2o_1_1_linear_solver_eigen_a602c24e05d2f46022aa1827fdbc45638}{Triplet}}
+\item 
+typedef Eigen\+::\+Permutation\+Matrix$<$ Eigen\+::\+Dynamic, Eigen\+::\+Dynamic $>$ \mbox{\hyperlink{classg2o_1_1_linear_solver_eigen_a8bd78b067016f2864fd734b679261357}{Permutation\+Matrix}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classg2o_1_1_linear_solver_eigen_ac9e7b64d4a559e6972a8b3798f490bd8}{Linear\+Solver\+Eigen}} ()
+\item 
+virtual \mbox{\hyperlink{classg2o_1_1_linear_solver_eigen_afd2eeb1d54a420e110b9b8cdf74b1cff}{$\sim$\+Linear\+Solver\+Eigen}} ()
+\item 
+virtual bool \mbox{\hyperlink{classg2o_1_1_linear_solver_eigen_a8fca4bb987dcbeb94a366b1532dee139}{init}} ()
+\item 
+bool \mbox{\hyperlink{classg2o_1_1_linear_solver_eigen_ae4ac566af324a238a31145c1e50b52e1}{solve}} (const \mbox{\hyperlink{classg2o_1_1_sparse_block_matrix}{Sparse\+Block\+Matrix}}$<$ Matrix\+Type $>$ \&A, double $\ast$x, double $\ast$b)
+\item 
+bool \mbox{\hyperlink{classg2o_1_1_linear_solver_eigen_a062a4808d98b01686817b4565fd149cf}{block\+Ordering}} () const
+\begin{DoxyCompactList}\small\item\em do the A\+MD ordering on the blocks or on the scalar matrix \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classg2o_1_1_linear_solver_eigen_a33a924364fc517e69c5ade5aeacd8ee3}{set\+Block\+Ordering}} (bool \mbox{\hyperlink{classg2o_1_1_linear_solver_eigen_a062a4808d98b01686817b4565fd149cf}{block\+Ordering}})
+\item 
+virtual bool \mbox{\hyperlink{classg2o_1_1_linear_solver_eigen_ad9bccc1b4bcd3cc5e107ac09ac93cf4b}{write\+Debug}} () const
+\begin{DoxyCompactList}\small\item\em write a debug dump of the system matrix if it is not S\+PD in solve \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classg2o_1_1_linear_solver_eigen_a5ceaab3ba944d327b21f7329c7e19c8c}{set\+Write\+Debug}} (bool b)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classg2o_1_1_linear_solver_eigen_a12307526d419d194620e982d8c683767}{compute\+Symbolic\+Decomposition}} (const \mbox{\hyperlink{classg2o_1_1_sparse_block_matrix}{Sparse\+Block\+Matrix}}$<$ Matrix\+Type $>$ \&A)
+\item 
+void \mbox{\hyperlink{classg2o_1_1_linear_solver_eigen_a8ab862dc1eebb6ec5815f3970e9073f3}{fill\+Sparse\+Matrix}} (const \mbox{\hyperlink{classg2o_1_1_sparse_block_matrix}{Sparse\+Block\+Matrix}}$<$ Matrix\+Type $>$ \&A, bool only\+Values)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classg2o_1_1_linear_solver_eigen_a52c02e9b24e4f6ade190e6adb29b05b4}{\+\_\+init}}
+\item 
+bool \mbox{\hyperlink{classg2o_1_1_linear_solver_eigen_a041970f37a5a6e63778f0c40e7c6e948}{\+\_\+block\+Ordering}}
+\item 
+bool \mbox{\hyperlink{classg2o_1_1_linear_solver_eigen_a2d331575853451fc94ca6f6420f0bdcb}{\+\_\+write\+Debug}}
+\item 
+\mbox{\hyperlink{classg2o_1_1_linear_solver_eigen_aeb7e2400bed3a249b5f29ce7cc00cd33}{Sparse\+Matrix}} \mbox{\hyperlink{classg2o_1_1_linear_solver_eigen_a39682995a9cf32dc79848281c6d4d9b9}{\+\_\+sparse\+Matrix}}
+\item 
+\mbox{\hyperlink{classg2o_1_1_linear_solver_eigen_1_1_cholesky_decomposition}{Cholesky\+Decomposition}} \mbox{\hyperlink{classg2o_1_1_linear_solver_eigen_ab7205de4c6820b3ecd7ed7f39bbdf573}{\+\_\+cholesky}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename Matrix\+Type$>$\newline
+class g2o\+::\+Linear\+Solver\+Eigen$<$ Matrix\+Type $>$}
+
+linear solver which uses the sparse Cholesky solver from Eigen 
+
+Has no dependencies except Eigen. Hence, should compile almost everywhere without to much issues. Performance should be similar to C\+Sparse, I guess. 
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classg2o_1_1_linear_solver_eigen_a8bd78b067016f2864fd734b679261357}\label{classg2o_1_1_linear_solver_eigen_a8bd78b067016f2864fd734b679261357}} 
+\index{g2o::LinearSolverEigen$<$ MatrixType $>$@{g2o::LinearSolverEigen$<$ MatrixType $>$}!PermutationMatrix@{PermutationMatrix}}
+\index{PermutationMatrix@{PermutationMatrix}!g2o::LinearSolverEigen$<$ MatrixType $>$@{g2o::LinearSolverEigen$<$ MatrixType $>$}}
+\doxysubsubsection{\texorpdfstring{PermutationMatrix}{PermutationMatrix}}
+{\footnotesize\ttfamily template$<$typename Matrix\+Type $>$ \\
+typedef Eigen\+::\+Permutation\+Matrix$<$Eigen\+::\+Dynamic, Eigen\+::\+Dynamic$>$ \mbox{\hyperlink{classg2o_1_1_linear_solver_eigen}{g2o\+::\+Linear\+Solver\+Eigen}}$<$ Matrix\+Type $>$\+::\mbox{\hyperlink{classg2o_1_1_linear_solver_eigen_a8bd78b067016f2864fd734b679261357}{Permutation\+Matrix}}}
+
+\mbox{\Hypertarget{classg2o_1_1_linear_solver_eigen_aeb7e2400bed3a249b5f29ce7cc00cd33}\label{classg2o_1_1_linear_solver_eigen_aeb7e2400bed3a249b5f29ce7cc00cd33}} 
+\index{g2o::LinearSolverEigen$<$ MatrixType $>$@{g2o::LinearSolverEigen$<$ MatrixType $>$}!SparseMatrix@{SparseMatrix}}
+\index{SparseMatrix@{SparseMatrix}!g2o::LinearSolverEigen$<$ MatrixType $>$@{g2o::LinearSolverEigen$<$ MatrixType $>$}}
+\doxysubsubsection{\texorpdfstring{SparseMatrix}{SparseMatrix}}
+{\footnotesize\ttfamily template$<$typename Matrix\+Type $>$ \\
+typedef Eigen\+::\+Sparse\+Matrix$<$double, Eigen\+::\+Col\+Major$>$ \mbox{\hyperlink{classg2o_1_1_linear_solver_eigen}{g2o\+::\+Linear\+Solver\+Eigen}}$<$ Matrix\+Type $>$\+::\mbox{\hyperlink{classg2o_1_1_linear_solver_eigen_aeb7e2400bed3a249b5f29ce7cc00cd33}{Sparse\+Matrix}}}
+
+\mbox{\Hypertarget{classg2o_1_1_linear_solver_eigen_a602c24e05d2f46022aa1827fdbc45638}\label{classg2o_1_1_linear_solver_eigen_a602c24e05d2f46022aa1827fdbc45638}} 
+\index{g2o::LinearSolverEigen$<$ MatrixType $>$@{g2o::LinearSolverEigen$<$ MatrixType $>$}!Triplet@{Triplet}}
+\index{Triplet@{Triplet}!g2o::LinearSolverEigen$<$ MatrixType $>$@{g2o::LinearSolverEigen$<$ MatrixType $>$}}
+\doxysubsubsection{\texorpdfstring{Triplet}{Triplet}}
+{\footnotesize\ttfamily template$<$typename Matrix\+Type $>$ \\
+typedef Eigen\+::\+Triplet$<$double$>$ \mbox{\hyperlink{classg2o_1_1_linear_solver_eigen}{g2o\+::\+Linear\+Solver\+Eigen}}$<$ Matrix\+Type $>$\+::\mbox{\hyperlink{classg2o_1_1_linear_solver_eigen_a602c24e05d2f46022aa1827fdbc45638}{Triplet}}}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classg2o_1_1_linear_solver_eigen_ac9e7b64d4a559e6972a8b3798f490bd8}\label{classg2o_1_1_linear_solver_eigen_ac9e7b64d4a559e6972a8b3798f490bd8}} 
+\index{g2o::LinearSolverEigen$<$ MatrixType $>$@{g2o::LinearSolverEigen$<$ MatrixType $>$}!LinearSolverEigen@{LinearSolverEigen}}
+\index{LinearSolverEigen@{LinearSolverEigen}!g2o::LinearSolverEigen$<$ MatrixType $>$@{g2o::LinearSolverEigen$<$ MatrixType $>$}}
+\doxysubsubsection{\texorpdfstring{LinearSolverEigen()}{LinearSolverEigen()}}
+{\footnotesize\ttfamily template$<$typename Matrix\+Type $>$ \\
+\mbox{\hyperlink{classg2o_1_1_linear_solver_eigen}{g2o\+::\+Linear\+Solver\+Eigen}}$<$ Matrix\+Type $>$\+::\mbox{\hyperlink{classg2o_1_1_linear_solver_eigen}{Linear\+Solver\+Eigen}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classg2o_1_1_linear_solver_eigen_afd2eeb1d54a420e110b9b8cdf74b1cff}\label{classg2o_1_1_linear_solver_eigen_afd2eeb1d54a420e110b9b8cdf74b1cff}} 
+\index{g2o::LinearSolverEigen$<$ MatrixType $>$@{g2o::LinearSolverEigen$<$ MatrixType $>$}!````~LinearSolverEigen@{$\sim$LinearSolverEigen}}
+\index{````~LinearSolverEigen@{$\sim$LinearSolverEigen}!g2o::LinearSolverEigen$<$ MatrixType $>$@{g2o::LinearSolverEigen$<$ MatrixType $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$LinearSolverEigen()}{~LinearSolverEigen()}}
+{\footnotesize\ttfamily template$<$typename Matrix\+Type $>$ \\
+virtual \mbox{\hyperlink{classg2o_1_1_linear_solver_eigen}{g2o\+::\+Linear\+Solver\+Eigen}}$<$ Matrix\+Type $>$\+::$\sim$\mbox{\hyperlink{classg2o_1_1_linear_solver_eigen}{Linear\+Solver\+Eigen}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classg2o_1_1_linear_solver_eigen_a062a4808d98b01686817b4565fd149cf}\label{classg2o_1_1_linear_solver_eigen_a062a4808d98b01686817b4565fd149cf}} 
+\index{g2o::LinearSolverEigen$<$ MatrixType $>$@{g2o::LinearSolverEigen$<$ MatrixType $>$}!blockOrdering@{blockOrdering}}
+\index{blockOrdering@{blockOrdering}!g2o::LinearSolverEigen$<$ MatrixType $>$@{g2o::LinearSolverEigen$<$ MatrixType $>$}}
+\doxysubsubsection{\texorpdfstring{blockOrdering()}{blockOrdering()}}
+{\footnotesize\ttfamily template$<$typename Matrix\+Type $>$ \\
+bool \mbox{\hyperlink{classg2o_1_1_linear_solver_eigen}{g2o\+::\+Linear\+Solver\+Eigen}}$<$ Matrix\+Type $>$\+::block\+Ordering (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+do the A\+MD ordering on the blocks or on the scalar matrix 
+
+\mbox{\Hypertarget{classg2o_1_1_linear_solver_eigen_a12307526d419d194620e982d8c683767}\label{classg2o_1_1_linear_solver_eigen_a12307526d419d194620e982d8c683767}} 
+\index{g2o::LinearSolverEigen$<$ MatrixType $>$@{g2o::LinearSolverEigen$<$ MatrixType $>$}!computeSymbolicDecomposition@{computeSymbolicDecomposition}}
+\index{computeSymbolicDecomposition@{computeSymbolicDecomposition}!g2o::LinearSolverEigen$<$ MatrixType $>$@{g2o::LinearSolverEigen$<$ MatrixType $>$}}
+\doxysubsubsection{\texorpdfstring{computeSymbolicDecomposition()}{computeSymbolicDecomposition()}}
+{\footnotesize\ttfamily template$<$typename Matrix\+Type $>$ \\
+void \mbox{\hyperlink{classg2o_1_1_linear_solver_eigen}{g2o\+::\+Linear\+Solver\+Eigen}}$<$ Matrix\+Type $>$\+::compute\+Symbolic\+Decomposition (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classg2o_1_1_sparse_block_matrix}{Sparse\+Block\+Matrix}}$<$ Matrix\+Type $>$ \&}]{A }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+compute the symbolic decompostion of the matrix only once. Since A has the same pattern in all the iterations, we only compute the fill-\/in reducing ordering once and re-\/use for all the following iterations. \mbox{\Hypertarget{classg2o_1_1_linear_solver_eigen_a8ab862dc1eebb6ec5815f3970e9073f3}\label{classg2o_1_1_linear_solver_eigen_a8ab862dc1eebb6ec5815f3970e9073f3}} 
+\index{g2o::LinearSolverEigen$<$ MatrixType $>$@{g2o::LinearSolverEigen$<$ MatrixType $>$}!fillSparseMatrix@{fillSparseMatrix}}
+\index{fillSparseMatrix@{fillSparseMatrix}!g2o::LinearSolverEigen$<$ MatrixType $>$@{g2o::LinearSolverEigen$<$ MatrixType $>$}}
+\doxysubsubsection{\texorpdfstring{fillSparseMatrix()}{fillSparseMatrix()}}
+{\footnotesize\ttfamily template$<$typename Matrix\+Type $>$ \\
+void \mbox{\hyperlink{classg2o_1_1_linear_solver_eigen}{g2o\+::\+Linear\+Solver\+Eigen}}$<$ Matrix\+Type $>$\+::fill\+Sparse\+Matrix (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classg2o_1_1_sparse_block_matrix}{Sparse\+Block\+Matrix}}$<$ Matrix\+Type $>$ \&}]{A,  }\item[{bool}]{only\+Values }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classg2o_1_1_linear_solver_eigen_a8fca4bb987dcbeb94a366b1532dee139}\label{classg2o_1_1_linear_solver_eigen_a8fca4bb987dcbeb94a366b1532dee139}} 
+\index{g2o::LinearSolverEigen$<$ MatrixType $>$@{g2o::LinearSolverEigen$<$ MatrixType $>$}!init@{init}}
+\index{init@{init}!g2o::LinearSolverEigen$<$ MatrixType $>$@{g2o::LinearSolverEigen$<$ MatrixType $>$}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily template$<$typename Matrix\+Type $>$ \\
+virtual bool \mbox{\hyperlink{classg2o_1_1_linear_solver_eigen}{g2o\+::\+Linear\+Solver\+Eigen}}$<$ Matrix\+Type $>$\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+init for operating on matrices with a different non-\/zero pattern like before 
+
+Implements \mbox{\hyperlink{classg2o_1_1_linear_solver_aebd961a94ef6de1bc66d2ca41dd2b17b}{g2o\+::\+Linear\+Solver$<$ Matrix\+Type $>$}}.
+
+\mbox{\Hypertarget{classg2o_1_1_linear_solver_eigen_a33a924364fc517e69c5ade5aeacd8ee3}\label{classg2o_1_1_linear_solver_eigen_a33a924364fc517e69c5ade5aeacd8ee3}} 
+\index{g2o::LinearSolverEigen$<$ MatrixType $>$@{g2o::LinearSolverEigen$<$ MatrixType $>$}!setBlockOrdering@{setBlockOrdering}}
+\index{setBlockOrdering@{setBlockOrdering}!g2o::LinearSolverEigen$<$ MatrixType $>$@{g2o::LinearSolverEigen$<$ MatrixType $>$}}
+\doxysubsubsection{\texorpdfstring{setBlockOrdering()}{setBlockOrdering()}}
+{\footnotesize\ttfamily template$<$typename Matrix\+Type $>$ \\
+void \mbox{\hyperlink{classg2o_1_1_linear_solver_eigen}{g2o\+::\+Linear\+Solver\+Eigen}}$<$ Matrix\+Type $>$\+::set\+Block\+Ordering (\begin{DoxyParamCaption}\item[{bool}]{block\+Ordering }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classg2o_1_1_linear_solver_eigen_a5ceaab3ba944d327b21f7329c7e19c8c}\label{classg2o_1_1_linear_solver_eigen_a5ceaab3ba944d327b21f7329c7e19c8c}} 
+\index{g2o::LinearSolverEigen$<$ MatrixType $>$@{g2o::LinearSolverEigen$<$ MatrixType $>$}!setWriteDebug@{setWriteDebug}}
+\index{setWriteDebug@{setWriteDebug}!g2o::LinearSolverEigen$<$ MatrixType $>$@{g2o::LinearSolverEigen$<$ MatrixType $>$}}
+\doxysubsubsection{\texorpdfstring{setWriteDebug()}{setWriteDebug()}}
+{\footnotesize\ttfamily template$<$typename Matrix\+Type $>$ \\
+virtual void \mbox{\hyperlink{classg2o_1_1_linear_solver_eigen}{g2o\+::\+Linear\+Solver\+Eigen}}$<$ Matrix\+Type $>$\+::set\+Write\+Debug (\begin{DoxyParamCaption}\item[{bool}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classg2o_1_1_linear_solver_a969c406ccacc38705b2a88f5ed23cb9a}{g2o\+::\+Linear\+Solver$<$ Matrix\+Type $>$}}.
+
+\mbox{\Hypertarget{classg2o_1_1_linear_solver_eigen_ae4ac566af324a238a31145c1e50b52e1}\label{classg2o_1_1_linear_solver_eigen_ae4ac566af324a238a31145c1e50b52e1}} 
+\index{g2o::LinearSolverEigen$<$ MatrixType $>$@{g2o::LinearSolverEigen$<$ MatrixType $>$}!solve@{solve}}
+\index{solve@{solve}!g2o::LinearSolverEigen$<$ MatrixType $>$@{g2o::LinearSolverEigen$<$ MatrixType $>$}}
+\doxysubsubsection{\texorpdfstring{solve()}{solve()}}
+{\footnotesize\ttfamily template$<$typename Matrix\+Type $>$ \\
+bool \mbox{\hyperlink{classg2o_1_1_linear_solver_eigen}{g2o\+::\+Linear\+Solver\+Eigen}}$<$ Matrix\+Type $>$\+::solve (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classg2o_1_1_sparse_block_matrix}{Sparse\+Block\+Matrix}}$<$ Matrix\+Type $>$ \&}]{A,  }\item[{double $\ast$}]{x,  }\item[{double $\ast$}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Assumes that A is the same matrix for several calls. Among other assumptions, the non-\/zero pattern does not change! If the matrix changes call \mbox{\hyperlink{classg2o_1_1_linear_solver_eigen_a8fca4bb987dcbeb94a366b1532dee139}{init()}} before. solve system Ax = b, x and b have to allocated beforehand!! 
+
+Implements \mbox{\hyperlink{classg2o_1_1_linear_solver_aa44b40826d50203c8ce2ff258c34e030}{g2o\+::\+Linear\+Solver$<$ Matrix\+Type $>$}}.
+
+\mbox{\Hypertarget{classg2o_1_1_linear_solver_eigen_ad9bccc1b4bcd3cc5e107ac09ac93cf4b}\label{classg2o_1_1_linear_solver_eigen_ad9bccc1b4bcd3cc5e107ac09ac93cf4b}} 
+\index{g2o::LinearSolverEigen$<$ MatrixType $>$@{g2o::LinearSolverEigen$<$ MatrixType $>$}!writeDebug@{writeDebug}}
+\index{writeDebug@{writeDebug}!g2o::LinearSolverEigen$<$ MatrixType $>$@{g2o::LinearSolverEigen$<$ MatrixType $>$}}
+\doxysubsubsection{\texorpdfstring{writeDebug()}{writeDebug()}}
+{\footnotesize\ttfamily template$<$typename Matrix\+Type $>$ \\
+virtual bool \mbox{\hyperlink{classg2o_1_1_linear_solver_eigen}{g2o\+::\+Linear\+Solver\+Eigen}}$<$ Matrix\+Type $>$\+::write\+Debug (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+write a debug dump of the system matrix if it is not S\+PD in solve 
+
+
+
+Reimplemented from \mbox{\hyperlink{classg2o_1_1_linear_solver_ac4b23c56cf69759a692906fc8816cf8f}{g2o\+::\+Linear\+Solver$<$ Matrix\+Type $>$}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classg2o_1_1_linear_solver_eigen_a041970f37a5a6e63778f0c40e7c6e948}\label{classg2o_1_1_linear_solver_eigen_a041970f37a5a6e63778f0c40e7c6e948}} 
+\index{g2o::LinearSolverEigen$<$ MatrixType $>$@{g2o::LinearSolverEigen$<$ MatrixType $>$}!\_blockOrdering@{\_blockOrdering}}
+\index{\_blockOrdering@{\_blockOrdering}!g2o::LinearSolverEigen$<$ MatrixType $>$@{g2o::LinearSolverEigen$<$ MatrixType $>$}}
+\doxysubsubsection{\texorpdfstring{\_blockOrdering}{\_blockOrdering}}
+{\footnotesize\ttfamily template$<$typename Matrix\+Type $>$ \\
+bool \mbox{\hyperlink{classg2o_1_1_linear_solver_eigen}{g2o\+::\+Linear\+Solver\+Eigen}}$<$ Matrix\+Type $>$\+::\+\_\+block\+Ordering\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classg2o_1_1_linear_solver_eigen_ab7205de4c6820b3ecd7ed7f39bbdf573}\label{classg2o_1_1_linear_solver_eigen_ab7205de4c6820b3ecd7ed7f39bbdf573}} 
+\index{g2o::LinearSolverEigen$<$ MatrixType $>$@{g2o::LinearSolverEigen$<$ MatrixType $>$}!\_cholesky@{\_cholesky}}
+\index{\_cholesky@{\_cholesky}!g2o::LinearSolverEigen$<$ MatrixType $>$@{g2o::LinearSolverEigen$<$ MatrixType $>$}}
+\doxysubsubsection{\texorpdfstring{\_cholesky}{\_cholesky}}
+{\footnotesize\ttfamily template$<$typename Matrix\+Type $>$ \\
+\mbox{\hyperlink{classg2o_1_1_linear_solver_eigen_1_1_cholesky_decomposition}{Cholesky\+Decomposition}} \mbox{\hyperlink{classg2o_1_1_linear_solver_eigen}{g2o\+::\+Linear\+Solver\+Eigen}}$<$ Matrix\+Type $>$\+::\+\_\+cholesky\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classg2o_1_1_linear_solver_eigen_a52c02e9b24e4f6ade190e6adb29b05b4}\label{classg2o_1_1_linear_solver_eigen_a52c02e9b24e4f6ade190e6adb29b05b4}} 
+\index{g2o::LinearSolverEigen$<$ MatrixType $>$@{g2o::LinearSolverEigen$<$ MatrixType $>$}!\_init@{\_init}}
+\index{\_init@{\_init}!g2o::LinearSolverEigen$<$ MatrixType $>$@{g2o::LinearSolverEigen$<$ MatrixType $>$}}
+\doxysubsubsection{\texorpdfstring{\_init}{\_init}}
+{\footnotesize\ttfamily template$<$typename Matrix\+Type $>$ \\
+bool \mbox{\hyperlink{classg2o_1_1_linear_solver_eigen}{g2o\+::\+Linear\+Solver\+Eigen}}$<$ Matrix\+Type $>$\+::\+\_\+init\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classg2o_1_1_linear_solver_eigen_a39682995a9cf32dc79848281c6d4d9b9}\label{classg2o_1_1_linear_solver_eigen_a39682995a9cf32dc79848281c6d4d9b9}} 
+\index{g2o::LinearSolverEigen$<$ MatrixType $>$@{g2o::LinearSolverEigen$<$ MatrixType $>$}!\_sparseMatrix@{\_sparseMatrix}}
+\index{\_sparseMatrix@{\_sparseMatrix}!g2o::LinearSolverEigen$<$ MatrixType $>$@{g2o::LinearSolverEigen$<$ MatrixType $>$}}
+\doxysubsubsection{\texorpdfstring{\_sparseMatrix}{\_sparseMatrix}}
+{\footnotesize\ttfamily template$<$typename Matrix\+Type $>$ \\
+\mbox{\hyperlink{classg2o_1_1_linear_solver_eigen_aeb7e2400bed3a249b5f29ce7cc00cd33}{Sparse\+Matrix}} \mbox{\hyperlink{classg2o_1_1_linear_solver_eigen}{g2o\+::\+Linear\+Solver\+Eigen}}$<$ Matrix\+Type $>$\+::\+\_\+sparse\+Matrix\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classg2o_1_1_linear_solver_eigen_a2d331575853451fc94ca6f6420f0bdcb}\label{classg2o_1_1_linear_solver_eigen_a2d331575853451fc94ca6f6420f0bdcb}} 
+\index{g2o::LinearSolverEigen$<$ MatrixType $>$@{g2o::LinearSolverEigen$<$ MatrixType $>$}!\_writeDebug@{\_writeDebug}}
+\index{\_writeDebug@{\_writeDebug}!g2o::LinearSolverEigen$<$ MatrixType $>$@{g2o::LinearSolverEigen$<$ MatrixType $>$}}
+\doxysubsubsection{\texorpdfstring{\_writeDebug}{\_writeDebug}}
+{\footnotesize\ttfamily template$<$typename Matrix\+Type $>$ \\
+bool \mbox{\hyperlink{classg2o_1_1_linear_solver_eigen}{g2o\+::\+Linear\+Solver\+Eigen}}$<$ Matrix\+Type $>$\+::\+\_\+write\+Debug\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+orb\+\_\+slam2/\+Thirdparty/g2o/g2o/solvers/\mbox{\hyperlink{linear__solver__eigen_8h}{linear\+\_\+solver\+\_\+eigen.\+h}}\end{DoxyCompactItemize}

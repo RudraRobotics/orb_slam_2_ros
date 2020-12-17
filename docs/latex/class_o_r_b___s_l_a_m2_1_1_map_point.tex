@@ -1,0 +1,561 @@
+\hypertarget{class_o_r_b___s_l_a_m2_1_1_map_point}{}\doxysection{O\+R\+B\+\_\+\+S\+L\+A\+M2\+::Map\+Point Class Reference}
+\label{class_o_r_b___s_l_a_m2_1_1_map_point}\index{ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}}
+
+
+{\ttfamily \#include $<$Map\+Point.\+h$>$}
+
+
+
+Collaboration diagram for O\+R\+B\+\_\+\+S\+L\+A\+M2\+::Map\+Point\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_o_r_b___s_l_a_m2_1_1_map_point__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point_ae8b6d24a7f79cfd260502859cb5b6901}{Map\+Point}} (const cv\+::\+Mat \&Pos, \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame}{Key\+Frame}} $\ast$p\+Ref\+KF, \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map}{Map}} $\ast$p\+Map)
+\item 
+\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point_abbb2b679ea956845f315a69773618fa7}{Map\+Point}} (const cv\+::\+Mat \&Pos, \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map}{Map}} $\ast$p\+Map, \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_frame}{Frame}} $\ast$p\+Frame, const int \&idxF)
+\item 
+void \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point_ad65e6322e9d06314db235ff4d072509f}{Set\+World\+Pos}} (const cv\+::\+Mat \&Pos)
+\item 
+cv\+::\+Mat \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point_a0e59b21447d5d889b39ad2fcc1b1db49}{Get\+World\+Pos}} ()
+\item 
+cv\+::\+Mat \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point_af0198d242a96476faa52da0ede3c8f10}{Get\+Normal}} ()
+\item 
+\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame}{Key\+Frame}} $\ast$ \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point_a98f595f0421fd95e406d1de6f48e05f3}{Get\+Reference\+Key\+Frame}} ()
+\item 
+std\+::map$<$ \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame}{Key\+Frame}} $\ast$, size\+\_\+t $>$ \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point_ae91e056d3b79e08a3fadd976888f6b09}{Get\+Observations}} ()
+\item 
+int \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point_a7fbc2a95f49eb6facdc5d5fa35de3287}{Observations}} ()
+\item 
+void \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point_a37277ee3c7d8657976e749ab920bb13f}{Add\+Observation}} (\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame}{Key\+Frame}} $\ast$p\+KF, size\+\_\+t idx)
+\item 
+void \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point_a79e6a93ea0c39329a082f4f69560f1be}{Erase\+Observation}} (\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame}{Key\+Frame}} $\ast$p\+KF)
+\item 
+int \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point_afbe3f2cf7f4d5e4596fa9f7ff0d44470}{Get\+Index\+In\+Key\+Frame}} (\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame}{Key\+Frame}} $\ast$p\+KF)
+\item 
+bool \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point_a7a8c48a885598ba4da3b188791dfd009}{Is\+In\+Key\+Frame}} (\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame}{Key\+Frame}} $\ast$p\+KF)
+\item 
+void \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point_a7ed2a66b528165d6c39cb6f84f684308}{Set\+Bad\+Flag}} ()
+\item 
+bool \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point_a46bb6b57cd914c9ebad30007f3af469a}{is\+Bad}} ()
+\item 
+void \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point_a8f2e205afcfae3dc70196bcd29194440}{Replace}} (\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point}{Map\+Point}} $\ast$p\+MP)
+\item 
+\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point}{Map\+Point}} $\ast$ \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point_ad8814ed8121bd730c640c620ed623baf}{Get\+Replaced}} ()
+\item 
+void \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point_a0a234f5bd6bc19a9ea55fad0c9e6db5f}{Increase\+Visible}} (int n=1)
+\item 
+void \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point_aa097cd8cf993a54e999f297e05729392}{Increase\+Found}} (int n=1)
+\item 
+float \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point_ac1b7c69a2d9f6bd785d465380844ce10}{Get\+Found\+Ratio}} ()
+\item 
+int \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point_a0d081d56b0f398c52581b3e0eaa1cb15}{Get\+Found}} ()
+\item 
+void \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point_ab4c3dfd8f5f05a4b1888021f1fac3d84}{Compute\+Distinctive\+Descriptors}} ()
+\item 
+cv\+::\+Mat \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point_a8f9faa5b4cc513795485dcfb460ea3d0}{Get\+Descriptor}} ()
+\item 
+void \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point_ac5b8e4ec6a7737860af57058bdd16124}{Update\+Normal\+And\+Depth}} ()
+\item 
+float \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point_aac7224845c1d39016c50dcaacc0ebe40}{Get\+Min\+Distance\+Invariance}} ()
+\item 
+float \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point_abf921da31ee4d522181bb6b8d9149fff}{Get\+Max\+Distance\+Invariance}} ()
+\item 
+int \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point_aa0e884ba7dc5b85ddb5ccb64113a8594}{Predict\+Scale}} (const float \&current\+Dist, \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame}{Key\+Frame}} $\ast$p\+KF)
+\item 
+int \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point_af083bd50463ee191a1abb540bb40ea3d}{Predict\+Scale}} (const float \&current\+Dist, \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_frame}{Frame}} $\ast$pF)
+\item 
+\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point_a3d9788e9d5c47d86b0f614cde91e3a4f}{Map\+Point}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+long unsigned int \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point_afba2eb4d8400a0c822ee991ba445d9be}{mn\+Id}}
+\item 
+long int \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point_ae20735198e68c7ed4c0f0956322c8f7a}{mn\+First\+K\+Fid}}
+\item 
+long int \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point_a03c1f367dd43f384bcd066e9da65bb88}{mn\+First\+Frame}}
+\item 
+int \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point_a2653a4c69121627fcc5ae812b1809a28}{n\+Obs}}
+\item 
+float \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point_a7d735552c42630c00bca4c2094fbbbf3}{m\+Track\+ProjX}}
+\item 
+float \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point_a5ab59610931a5c2e14f502e8233571e4}{m\+Track\+ProjY}}
+\item 
+float \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point_a4f0a0671a3587e2aac0708eed07c5170}{m\+Track\+Proj\+XR}}
+\item 
+bool \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point_a0187350fa3fddd0bf89ccf354acb4766}{mb\+Track\+In\+View}}
+\item 
+int \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point_aac515bf003cea5f99737d13475c46816}{mn\+Track\+Scale\+Level}}
+\item 
+float \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point_a728107bc670ba47d79bad5ba288256d6}{m\+Track\+View\+Cos}}
+\item 
+long unsigned int \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point_a19152183cfddc71b63650175def6aec7}{mn\+Track\+Reference\+For\+Frame}}
+\item 
+long unsigned int \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point_aea3a63ce27fc39e536a6ceef7c1f3473}{mn\+Last\+Frame\+Seen}}
+\item 
+long unsigned int \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point_ad4da26d02aa54a3e0be6a09e90fa39ec}{mn\+B\+A\+Local\+For\+KF}}
+\item 
+long unsigned int \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point_aedba463c6440c2b448e9ec21acd58b9a}{mn\+Fuse\+Candidate\+For\+KF}}
+\item 
+long unsigned int \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point_a44172716cac5a56004a60d165de8cfa2}{mn\+Loop\+Point\+For\+KF}}
+\item 
+long unsigned int \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point_a86626462be01ad9a133dca0f5b49e688}{mn\+Corrected\+By\+KF}}
+\item 
+long unsigned int \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point_ade5858af14ed7924d48dbf191ea5448c}{mn\+Corrected\+Reference}}
+\item 
+cv\+::\+Mat \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point_a2669d92452bb1347a6a09700e369f049}{m\+Pos\+G\+BA}}
+\item 
+long unsigned int \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point_abcef580d7b3562ea9025ea1dc2141b92}{mn\+B\+A\+Global\+For\+KF}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static long unsigned int \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point_aa79702928d566db4fcd7716249bd96a2}{n\+Next\+Id}} =0
+\item 
+static std\+::mutex \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point_a58d0ed9067593833efa652ea671ebf62}{m\+Global\+Mutex}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+cv\+::\+Mat \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point_a39741adada8dcd302afbf45ec2e72af0}{m\+World\+Pos}}
+\item 
+std\+::map$<$ \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame}{Key\+Frame}} $\ast$, size\+\_\+t $>$ \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point_a189bea541f860af75ceb60300b59d8e3}{m\+Observations}}
+\item 
+cv\+::\+Mat \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point_aba0cff72e2182ff72d32edd77dc7832d}{m\+Normal\+Vector}}
+\item 
+cv\+::\+Mat \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point_ac2a05b8ddc806ecc6939f42d13828876}{m\+Descriptor}}
+\item 
+\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame}{Key\+Frame}} $\ast$ \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point_a27cc4fee44b1ae77b24a8c766c617058}{mp\+Ref\+KF}}
+\item 
+int \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point_aadb2c83e36dc01e47983f57e831bac7b}{mn\+Visible}}
+\item 
+int \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point_a1defea85441b8063ef9ebb47c9959289}{mn\+Found}}
+\item 
+bool \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point_aa8f2fc3c4b67c04e97162a5084e1dada}{mb\+Bad}}
+\item 
+\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point}{Map\+Point}} $\ast$ \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point_abf1fe1c8a41919e1890b70baa18bd2fb}{mp\+Replaced}}
+\item 
+float \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point_ac179383327d65067da6febe55cbfc32a}{mf\+Min\+Distance}}
+\item 
+float \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point_afc04bae1b7819dd158a572de56074f63}{mf\+Max\+Distance}}
+\item 
+\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map}{Map}} $\ast$ \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point_aad9ad02a540966d12b75460238290d90}{mp\+Map}}
+\item 
+std\+::mutex \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point_a592b97bed3453c0a599336fa848a8cef}{m\+Mutex\+Pos}}
+\item 
+std\+::mutex \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point_a3ab20d400977581ac45a109f5544ffda}{m\+Mutex\+Features}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point_ac98d07dd8f7b70e16ccb9a01abf56b9c}{boost\+::serialization\+::access}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_map_point_ae8b6d24a7f79cfd260502859cb5b6901}\label{class_o_r_b___s_l_a_m2_1_1_map_point_ae8b6d24a7f79cfd260502859cb5b6901}} 
+\index{ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}!MapPoint@{MapPoint}}
+\index{MapPoint@{MapPoint}!ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}}
+\doxysubsubsection{\texorpdfstring{MapPoint()}{MapPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Map\+Point\+::\+Map\+Point (\begin{DoxyParamCaption}\item[{const cv\+::\+Mat \&}]{Pos,  }\item[{\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame}{Key\+Frame}} $\ast$}]{p\+Ref\+KF,  }\item[{\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map}{Map}} $\ast$}]{p\+Map }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_map_point_abbb2b679ea956845f315a69773618fa7}\label{class_o_r_b___s_l_a_m2_1_1_map_point_abbb2b679ea956845f315a69773618fa7}} 
+\index{ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}!MapPoint@{MapPoint}}
+\index{MapPoint@{MapPoint}!ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}}
+\doxysubsubsection{\texorpdfstring{MapPoint()}{MapPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Map\+Point\+::\+Map\+Point (\begin{DoxyParamCaption}\item[{const cv\+::\+Mat \&}]{Pos,  }\item[{\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map}{Map}} $\ast$}]{p\+Map,  }\item[{\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_frame}{Frame}} $\ast$}]{p\+Frame,  }\item[{const int \&}]{idxF }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_map_point_a3d9788e9d5c47d86b0f614cde91e3a4f}\label{class_o_r_b___s_l_a_m2_1_1_map_point_a3d9788e9d5c47d86b0f614cde91e3a4f}} 
+\index{ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}!MapPoint@{MapPoint}}
+\index{MapPoint@{MapPoint}!ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}}
+\doxysubsubsection{\texorpdfstring{MapPoint()}{MapPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Map\+Point\+::\+Map\+Point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_map_point_a37277ee3c7d8657976e749ab920bb13f}\label{class_o_r_b___s_l_a_m2_1_1_map_point_a37277ee3c7d8657976e749ab920bb13f}} 
+\index{ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}!AddObservation@{AddObservation}}
+\index{AddObservation@{AddObservation}!ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}}
+\doxysubsubsection{\texorpdfstring{AddObservation()}{AddObservation()}}
+{\footnotesize\ttfamily void O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Map\+Point\+::\+Add\+Observation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame}{Key\+Frame}} $\ast$}]{p\+KF,  }\item[{size\+\_\+t}]{idx }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_map_point_ab4c3dfd8f5f05a4b1888021f1fac3d84}\label{class_o_r_b___s_l_a_m2_1_1_map_point_ab4c3dfd8f5f05a4b1888021f1fac3d84}} 
+\index{ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}!ComputeDistinctiveDescriptors@{ComputeDistinctiveDescriptors}}
+\index{ComputeDistinctiveDescriptors@{ComputeDistinctiveDescriptors}!ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}}
+\doxysubsubsection{\texorpdfstring{ComputeDistinctiveDescriptors()}{ComputeDistinctiveDescriptors()}}
+{\footnotesize\ttfamily void O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Map\+Point\+::\+Compute\+Distinctive\+Descriptors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_map_point_a79e6a93ea0c39329a082f4f69560f1be}\label{class_o_r_b___s_l_a_m2_1_1_map_point_a79e6a93ea0c39329a082f4f69560f1be}} 
+\index{ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}!EraseObservation@{EraseObservation}}
+\index{EraseObservation@{EraseObservation}!ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}}
+\doxysubsubsection{\texorpdfstring{EraseObservation()}{EraseObservation()}}
+{\footnotesize\ttfamily void O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Map\+Point\+::\+Erase\+Observation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame}{Key\+Frame}} $\ast$}]{p\+KF }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_map_point_a8f9faa5b4cc513795485dcfb460ea3d0}\label{class_o_r_b___s_l_a_m2_1_1_map_point_a8f9faa5b4cc513795485dcfb460ea3d0}} 
+\index{ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}!GetDescriptor@{GetDescriptor}}
+\index{GetDescriptor@{GetDescriptor}!ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}}
+\doxysubsubsection{\texorpdfstring{GetDescriptor()}{GetDescriptor()}}
+{\footnotesize\ttfamily cv\+::\+Mat O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Map\+Point\+::\+Get\+Descriptor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_map_point_a0d081d56b0f398c52581b3e0eaa1cb15}\label{class_o_r_b___s_l_a_m2_1_1_map_point_a0d081d56b0f398c52581b3e0eaa1cb15}} 
+\index{ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}!GetFound@{GetFound}}
+\index{GetFound@{GetFound}!ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}}
+\doxysubsubsection{\texorpdfstring{GetFound()}{GetFound()}}
+{\footnotesize\ttfamily int O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Map\+Point\+::\+Get\+Found (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_map_point_ac1b7c69a2d9f6bd785d465380844ce10}\label{class_o_r_b___s_l_a_m2_1_1_map_point_ac1b7c69a2d9f6bd785d465380844ce10}} 
+\index{ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}!GetFoundRatio@{GetFoundRatio}}
+\index{GetFoundRatio@{GetFoundRatio}!ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}}
+\doxysubsubsection{\texorpdfstring{GetFoundRatio()}{GetFoundRatio()}}
+{\footnotesize\ttfamily float O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Map\+Point\+::\+Get\+Found\+Ratio (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_map_point_afbe3f2cf7f4d5e4596fa9f7ff0d44470}\label{class_o_r_b___s_l_a_m2_1_1_map_point_afbe3f2cf7f4d5e4596fa9f7ff0d44470}} 
+\index{ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}!GetIndexInKeyFrame@{GetIndexInKeyFrame}}
+\index{GetIndexInKeyFrame@{GetIndexInKeyFrame}!ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}}
+\doxysubsubsection{\texorpdfstring{GetIndexInKeyFrame()}{GetIndexInKeyFrame()}}
+{\footnotesize\ttfamily int O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Map\+Point\+::\+Get\+Index\+In\+Key\+Frame (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame}{Key\+Frame}} $\ast$}]{p\+KF }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_map_point_abf921da31ee4d522181bb6b8d9149fff}\label{class_o_r_b___s_l_a_m2_1_1_map_point_abf921da31ee4d522181bb6b8d9149fff}} 
+\index{ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}!GetMaxDistanceInvariance@{GetMaxDistanceInvariance}}
+\index{GetMaxDistanceInvariance@{GetMaxDistanceInvariance}!ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}}
+\doxysubsubsection{\texorpdfstring{GetMaxDistanceInvariance()}{GetMaxDistanceInvariance()}}
+{\footnotesize\ttfamily float O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Map\+Point\+::\+Get\+Max\+Distance\+Invariance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_map_point_aac7224845c1d39016c50dcaacc0ebe40}\label{class_o_r_b___s_l_a_m2_1_1_map_point_aac7224845c1d39016c50dcaacc0ebe40}} 
+\index{ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}!GetMinDistanceInvariance@{GetMinDistanceInvariance}}
+\index{GetMinDistanceInvariance@{GetMinDistanceInvariance}!ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}}
+\doxysubsubsection{\texorpdfstring{GetMinDistanceInvariance()}{GetMinDistanceInvariance()}}
+{\footnotesize\ttfamily float O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Map\+Point\+::\+Get\+Min\+Distance\+Invariance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_map_point_af0198d242a96476faa52da0ede3c8f10}\label{class_o_r_b___s_l_a_m2_1_1_map_point_af0198d242a96476faa52da0ede3c8f10}} 
+\index{ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}!GetNormal@{GetNormal}}
+\index{GetNormal@{GetNormal}!ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}}
+\doxysubsubsection{\texorpdfstring{GetNormal()}{GetNormal()}}
+{\footnotesize\ttfamily cv\+::\+Mat O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Map\+Point\+::\+Get\+Normal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_map_point_ae91e056d3b79e08a3fadd976888f6b09}\label{class_o_r_b___s_l_a_m2_1_1_map_point_ae91e056d3b79e08a3fadd976888f6b09}} 
+\index{ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}!GetObservations@{GetObservations}}
+\index{GetObservations@{GetObservations}!ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}}
+\doxysubsubsection{\texorpdfstring{GetObservations()}{GetObservations()}}
+{\footnotesize\ttfamily map$<$ \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame}{Key\+Frame}} $\ast$, size\+\_\+t $>$ O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Map\+Point\+::\+Get\+Observations (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_map_point_a98f595f0421fd95e406d1de6f48e05f3}\label{class_o_r_b___s_l_a_m2_1_1_map_point_a98f595f0421fd95e406d1de6f48e05f3}} 
+\index{ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}!GetReferenceKeyFrame@{GetReferenceKeyFrame}}
+\index{GetReferenceKeyFrame@{GetReferenceKeyFrame}!ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}}
+\doxysubsubsection{\texorpdfstring{GetReferenceKeyFrame()}{GetReferenceKeyFrame()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame}{Key\+Frame}} $\ast$ O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Map\+Point\+::\+Get\+Reference\+Key\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_map_point_ad8814ed8121bd730c640c620ed623baf}\label{class_o_r_b___s_l_a_m2_1_1_map_point_ad8814ed8121bd730c640c620ed623baf}} 
+\index{ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}!GetReplaced@{GetReplaced}}
+\index{GetReplaced@{GetReplaced}!ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}}
+\doxysubsubsection{\texorpdfstring{GetReplaced()}{GetReplaced()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point}{Map\+Point}} $\ast$ O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Map\+Point\+::\+Get\+Replaced (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_map_point_a0e59b21447d5d889b39ad2fcc1b1db49}\label{class_o_r_b___s_l_a_m2_1_1_map_point_a0e59b21447d5d889b39ad2fcc1b1db49}} 
+\index{ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}!GetWorldPos@{GetWorldPos}}
+\index{GetWorldPos@{GetWorldPos}!ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}}
+\doxysubsubsection{\texorpdfstring{GetWorldPos()}{GetWorldPos()}}
+{\footnotesize\ttfamily cv\+::\+Mat O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Map\+Point\+::\+Get\+World\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_map_point_aa097cd8cf993a54e999f297e05729392}\label{class_o_r_b___s_l_a_m2_1_1_map_point_aa097cd8cf993a54e999f297e05729392}} 
+\index{ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}!IncreaseFound@{IncreaseFound}}
+\index{IncreaseFound@{IncreaseFound}!ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}}
+\doxysubsubsection{\texorpdfstring{IncreaseFound()}{IncreaseFound()}}
+{\footnotesize\ttfamily void O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Map\+Point\+::\+Increase\+Found (\begin{DoxyParamCaption}\item[{int}]{n = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_map_point_a0a234f5bd6bc19a9ea55fad0c9e6db5f}\label{class_o_r_b___s_l_a_m2_1_1_map_point_a0a234f5bd6bc19a9ea55fad0c9e6db5f}} 
+\index{ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}!IncreaseVisible@{IncreaseVisible}}
+\index{IncreaseVisible@{IncreaseVisible}!ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}}
+\doxysubsubsection{\texorpdfstring{IncreaseVisible()}{IncreaseVisible()}}
+{\footnotesize\ttfamily void O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Map\+Point\+::\+Increase\+Visible (\begin{DoxyParamCaption}\item[{int}]{n = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_map_point_a46bb6b57cd914c9ebad30007f3af469a}\label{class_o_r_b___s_l_a_m2_1_1_map_point_a46bb6b57cd914c9ebad30007f3af469a}} 
+\index{ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}!isBad@{isBad}}
+\index{isBad@{isBad}!ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}}
+\doxysubsubsection{\texorpdfstring{isBad()}{isBad()}}
+{\footnotesize\ttfamily bool O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Map\+Point\+::is\+Bad (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_map_point_a7a8c48a885598ba4da3b188791dfd009}\label{class_o_r_b___s_l_a_m2_1_1_map_point_a7a8c48a885598ba4da3b188791dfd009}} 
+\index{ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}!IsInKeyFrame@{IsInKeyFrame}}
+\index{IsInKeyFrame@{IsInKeyFrame}!ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}}
+\doxysubsubsection{\texorpdfstring{IsInKeyFrame()}{IsInKeyFrame()}}
+{\footnotesize\ttfamily bool O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Map\+Point\+::\+Is\+In\+Key\+Frame (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame}{Key\+Frame}} $\ast$}]{p\+KF }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_map_point_a7fbc2a95f49eb6facdc5d5fa35de3287}\label{class_o_r_b___s_l_a_m2_1_1_map_point_a7fbc2a95f49eb6facdc5d5fa35de3287}} 
+\index{ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}!Observations@{Observations}}
+\index{Observations@{Observations}!ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}}
+\doxysubsubsection{\texorpdfstring{Observations()}{Observations()}}
+{\footnotesize\ttfamily int O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Map\+Point\+::\+Observations (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_map_point_af083bd50463ee191a1abb540bb40ea3d}\label{class_o_r_b___s_l_a_m2_1_1_map_point_af083bd50463ee191a1abb540bb40ea3d}} 
+\index{ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}!PredictScale@{PredictScale}}
+\index{PredictScale@{PredictScale}!ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}}
+\doxysubsubsection{\texorpdfstring{PredictScale()}{PredictScale()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Map\+Point\+::\+Predict\+Scale (\begin{DoxyParamCaption}\item[{const float \&}]{current\+Dist,  }\item[{\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_frame}{Frame}} $\ast$}]{pF }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_map_point_aa0e884ba7dc5b85ddb5ccb64113a8594}\label{class_o_r_b___s_l_a_m2_1_1_map_point_aa0e884ba7dc5b85ddb5ccb64113a8594}} 
+\index{ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}!PredictScale@{PredictScale}}
+\index{PredictScale@{PredictScale}!ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}}
+\doxysubsubsection{\texorpdfstring{PredictScale()}{PredictScale()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Map\+Point\+::\+Predict\+Scale (\begin{DoxyParamCaption}\item[{const float \&}]{current\+Dist,  }\item[{\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame}{Key\+Frame}} $\ast$}]{p\+KF }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_map_point_a8f2e205afcfae3dc70196bcd29194440}\label{class_o_r_b___s_l_a_m2_1_1_map_point_a8f2e205afcfae3dc70196bcd29194440}} 
+\index{ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}!Replace@{Replace}}
+\index{Replace@{Replace}!ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}}
+\doxysubsubsection{\texorpdfstring{Replace()}{Replace()}}
+{\footnotesize\ttfamily void O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Map\+Point\+::\+Replace (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point}{Map\+Point}} $\ast$}]{p\+MP }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_map_point_a7ed2a66b528165d6c39cb6f84f684308}\label{class_o_r_b___s_l_a_m2_1_1_map_point_a7ed2a66b528165d6c39cb6f84f684308}} 
+\index{ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}!SetBadFlag@{SetBadFlag}}
+\index{SetBadFlag@{SetBadFlag}!ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}}
+\doxysubsubsection{\texorpdfstring{SetBadFlag()}{SetBadFlag()}}
+{\footnotesize\ttfamily void O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Map\+Point\+::\+Set\+Bad\+Flag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_map_point_ad65e6322e9d06314db235ff4d072509f}\label{class_o_r_b___s_l_a_m2_1_1_map_point_ad65e6322e9d06314db235ff4d072509f}} 
+\index{ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}!SetWorldPos@{SetWorldPos}}
+\index{SetWorldPos@{SetWorldPos}!ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}}
+\doxysubsubsection{\texorpdfstring{SetWorldPos()}{SetWorldPos()}}
+{\footnotesize\ttfamily void O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Map\+Point\+::\+Set\+World\+Pos (\begin{DoxyParamCaption}\item[{const cv\+::\+Mat \&}]{Pos }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_map_point_ac5b8e4ec6a7737860af57058bdd16124}\label{class_o_r_b___s_l_a_m2_1_1_map_point_ac5b8e4ec6a7737860af57058bdd16124}} 
+\index{ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}!UpdateNormalAndDepth@{UpdateNormalAndDepth}}
+\index{UpdateNormalAndDepth@{UpdateNormalAndDepth}!ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}}
+\doxysubsubsection{\texorpdfstring{UpdateNormalAndDepth()}{UpdateNormalAndDepth()}}
+{\footnotesize\ttfamily void O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Map\+Point\+::\+Update\+Normal\+And\+Depth (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_map_point_ac98d07dd8f7b70e16ccb9a01abf56b9c}\label{class_o_r_b___s_l_a_m2_1_1_map_point_ac98d07dd8f7b70e16ccb9a01abf56b9c}} 
+\index{ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}!boost::serialization::access@{boost::serialization::access}}
+\index{boost::serialization::access@{boost::serialization::access}!ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}}
+\doxysubsubsection{\texorpdfstring{boost::serialization::access}{boost::serialization::access}}
+{\footnotesize\ttfamily friend class boost\+::serialization\+::access\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_map_point_aa8f2fc3c4b67c04e97162a5084e1dada}\label{class_o_r_b___s_l_a_m2_1_1_map_point_aa8f2fc3c4b67c04e97162a5084e1dada}} 
+\index{ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}!mbBad@{mbBad}}
+\index{mbBad@{mbBad}!ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}}
+\doxysubsubsection{\texorpdfstring{mbBad}{mbBad}}
+{\footnotesize\ttfamily bool O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Map\+Point\+::mb\+Bad\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_map_point_a0187350fa3fddd0bf89ccf354acb4766}\label{class_o_r_b___s_l_a_m2_1_1_map_point_a0187350fa3fddd0bf89ccf354acb4766}} 
+\index{ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}!mbTrackInView@{mbTrackInView}}
+\index{mbTrackInView@{mbTrackInView}!ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}}
+\doxysubsubsection{\texorpdfstring{mbTrackInView}{mbTrackInView}}
+{\footnotesize\ttfamily bool O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Map\+Point\+::mb\+Track\+In\+View}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_map_point_ac2a05b8ddc806ecc6939f42d13828876}\label{class_o_r_b___s_l_a_m2_1_1_map_point_ac2a05b8ddc806ecc6939f42d13828876}} 
+\index{ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}!mDescriptor@{mDescriptor}}
+\index{mDescriptor@{mDescriptor}!ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}}
+\doxysubsubsection{\texorpdfstring{mDescriptor}{mDescriptor}}
+{\footnotesize\ttfamily cv\+::\+Mat O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Map\+Point\+::m\+Descriptor\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_map_point_afc04bae1b7819dd158a572de56074f63}\label{class_o_r_b___s_l_a_m2_1_1_map_point_afc04bae1b7819dd158a572de56074f63}} 
+\index{ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}!mfMaxDistance@{mfMaxDistance}}
+\index{mfMaxDistance@{mfMaxDistance}!ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}}
+\doxysubsubsection{\texorpdfstring{mfMaxDistance}{mfMaxDistance}}
+{\footnotesize\ttfamily float O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Map\+Point\+::mf\+Max\+Distance\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_map_point_ac179383327d65067da6febe55cbfc32a}\label{class_o_r_b___s_l_a_m2_1_1_map_point_ac179383327d65067da6febe55cbfc32a}} 
+\index{ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}!mfMinDistance@{mfMinDistance}}
+\index{mfMinDistance@{mfMinDistance}!ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}}
+\doxysubsubsection{\texorpdfstring{mfMinDistance}{mfMinDistance}}
+{\footnotesize\ttfamily float O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Map\+Point\+::mf\+Min\+Distance\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_map_point_a58d0ed9067593833efa652ea671ebf62}\label{class_o_r_b___s_l_a_m2_1_1_map_point_a58d0ed9067593833efa652ea671ebf62}} 
+\index{ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}!mGlobalMutex@{mGlobalMutex}}
+\index{mGlobalMutex@{mGlobalMutex}!ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}}
+\doxysubsubsection{\texorpdfstring{mGlobalMutex}{mGlobalMutex}}
+{\footnotesize\ttfamily mutex O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Map\+Point\+::m\+Global\+Mutex\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_map_point_a3ab20d400977581ac45a109f5544ffda}\label{class_o_r_b___s_l_a_m2_1_1_map_point_a3ab20d400977581ac45a109f5544ffda}} 
+\index{ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}!mMutexFeatures@{mMutexFeatures}}
+\index{mMutexFeatures@{mMutexFeatures}!ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}}
+\doxysubsubsection{\texorpdfstring{mMutexFeatures}{mMutexFeatures}}
+{\footnotesize\ttfamily std\+::mutex O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Map\+Point\+::m\+Mutex\+Features\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_map_point_a592b97bed3453c0a599336fa848a8cef}\label{class_o_r_b___s_l_a_m2_1_1_map_point_a592b97bed3453c0a599336fa848a8cef}} 
+\index{ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}!mMutexPos@{mMutexPos}}
+\index{mMutexPos@{mMutexPos}!ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}}
+\doxysubsubsection{\texorpdfstring{mMutexPos}{mMutexPos}}
+{\footnotesize\ttfamily std\+::mutex O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Map\+Point\+::m\+Mutex\+Pos\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_map_point_abcef580d7b3562ea9025ea1dc2141b92}\label{class_o_r_b___s_l_a_m2_1_1_map_point_abcef580d7b3562ea9025ea1dc2141b92}} 
+\index{ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}!mnBAGlobalForKF@{mnBAGlobalForKF}}
+\index{mnBAGlobalForKF@{mnBAGlobalForKF}!ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}}
+\doxysubsubsection{\texorpdfstring{mnBAGlobalForKF}{mnBAGlobalForKF}}
+{\footnotesize\ttfamily long unsigned int O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Map\+Point\+::mn\+B\+A\+Global\+For\+KF}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_map_point_ad4da26d02aa54a3e0be6a09e90fa39ec}\label{class_o_r_b___s_l_a_m2_1_1_map_point_ad4da26d02aa54a3e0be6a09e90fa39ec}} 
+\index{ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}!mnBALocalForKF@{mnBALocalForKF}}
+\index{mnBALocalForKF@{mnBALocalForKF}!ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}}
+\doxysubsubsection{\texorpdfstring{mnBALocalForKF}{mnBALocalForKF}}
+{\footnotesize\ttfamily long unsigned int O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Map\+Point\+::mn\+B\+A\+Local\+For\+KF}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_map_point_a86626462be01ad9a133dca0f5b49e688}\label{class_o_r_b___s_l_a_m2_1_1_map_point_a86626462be01ad9a133dca0f5b49e688}} 
+\index{ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}!mnCorrectedByKF@{mnCorrectedByKF}}
+\index{mnCorrectedByKF@{mnCorrectedByKF}!ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}}
+\doxysubsubsection{\texorpdfstring{mnCorrectedByKF}{mnCorrectedByKF}}
+{\footnotesize\ttfamily long unsigned int O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Map\+Point\+::mn\+Corrected\+By\+KF}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_map_point_ade5858af14ed7924d48dbf191ea5448c}\label{class_o_r_b___s_l_a_m2_1_1_map_point_ade5858af14ed7924d48dbf191ea5448c}} 
+\index{ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}!mnCorrectedReference@{mnCorrectedReference}}
+\index{mnCorrectedReference@{mnCorrectedReference}!ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}}
+\doxysubsubsection{\texorpdfstring{mnCorrectedReference}{mnCorrectedReference}}
+{\footnotesize\ttfamily long unsigned int O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Map\+Point\+::mn\+Corrected\+Reference}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_map_point_a03c1f367dd43f384bcd066e9da65bb88}\label{class_o_r_b___s_l_a_m2_1_1_map_point_a03c1f367dd43f384bcd066e9da65bb88}} 
+\index{ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}!mnFirstFrame@{mnFirstFrame}}
+\index{mnFirstFrame@{mnFirstFrame}!ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}}
+\doxysubsubsection{\texorpdfstring{mnFirstFrame}{mnFirstFrame}}
+{\footnotesize\ttfamily long int O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Map\+Point\+::mn\+First\+Frame}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_map_point_ae20735198e68c7ed4c0f0956322c8f7a}\label{class_o_r_b___s_l_a_m2_1_1_map_point_ae20735198e68c7ed4c0f0956322c8f7a}} 
+\index{ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}!mnFirstKFid@{mnFirstKFid}}
+\index{mnFirstKFid@{mnFirstKFid}!ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}}
+\doxysubsubsection{\texorpdfstring{mnFirstKFid}{mnFirstKFid}}
+{\footnotesize\ttfamily long int O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Map\+Point\+::mn\+First\+K\+Fid}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_map_point_a1defea85441b8063ef9ebb47c9959289}\label{class_o_r_b___s_l_a_m2_1_1_map_point_a1defea85441b8063ef9ebb47c9959289}} 
+\index{ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}!mnFound@{mnFound}}
+\index{mnFound@{mnFound}!ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}}
+\doxysubsubsection{\texorpdfstring{mnFound}{mnFound}}
+{\footnotesize\ttfamily int O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Map\+Point\+::mn\+Found\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_map_point_aedba463c6440c2b448e9ec21acd58b9a}\label{class_o_r_b___s_l_a_m2_1_1_map_point_aedba463c6440c2b448e9ec21acd58b9a}} 
+\index{ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}!mnFuseCandidateForKF@{mnFuseCandidateForKF}}
+\index{mnFuseCandidateForKF@{mnFuseCandidateForKF}!ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}}
+\doxysubsubsection{\texorpdfstring{mnFuseCandidateForKF}{mnFuseCandidateForKF}}
+{\footnotesize\ttfamily long unsigned int O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Map\+Point\+::mn\+Fuse\+Candidate\+For\+KF}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_map_point_afba2eb4d8400a0c822ee991ba445d9be}\label{class_o_r_b___s_l_a_m2_1_1_map_point_afba2eb4d8400a0c822ee991ba445d9be}} 
+\index{ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}!mnId@{mnId}}
+\index{mnId@{mnId}!ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}}
+\doxysubsubsection{\texorpdfstring{mnId}{mnId}}
+{\footnotesize\ttfamily long unsigned int O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Map\+Point\+::mn\+Id}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_map_point_aea3a63ce27fc39e536a6ceef7c1f3473}\label{class_o_r_b___s_l_a_m2_1_1_map_point_aea3a63ce27fc39e536a6ceef7c1f3473}} 
+\index{ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}!mnLastFrameSeen@{mnLastFrameSeen}}
+\index{mnLastFrameSeen@{mnLastFrameSeen}!ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}}
+\doxysubsubsection{\texorpdfstring{mnLastFrameSeen}{mnLastFrameSeen}}
+{\footnotesize\ttfamily long unsigned int O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Map\+Point\+::mn\+Last\+Frame\+Seen}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_map_point_a44172716cac5a56004a60d165de8cfa2}\label{class_o_r_b___s_l_a_m2_1_1_map_point_a44172716cac5a56004a60d165de8cfa2}} 
+\index{ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}!mnLoopPointForKF@{mnLoopPointForKF}}
+\index{mnLoopPointForKF@{mnLoopPointForKF}!ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}}
+\doxysubsubsection{\texorpdfstring{mnLoopPointForKF}{mnLoopPointForKF}}
+{\footnotesize\ttfamily long unsigned int O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Map\+Point\+::mn\+Loop\+Point\+For\+KF}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_map_point_aba0cff72e2182ff72d32edd77dc7832d}\label{class_o_r_b___s_l_a_m2_1_1_map_point_aba0cff72e2182ff72d32edd77dc7832d}} 
+\index{ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}!mNormalVector@{mNormalVector}}
+\index{mNormalVector@{mNormalVector}!ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}}
+\doxysubsubsection{\texorpdfstring{mNormalVector}{mNormalVector}}
+{\footnotesize\ttfamily cv\+::\+Mat O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Map\+Point\+::m\+Normal\+Vector\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_map_point_a19152183cfddc71b63650175def6aec7}\label{class_o_r_b___s_l_a_m2_1_1_map_point_a19152183cfddc71b63650175def6aec7}} 
+\index{ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}!mnTrackReferenceForFrame@{mnTrackReferenceForFrame}}
+\index{mnTrackReferenceForFrame@{mnTrackReferenceForFrame}!ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}}
+\doxysubsubsection{\texorpdfstring{mnTrackReferenceForFrame}{mnTrackReferenceForFrame}}
+{\footnotesize\ttfamily long unsigned int O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Map\+Point\+::mn\+Track\+Reference\+For\+Frame}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_map_point_aac515bf003cea5f99737d13475c46816}\label{class_o_r_b___s_l_a_m2_1_1_map_point_aac515bf003cea5f99737d13475c46816}} 
+\index{ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}!mnTrackScaleLevel@{mnTrackScaleLevel}}
+\index{mnTrackScaleLevel@{mnTrackScaleLevel}!ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}}
+\doxysubsubsection{\texorpdfstring{mnTrackScaleLevel}{mnTrackScaleLevel}}
+{\footnotesize\ttfamily int O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Map\+Point\+::mn\+Track\+Scale\+Level}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_map_point_aadb2c83e36dc01e47983f57e831bac7b}\label{class_o_r_b___s_l_a_m2_1_1_map_point_aadb2c83e36dc01e47983f57e831bac7b}} 
+\index{ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}!mnVisible@{mnVisible}}
+\index{mnVisible@{mnVisible}!ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}}
+\doxysubsubsection{\texorpdfstring{mnVisible}{mnVisible}}
+{\footnotesize\ttfamily int O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Map\+Point\+::mn\+Visible\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_map_point_a189bea541f860af75ceb60300b59d8e3}\label{class_o_r_b___s_l_a_m2_1_1_map_point_a189bea541f860af75ceb60300b59d8e3}} 
+\index{ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}!mObservations@{mObservations}}
+\index{mObservations@{mObservations}!ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}}
+\doxysubsubsection{\texorpdfstring{mObservations}{mObservations}}
+{\footnotesize\ttfamily std\+::map$<$\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame}{Key\+Frame}}$\ast$,size\+\_\+t$>$ O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Map\+Point\+::m\+Observations\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_map_point_aad9ad02a540966d12b75460238290d90}\label{class_o_r_b___s_l_a_m2_1_1_map_point_aad9ad02a540966d12b75460238290d90}} 
+\index{ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}!mpMap@{mpMap}}
+\index{mpMap@{mpMap}!ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}}
+\doxysubsubsection{\texorpdfstring{mpMap}{mpMap}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map}{Map}}$\ast$ O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Map\+Point\+::mp\+Map\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_map_point_a2669d92452bb1347a6a09700e369f049}\label{class_o_r_b___s_l_a_m2_1_1_map_point_a2669d92452bb1347a6a09700e369f049}} 
+\index{ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}!mPosGBA@{mPosGBA}}
+\index{mPosGBA@{mPosGBA}!ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}}
+\doxysubsubsection{\texorpdfstring{mPosGBA}{mPosGBA}}
+{\footnotesize\ttfamily cv\+::\+Mat O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Map\+Point\+::m\+Pos\+G\+BA}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_map_point_a27cc4fee44b1ae77b24a8c766c617058}\label{class_o_r_b___s_l_a_m2_1_1_map_point_a27cc4fee44b1ae77b24a8c766c617058}} 
+\index{ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}!mpRefKF@{mpRefKF}}
+\index{mpRefKF@{mpRefKF}!ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}}
+\doxysubsubsection{\texorpdfstring{mpRefKF}{mpRefKF}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame}{Key\+Frame}}$\ast$ O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Map\+Point\+::mp\+Ref\+KF\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_map_point_abf1fe1c8a41919e1890b70baa18bd2fb}\label{class_o_r_b___s_l_a_m2_1_1_map_point_abf1fe1c8a41919e1890b70baa18bd2fb}} 
+\index{ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}!mpReplaced@{mpReplaced}}
+\index{mpReplaced@{mpReplaced}!ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}}
+\doxysubsubsection{\texorpdfstring{mpReplaced}{mpReplaced}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_map_point}{Map\+Point}}$\ast$ O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Map\+Point\+::mp\+Replaced\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_map_point_a7d735552c42630c00bca4c2094fbbbf3}\label{class_o_r_b___s_l_a_m2_1_1_map_point_a7d735552c42630c00bca4c2094fbbbf3}} 
+\index{ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}!mTrackProjX@{mTrackProjX}}
+\index{mTrackProjX@{mTrackProjX}!ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}}
+\doxysubsubsection{\texorpdfstring{mTrackProjX}{mTrackProjX}}
+{\footnotesize\ttfamily float O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Map\+Point\+::m\+Track\+ProjX}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_map_point_a4f0a0671a3587e2aac0708eed07c5170}\label{class_o_r_b___s_l_a_m2_1_1_map_point_a4f0a0671a3587e2aac0708eed07c5170}} 
+\index{ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}!mTrackProjXR@{mTrackProjXR}}
+\index{mTrackProjXR@{mTrackProjXR}!ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}}
+\doxysubsubsection{\texorpdfstring{mTrackProjXR}{mTrackProjXR}}
+{\footnotesize\ttfamily float O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Map\+Point\+::m\+Track\+Proj\+XR}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_map_point_a5ab59610931a5c2e14f502e8233571e4}\label{class_o_r_b___s_l_a_m2_1_1_map_point_a5ab59610931a5c2e14f502e8233571e4}} 
+\index{ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}!mTrackProjY@{mTrackProjY}}
+\index{mTrackProjY@{mTrackProjY}!ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}}
+\doxysubsubsection{\texorpdfstring{mTrackProjY}{mTrackProjY}}
+{\footnotesize\ttfamily float O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Map\+Point\+::m\+Track\+ProjY}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_map_point_a728107bc670ba47d79bad5ba288256d6}\label{class_o_r_b___s_l_a_m2_1_1_map_point_a728107bc670ba47d79bad5ba288256d6}} 
+\index{ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}!mTrackViewCos@{mTrackViewCos}}
+\index{mTrackViewCos@{mTrackViewCos}!ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}}
+\doxysubsubsection{\texorpdfstring{mTrackViewCos}{mTrackViewCos}}
+{\footnotesize\ttfamily float O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Map\+Point\+::m\+Track\+View\+Cos}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_map_point_a39741adada8dcd302afbf45ec2e72af0}\label{class_o_r_b___s_l_a_m2_1_1_map_point_a39741adada8dcd302afbf45ec2e72af0}} 
+\index{ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}!mWorldPos@{mWorldPos}}
+\index{mWorldPos@{mWorldPos}!ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}}
+\doxysubsubsection{\texorpdfstring{mWorldPos}{mWorldPos}}
+{\footnotesize\ttfamily cv\+::\+Mat O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Map\+Point\+::m\+World\+Pos\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_map_point_aa79702928d566db4fcd7716249bd96a2}\label{class_o_r_b___s_l_a_m2_1_1_map_point_aa79702928d566db4fcd7716249bd96a2}} 
+\index{ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}!nNextId@{nNextId}}
+\index{nNextId@{nNextId}!ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}}
+\doxysubsubsection{\texorpdfstring{nNextId}{nNextId}}
+{\footnotesize\ttfamily long unsigned int O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Map\+Point\+::n\+Next\+Id =0\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_map_point_a2653a4c69121627fcc5ae812b1809a28}\label{class_o_r_b___s_l_a_m2_1_1_map_point_a2653a4c69121627fcc5ae812b1809a28}} 
+\index{ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}!nObs@{nObs}}
+\index{nObs@{nObs}!ORB\_SLAM2::MapPoint@{ORB\_SLAM2::MapPoint}}
+\doxysubsubsection{\texorpdfstring{nObs}{nObs}}
+{\footnotesize\ttfamily int O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Map\+Point\+::n\+Obs}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+orb\+\_\+slam2/include/\mbox{\hyperlink{_map_point_8h}{Map\+Point.\+h}}\item 
+orb\+\_\+slam2/src/\mbox{\hyperlink{_map_point_8cc}{Map\+Point.\+cc}}\end{DoxyCompactItemize}

@@ -1,0 +1,11 @@
+<map id="orb_slam2/Thirdparty/g2o/g2o/core/optimization_algorithm_with_hessian.h" name="orb_slam2/Thirdparty/g2o/g2o/core/optimization_algorithm_with_hessian.h">
+<area shape="rect" id="node1" title=" " alt="" coords="352,5,548,61"/>
+<area shape="rect" id="node2" href="$optimization__algorithm__dogleg_8h.html" title=" " alt="" coords="12,109,208,165"/>
+<area shape="rect" id="node4" href="$optimization__algorithm__gauss__newton_8h.html" title=" " alt="" coords="236,109,440,165"/>
+<area shape="rect" id="node6" href="$optimization__algorithm__levenberg_8h.html" title=" " alt="" coords="468,109,664,165"/>
+<area shape="rect" id="node9" href="$optimization__algorithm__with__hessian_8cpp.html" title=" " alt="" coords="689,109,899,165"/>
+<area shape="rect" id="node3" href="$optimization__algorithm__dogleg_8cpp.html" title=" " alt="" coords="5,213,201,269"/>
+<area shape="rect" id="node5" href="$optimization__algorithm__gauss__newton_8cpp.html" title=" " alt="" coords="226,213,445,269"/>
+<area shape="rect" id="node7" href="$_optimizer_8cc.html" title=" " alt="" coords="469,228,668,255"/>
+<area shape="rect" id="node8" href="$optimization__algorithm__levenberg_8cpp.html" title=" " alt="" coords="692,213,888,269"/>
+</map>

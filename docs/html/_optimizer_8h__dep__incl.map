@@ -1,0 +1,8 @@
+<map id="orb_slam2/include/Optimizer.h" name="orb_slam2/include/Optimizer.h">
+<area shape="rect" id="node1" title=" " alt="" coords="471,5,693,32"/>
+<area shape="rect" id="node2" href="$_initializer_8cc.html" title=" " alt="" coords="5,80,201,107"/>
+<area shape="rect" id="node3" href="$_local_mapping_8cc.html" title=" " alt="" coords="225,80,451,107"/>
+<area shape="rect" id="node4" href="$_loop_closing_8cc.html" title=" " alt="" coords="475,80,689,107"/>
+<area shape="rect" id="node5" href="$_optimizer_8cc.html" title=" " alt="" coords="713,80,912,107"/>
+<area shape="rect" id="node6" href="$_tracking_8cc.html" title=" " alt="" coords="936,80,1127,107"/>
+</map>

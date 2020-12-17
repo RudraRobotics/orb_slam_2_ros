@@ -1,0 +1,247 @@
+\hypertarget{classg2o_1_1_optimization_algorithm}{}\doxysection{g2o\+::Optimization\+Algorithm Class Reference}
+\label{classg2o_1_1_optimization_algorithm}\index{g2o::OptimizationAlgorithm@{g2o::OptimizationAlgorithm}}
+
+
+Generic interface for a non-\/linear solver operating on a graph.  
+
+
+
+
+{\ttfamily \#include $<$optimization\+\_\+algorithm.\+h$>$}
+
+
+
+Inheritance diagram for g2o\+::Optimization\+Algorithm\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1_optimization_algorithm__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for g2o\+::Optimization\+Algorithm\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classg2o_1_1_optimization_algorithm__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classg2o_1_1_optimization_algorithm_a705d58d7bc19528a8ab718570d090cdf}{Solver\+Result}} \{ \mbox{\hyperlink{classg2o_1_1_optimization_algorithm_a705d58d7bc19528a8ab718570d090cdfa3c3d3db3bae371ad18611e0ec5aa99ef}{Terminate}} =2, 
+\mbox{\hyperlink{classg2o_1_1_optimization_algorithm_a705d58d7bc19528a8ab718570d090cdfa5e94b8ee7748cc4c1a5c86de2e8cc962}{OK}} =1, 
+\mbox{\hyperlink{classg2o_1_1_optimization_algorithm_a705d58d7bc19528a8ab718570d090cdfa375598c3a146bb5116b5d19bb1a88f84}{Fail}} =-\/1
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classg2o_1_1_optimization_algorithm_a205013e0425b7bbae01cd16caf500ebb}{Optimization\+Algorithm}} ()
+\item 
+virtual \mbox{\hyperlink{classg2o_1_1_optimization_algorithm_af2516e3d66596ec9c9dfdd08d48e90f9}{$\sim$\+Optimization\+Algorithm}} ()
+\item 
+virtual bool \mbox{\hyperlink{classg2o_1_1_optimization_algorithm_af5b54ea6d40a8ab4c16d448ba02a0c80}{init}} (bool online=false)=0
+\item 
+virtual \mbox{\hyperlink{classg2o_1_1_optimization_algorithm_a705d58d7bc19528a8ab718570d090cdf}{Solver\+Result}} \mbox{\hyperlink{classg2o_1_1_optimization_algorithm_ab174deeeb2551ceaf715ea09f0f9c077}{solve}} (int iteration, bool online=false)=0
+\item 
+virtual bool \mbox{\hyperlink{classg2o_1_1_optimization_algorithm_a67b159f3a83471ba9ebcc0a9162a0e23}{compute\+Marginals}} (\mbox{\hyperlink{classg2o_1_1_sparse_block_matrix}{Sparse\+Block\+Matrix}}$<$ Matrix\+Xd $>$ \&spinv, const std\+::vector$<$ std\+::pair$<$ int, int $>$ $>$ \&block\+Indices)=0
+\item 
+virtual bool \mbox{\hyperlink{classg2o_1_1_optimization_algorithm_a6b86c5d3c56a41c18f2aee611b62d71b}{update\+Structure}} (const std\+::vector$<$ \mbox{\hyperlink{classg2o_1_1_hyper_graph_1_1_vertex}{Hyper\+Graph\+::\+Vertex}} $\ast$ $>$ \&vset, const \mbox{\hyperlink{classg2o_1_1_hyper_graph_a5e2970e236c0dcb4eff7c205d7b6b4ae}{Hyper\+Graph\+::\+Edge\+Set}} \&edges)=0
+\item 
+virtual void \mbox{\hyperlink{classg2o_1_1_optimization_algorithm_a6683d35e67402b50924bc4744b6e282a}{print\+Verbose}} (std\+::ostream \&os) const
+\item 
+const \mbox{\hyperlink{classg2o_1_1_sparse_optimizer}{Sparse\+Optimizer}} $\ast$ \mbox{\hyperlink{classg2o_1_1_optimization_algorithm_a040b3e3fd814d9928fa73ae6e98cedc5}{optimizer}} () const
+\begin{DoxyCompactList}\small\item\em return the optimizer operating on \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classg2o_1_1_sparse_optimizer}{Sparse\+Optimizer}} $\ast$ \mbox{\hyperlink{classg2o_1_1_optimization_algorithm_ac6ca7a2adbd25615be78316bc811a315}{optimizer}} ()
+\item 
+void \mbox{\hyperlink{classg2o_1_1_optimization_algorithm_aff88a3dc8357c98712ff0047e601bd5e}{set\+Optimizer}} (\mbox{\hyperlink{classg2o_1_1_sparse_optimizer}{Sparse\+Optimizer}} $\ast$\mbox{\hyperlink{classg2o_1_1_optimization_algorithm_a040b3e3fd814d9928fa73ae6e98cedc5}{optimizer}})
+\item 
+const \mbox{\hyperlink{classg2o_1_1_property_map}{Property\+Map}} \& \mbox{\hyperlink{classg2o_1_1_optimization_algorithm_a0901951b7accc6744447c82dd043a07e}{properties}} () const
+\begin{DoxyCompactList}\small\item\em return the properties of the solver \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classg2o_1_1_optimization_algorithm_aa05a6380f936c728a574c7c272bcc524}{update\+Properties\+From\+String}} (const std\+::string \&prop\+String)
+\item 
+void \mbox{\hyperlink{classg2o_1_1_optimization_algorithm_a830831cbe8357957188440c2f22bed91}{print\+Properties}} (std\+::ostream \&os) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classg2o_1_1_sparse_optimizer}{Sparse\+Optimizer}} $\ast$ \mbox{\hyperlink{classg2o_1_1_optimization_algorithm_a6017c344be0d9f09d6674849849c6b60}{\+\_\+optimizer}}
+\begin{DoxyCompactList}\small\item\em the optimizer the solver is working on \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classg2o_1_1_property_map}{Property\+Map}} \mbox{\hyperlink{classg2o_1_1_optimization_algorithm_ae37b494f69b483a3fcafa944e987e325}{\+\_\+properties}}
+\begin{DoxyCompactList}\small\item\em the properties of your solver, use this to store the parameters of your solver \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Generic interface for a non-\/linear solver operating on a graph. 
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classg2o_1_1_optimization_algorithm_a705d58d7bc19528a8ab718570d090cdf}\label{classg2o_1_1_optimization_algorithm_a705d58d7bc19528a8ab718570d090cdf}} 
+\index{g2o::OptimizationAlgorithm@{g2o::OptimizationAlgorithm}!SolverResult@{SolverResult}}
+\index{SolverResult@{SolverResult}!g2o::OptimizationAlgorithm@{g2o::OptimizationAlgorithm}}
+\doxysubsubsection{\texorpdfstring{SolverResult}{SolverResult}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classg2o_1_1_optimization_algorithm_a705d58d7bc19528a8ab718570d090cdf}{g2o\+::\+Optimization\+Algorithm\+::\+Solver\+Result}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Terminate@{Terminate}!g2o::OptimizationAlgorithm@{g2o::OptimizationAlgorithm}}\index{g2o::OptimizationAlgorithm@{g2o::OptimizationAlgorithm}!Terminate@{Terminate}}}\mbox{\Hypertarget{classg2o_1_1_optimization_algorithm_a705d58d7bc19528a8ab718570d090cdfa3c3d3db3bae371ad18611e0ec5aa99ef}\label{classg2o_1_1_optimization_algorithm_a705d58d7bc19528a8ab718570d090cdfa3c3d3db3bae371ad18611e0ec5aa99ef}} 
+Terminate&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OK@{OK}!g2o::OptimizationAlgorithm@{g2o::OptimizationAlgorithm}}\index{g2o::OptimizationAlgorithm@{g2o::OptimizationAlgorithm}!OK@{OK}}}\mbox{\Hypertarget{classg2o_1_1_optimization_algorithm_a705d58d7bc19528a8ab718570d090cdfa5e94b8ee7748cc4c1a5c86de2e8cc962}\label{classg2o_1_1_optimization_algorithm_a705d58d7bc19528a8ab718570d090cdfa5e94b8ee7748cc4c1a5c86de2e8cc962}} 
+OK&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Fail@{Fail}!g2o::OptimizationAlgorithm@{g2o::OptimizationAlgorithm}}\index{g2o::OptimizationAlgorithm@{g2o::OptimizationAlgorithm}!Fail@{Fail}}}\mbox{\Hypertarget{classg2o_1_1_optimization_algorithm_a705d58d7bc19528a8ab718570d090cdfa375598c3a146bb5116b5d19bb1a88f84}\label{classg2o_1_1_optimization_algorithm_a705d58d7bc19528a8ab718570d090cdfa375598c3a146bb5116b5d19bb1a88f84}} 
+Fail&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classg2o_1_1_optimization_algorithm_a205013e0425b7bbae01cd16caf500ebb}\label{classg2o_1_1_optimization_algorithm_a205013e0425b7bbae01cd16caf500ebb}} 
+\index{g2o::OptimizationAlgorithm@{g2o::OptimizationAlgorithm}!OptimizationAlgorithm@{OptimizationAlgorithm}}
+\index{OptimizationAlgorithm@{OptimizationAlgorithm}!g2o::OptimizationAlgorithm@{g2o::OptimizationAlgorithm}}
+\doxysubsubsection{\texorpdfstring{OptimizationAlgorithm()}{OptimizationAlgorithm()}}
+{\footnotesize\ttfamily g2o\+::\+Optimization\+Algorithm\+::\+Optimization\+Algorithm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classg2o_1_1_optimization_algorithm_af2516e3d66596ec9c9dfdd08d48e90f9}\label{classg2o_1_1_optimization_algorithm_af2516e3d66596ec9c9dfdd08d48e90f9}} 
+\index{g2o::OptimizationAlgorithm@{g2o::OptimizationAlgorithm}!````~OptimizationAlgorithm@{$\sim$OptimizationAlgorithm}}
+\index{````~OptimizationAlgorithm@{$\sim$OptimizationAlgorithm}!g2o::OptimizationAlgorithm@{g2o::OptimizationAlgorithm}}
+\doxysubsubsection{\texorpdfstring{$\sim$OptimizationAlgorithm()}{~OptimizationAlgorithm()}}
+{\footnotesize\ttfamily g2o\+::\+Optimization\+Algorithm\+::$\sim$\+Optimization\+Algorithm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classg2o_1_1_optimization_algorithm_a67b159f3a83471ba9ebcc0a9162a0e23}\label{classg2o_1_1_optimization_algorithm_a67b159f3a83471ba9ebcc0a9162a0e23}} 
+\index{g2o::OptimizationAlgorithm@{g2o::OptimizationAlgorithm}!computeMarginals@{computeMarginals}}
+\index{computeMarginals@{computeMarginals}!g2o::OptimizationAlgorithm@{g2o::OptimizationAlgorithm}}
+\doxysubsubsection{\texorpdfstring{computeMarginals()}{computeMarginals()}}
+{\footnotesize\ttfamily virtual bool g2o\+::\+Optimization\+Algorithm\+::compute\+Marginals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classg2o_1_1_sparse_block_matrix}{Sparse\+Block\+Matrix}}$<$ Matrix\+Xd $>$ \&}]{spinv,  }\item[{const std\+::vector$<$ std\+::pair$<$ int, int $>$ $>$ \&}]{block\+Indices }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+computes the block diagonal elements of the pattern specified in the input and stores them in given \mbox{\hyperlink{classg2o_1_1_sparse_block_matrix}{Sparse\+Block\+Matrix}}. If your solver does not support computing the marginals, return false. 
+
+Implemented in \mbox{\hyperlink{classg2o_1_1_optimization_algorithm_with_hessian_af1959727df2b7cf233a171cfed246e9a}{g2o\+::\+Optimization\+Algorithm\+With\+Hessian}}.
+
+\mbox{\Hypertarget{classg2o_1_1_optimization_algorithm_af5b54ea6d40a8ab4c16d448ba02a0c80}\label{classg2o_1_1_optimization_algorithm_af5b54ea6d40a8ab4c16d448ba02a0c80}} 
+\index{g2o::OptimizationAlgorithm@{g2o::OptimizationAlgorithm}!init@{init}}
+\index{init@{init}!g2o::OptimizationAlgorithm@{g2o::OptimizationAlgorithm}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily virtual bool g2o\+::\+Optimization\+Algorithm\+::init (\begin{DoxyParamCaption}\item[{bool}]{online = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+initialize the solver, called once before the first call to \mbox{\hyperlink{classg2o_1_1_optimization_algorithm_ab174deeeb2551ceaf715ea09f0f9c077}{solve()}} 
+
+Implemented in \mbox{\hyperlink{classg2o_1_1_optimization_algorithm_with_hessian_ae067a9c2961718dc8a37e3b8478b6d01}{g2o\+::\+Optimization\+Algorithm\+With\+Hessian}}.
+
+\mbox{\Hypertarget{classg2o_1_1_optimization_algorithm_ac6ca7a2adbd25615be78316bc811a315}\label{classg2o_1_1_optimization_algorithm_ac6ca7a2adbd25615be78316bc811a315}} 
+\index{g2o::OptimizationAlgorithm@{g2o::OptimizationAlgorithm}!optimizer@{optimizer}}
+\index{optimizer@{optimizer}!g2o::OptimizationAlgorithm@{g2o::OptimizationAlgorithm}}
+\doxysubsubsection{\texorpdfstring{optimizer()}{optimizer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classg2o_1_1_sparse_optimizer}{Sparse\+Optimizer}}$\ast$ g2o\+::\+Optimization\+Algorithm\+::optimizer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classg2o_1_1_optimization_algorithm_a040b3e3fd814d9928fa73ae6e98cedc5}\label{classg2o_1_1_optimization_algorithm_a040b3e3fd814d9928fa73ae6e98cedc5}} 
+\index{g2o::OptimizationAlgorithm@{g2o::OptimizationAlgorithm}!optimizer@{optimizer}}
+\index{optimizer@{optimizer}!g2o::OptimizationAlgorithm@{g2o::OptimizationAlgorithm}}
+\doxysubsubsection{\texorpdfstring{optimizer()}{optimizer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classg2o_1_1_sparse_optimizer}{Sparse\+Optimizer}}$\ast$ g2o\+::\+Optimization\+Algorithm\+::optimizer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+return the optimizer operating on 
+
+\mbox{\Hypertarget{classg2o_1_1_optimization_algorithm_a830831cbe8357957188440c2f22bed91}\label{classg2o_1_1_optimization_algorithm_a830831cbe8357957188440c2f22bed91}} 
+\index{g2o::OptimizationAlgorithm@{g2o::OptimizationAlgorithm}!printProperties@{printProperties}}
+\index{printProperties@{printProperties}!g2o::OptimizationAlgorithm@{g2o::OptimizationAlgorithm}}
+\doxysubsubsection{\texorpdfstring{printProperties()}{printProperties()}}
+{\footnotesize\ttfamily void g2o\+::\+Optimization\+Algorithm\+::print\+Properties (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os }\end{DoxyParamCaption}) const}
+
+print the properties to a stream in a human readable fashion \mbox{\Hypertarget{classg2o_1_1_optimization_algorithm_a6683d35e67402b50924bc4744b6e282a}\label{classg2o_1_1_optimization_algorithm_a6683d35e67402b50924bc4744b6e282a}} 
+\index{g2o::OptimizationAlgorithm@{g2o::OptimizationAlgorithm}!printVerbose@{printVerbose}}
+\index{printVerbose@{printVerbose}!g2o::OptimizationAlgorithm@{g2o::OptimizationAlgorithm}}
+\doxysubsubsection{\texorpdfstring{printVerbose()}{printVerbose()}}
+{\footnotesize\ttfamily virtual void g2o\+::\+Optimization\+Algorithm\+::print\+Verbose (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+called by the optimizer if verbose. re-\/implement, if you want to print something 
+
+Reimplemented in \mbox{\hyperlink{classg2o_1_1_optimization_algorithm_dogleg_a48f424443a7b2b6e8c532204cd7334cd}{g2o\+::\+Optimization\+Algorithm\+Dogleg}}, \mbox{\hyperlink{classg2o_1_1_optimization_algorithm_gauss_newton_aff4c1b6a9f8a2e5c6777cfef9d4a18ba}{g2o\+::\+Optimization\+Algorithm\+Gauss\+Newton}}, and \mbox{\hyperlink{classg2o_1_1_optimization_algorithm_levenberg_a67308ead9762f478e29385229ea4b138}{g2o\+::\+Optimization\+Algorithm\+Levenberg}}.
+
+\mbox{\Hypertarget{classg2o_1_1_optimization_algorithm_a0901951b7accc6744447c82dd043a07e}\label{classg2o_1_1_optimization_algorithm_a0901951b7accc6744447c82dd043a07e}} 
+\index{g2o::OptimizationAlgorithm@{g2o::OptimizationAlgorithm}!properties@{properties}}
+\index{properties@{properties}!g2o::OptimizationAlgorithm@{g2o::OptimizationAlgorithm}}
+\doxysubsubsection{\texorpdfstring{properties()}{properties()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classg2o_1_1_property_map}{Property\+Map}}\& g2o\+::\+Optimization\+Algorithm\+::properties (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+return the properties of the solver 
+
+\mbox{\Hypertarget{classg2o_1_1_optimization_algorithm_aff88a3dc8357c98712ff0047e601bd5e}\label{classg2o_1_1_optimization_algorithm_aff88a3dc8357c98712ff0047e601bd5e}} 
+\index{g2o::OptimizationAlgorithm@{g2o::OptimizationAlgorithm}!setOptimizer@{setOptimizer}}
+\index{setOptimizer@{setOptimizer}!g2o::OptimizationAlgorithm@{g2o::OptimizationAlgorithm}}
+\doxysubsubsection{\texorpdfstring{setOptimizer()}{setOptimizer()}}
+{\footnotesize\ttfamily void g2o\+::\+Optimization\+Algorithm\+::set\+Optimizer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classg2o_1_1_sparse_optimizer}{Sparse\+Optimizer}} $\ast$}]{optimizer }\end{DoxyParamCaption})}
+
+specify on which optimizer the solver should work on \mbox{\Hypertarget{classg2o_1_1_optimization_algorithm_ab174deeeb2551ceaf715ea09f0f9c077}\label{classg2o_1_1_optimization_algorithm_ab174deeeb2551ceaf715ea09f0f9c077}} 
+\index{g2o::OptimizationAlgorithm@{g2o::OptimizationAlgorithm}!solve@{solve}}
+\index{solve@{solve}!g2o::OptimizationAlgorithm@{g2o::OptimizationAlgorithm}}
+\doxysubsubsection{\texorpdfstring{solve()}{solve()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classg2o_1_1_optimization_algorithm_a705d58d7bc19528a8ab718570d090cdf}{Solver\+Result}} g2o\+::\+Optimization\+Algorithm\+::solve (\begin{DoxyParamCaption}\item[{int}]{iteration,  }\item[{bool}]{online = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Solve one iteration. The \mbox{\hyperlink{classg2o_1_1_sparse_optimizer}{Sparse\+Optimizer}} running on-\/top will call this for the given number of iterations. 
+\begin{DoxyParams}{Parameters}
+{\em iteration} & indicates the current iteration \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classg2o_1_1_optimization_algorithm_dogleg_ace62fd809c18655bd7ff104285748610}{g2o\+::\+Optimization\+Algorithm\+Dogleg}}, \mbox{\hyperlink{classg2o_1_1_optimization_algorithm_gauss_newton_aba0b67eecaca01c576de7e605e5af5f1}{g2o\+::\+Optimization\+Algorithm\+Gauss\+Newton}}, and \mbox{\hyperlink{classg2o_1_1_optimization_algorithm_levenberg_a7140fa989b54eac4e09ba17829dcada0}{g2o\+::\+Optimization\+Algorithm\+Levenberg}}.
+
+\mbox{\Hypertarget{classg2o_1_1_optimization_algorithm_aa05a6380f936c728a574c7c272bcc524}\label{classg2o_1_1_optimization_algorithm_aa05a6380f936c728a574c7c272bcc524}} 
+\index{g2o::OptimizationAlgorithm@{g2o::OptimizationAlgorithm}!updatePropertiesFromString@{updatePropertiesFromString}}
+\index{updatePropertiesFromString@{updatePropertiesFromString}!g2o::OptimizationAlgorithm@{g2o::OptimizationAlgorithm}}
+\doxysubsubsection{\texorpdfstring{updatePropertiesFromString()}{updatePropertiesFromString()}}
+{\footnotesize\ttfamily bool g2o\+::\+Optimization\+Algorithm\+::update\+Properties\+From\+String (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{prop\+String }\end{DoxyParamCaption})}
+
+update the properties from a string, see \mbox{\hyperlink{classg2o_1_1_property_map_a0407e6a72afafd608f13cfdffc6ffc06}{Property\+Map\+::update\+Map\+From\+String()}} \mbox{\Hypertarget{classg2o_1_1_optimization_algorithm_a6b86c5d3c56a41c18f2aee611b62d71b}\label{classg2o_1_1_optimization_algorithm_a6b86c5d3c56a41c18f2aee611b62d71b}} 
+\index{g2o::OptimizationAlgorithm@{g2o::OptimizationAlgorithm}!updateStructure@{updateStructure}}
+\index{updateStructure@{updateStructure}!g2o::OptimizationAlgorithm@{g2o::OptimizationAlgorithm}}
+\doxysubsubsection{\texorpdfstring{updateStructure()}{updateStructure()}}
+{\footnotesize\ttfamily virtual bool g2o\+::\+Optimization\+Algorithm\+::update\+Structure (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classg2o_1_1_hyper_graph_1_1_vertex}{Hyper\+Graph\+::\+Vertex}} $\ast$ $>$ \&}]{vset,  }\item[{const \mbox{\hyperlink{classg2o_1_1_hyper_graph_a5e2970e236c0dcb4eff7c205d7b6b4ae}{Hyper\+Graph\+::\+Edge\+Set}} \&}]{edges }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+update the structures for online processing 
+
+Implemented in \mbox{\hyperlink{classg2o_1_1_optimization_algorithm_with_hessian_a9ffffb2bdb70db856bccdb6774776fa3}{g2o\+::\+Optimization\+Algorithm\+With\+Hessian}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classg2o_1_1_optimization_algorithm_a6017c344be0d9f09d6674849849c6b60}\label{classg2o_1_1_optimization_algorithm_a6017c344be0d9f09d6674849849c6b60}} 
+\index{g2o::OptimizationAlgorithm@{g2o::OptimizationAlgorithm}!\_optimizer@{\_optimizer}}
+\index{\_optimizer@{\_optimizer}!g2o::OptimizationAlgorithm@{g2o::OptimizationAlgorithm}}
+\doxysubsubsection{\texorpdfstring{\_optimizer}{\_optimizer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classg2o_1_1_sparse_optimizer}{Sparse\+Optimizer}}$\ast$ g2o\+::\+Optimization\+Algorithm\+::\+\_\+optimizer\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+the optimizer the solver is working on 
+
+\mbox{\Hypertarget{classg2o_1_1_optimization_algorithm_ae37b494f69b483a3fcafa944e987e325}\label{classg2o_1_1_optimization_algorithm_ae37b494f69b483a3fcafa944e987e325}} 
+\index{g2o::OptimizationAlgorithm@{g2o::OptimizationAlgorithm}!\_properties@{\_properties}}
+\index{\_properties@{\_properties}!g2o::OptimizationAlgorithm@{g2o::OptimizationAlgorithm}}
+\doxysubsubsection{\texorpdfstring{\_properties}{\_properties}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classg2o_1_1_property_map}{Property\+Map}} g2o\+::\+Optimization\+Algorithm\+::\+\_\+properties\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+the properties of your solver, use this to store the parameters of your solver 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+orb\+\_\+slam2/\+Thirdparty/g2o/g2o/core/\mbox{\hyperlink{optimization__algorithm_8h}{optimization\+\_\+algorithm.\+h}}\item 
+orb\+\_\+slam2/\+Thirdparty/g2o/g2o/core/\mbox{\hyperlink{optimization__algorithm_8cpp}{optimization\+\_\+algorithm.\+cpp}}\end{DoxyCompactItemize}

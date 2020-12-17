@@ -1,0 +1,139 @@
+\hypertarget{class_o_r_b___s_l_a_m2_1_1_key_frame_database}{}\doxysection{O\+R\+B\+\_\+\+S\+L\+A\+M2\+::Key\+Frame\+Database Class Reference}
+\label{class_o_r_b___s_l_a_m2_1_1_key_frame_database}\index{ORB\_SLAM2::KeyFrameDatabase@{ORB\_SLAM2::KeyFrameDatabase}}
+
+
+{\ttfamily \#include $<$Key\+Frame\+Database.\+h$>$}
+
+
+
+Collaboration diagram for O\+R\+B\+\_\+\+S\+L\+A\+M2\+::Key\+Frame\+Database\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{class_o_r_b___s_l_a_m2_1_1_key_frame_database__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame_database_a83495a11d1fb3cd98e82fa1e2efb6920}{Key\+Frame\+Database}} (const \mbox{\hyperlink{namespace_o_r_b___s_l_a_m2_a2fafba714858cab1bb18d438e2e83c5d}{O\+R\+B\+Vocabulary}} \&voc)
+\item 
+void \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame_database_a1b3a362116e3ecf2cd7e151be2ca3fcb}{add}} (\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame}{Key\+Frame}} $\ast$p\+KF)
+\item 
+void \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame_database_aa5b56ae1d1cb827fb4602abd61d77a06}{erase}} (\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame}{Key\+Frame}} $\ast$p\+KF)
+\item 
+void \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame_database_a3eccf99ba2e387d0273f919fd0574ea2}{clear}} ()
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame}{Key\+Frame}} $\ast$ $>$ \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame_database_a2d396aae02c4318ea8c7e7eff8059c69}{Detect\+Loop\+Candidates}} (\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame}{Key\+Frame}} $\ast$p\+KF, float min\+Score)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame}{Key\+Frame}} $\ast$ $>$ \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame_database_a008586e4d07ece0d948d0f1633447a2b}{Detect\+Relocalization\+Candidates}} (\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_frame}{Frame}} $\ast$F)
+\item 
+\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame_database_a5717590a07245379239f313ab1209676}{Key\+Frame\+Database}} ()
+\item 
+void \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame_database_aa8abf0ca35c86f80c99f377d5c98c0d9}{Set\+O\+R\+Bvocabulary}} (\mbox{\hyperlink{namespace_o_r_b___s_l_a_m2_a2fafba714858cab1bb18d438e2e83c5d}{O\+R\+B\+Vocabulary}} $\ast$porbv)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{namespace_o_r_b___s_l_a_m2_a2fafba714858cab1bb18d438e2e83c5d}{O\+R\+B\+Vocabulary}} $\ast$ \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame_database_ad11a653313a5f0ef6f6fbc4880df0b7d}{mp\+Voc}}
+\item 
+std\+::vector$<$ list$<$ \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame}{Key\+Frame}} $\ast$ $>$ $>$ \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame_database_a3b6d73823fcd1b96f3ba5a66be0b2227}{mv\+Inverted\+File}}
+\item 
+std\+::mutex \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame_database_a31fc30f1474b8c97d81c96135e6912a1}{m\+Mutex}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame_database_ac98d07dd8f7b70e16ccb9a01abf56b9c}{boost\+::serialization\+::access}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_key_frame_database_a83495a11d1fb3cd98e82fa1e2efb6920}\label{class_o_r_b___s_l_a_m2_1_1_key_frame_database_a83495a11d1fb3cd98e82fa1e2efb6920}} 
+\index{ORB\_SLAM2::KeyFrameDatabase@{ORB\_SLAM2::KeyFrameDatabase}!KeyFrameDatabase@{KeyFrameDatabase}}
+\index{KeyFrameDatabase@{KeyFrameDatabase}!ORB\_SLAM2::KeyFrameDatabase@{ORB\_SLAM2::KeyFrameDatabase}}
+\doxysubsubsection{\texorpdfstring{KeyFrameDatabase()}{KeyFrameDatabase()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Key\+Frame\+Database\+::\+Key\+Frame\+Database (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespace_o_r_b___s_l_a_m2_a2fafba714858cab1bb18d438e2e83c5d}{O\+R\+B\+Vocabulary}} \&}]{voc }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_key_frame_database_a5717590a07245379239f313ab1209676}\label{class_o_r_b___s_l_a_m2_1_1_key_frame_database_a5717590a07245379239f313ab1209676}} 
+\index{ORB\_SLAM2::KeyFrameDatabase@{ORB\_SLAM2::KeyFrameDatabase}!KeyFrameDatabase@{KeyFrameDatabase}}
+\index{KeyFrameDatabase@{KeyFrameDatabase}!ORB\_SLAM2::KeyFrameDatabase@{ORB\_SLAM2::KeyFrameDatabase}}
+\doxysubsubsection{\texorpdfstring{KeyFrameDatabase()}{KeyFrameDatabase()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Key\+Frame\+Database\+::\+Key\+Frame\+Database (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_key_frame_database_a1b3a362116e3ecf2cd7e151be2ca3fcb}\label{class_o_r_b___s_l_a_m2_1_1_key_frame_database_a1b3a362116e3ecf2cd7e151be2ca3fcb}} 
+\index{ORB\_SLAM2::KeyFrameDatabase@{ORB\_SLAM2::KeyFrameDatabase}!add@{add}}
+\index{add@{add}!ORB\_SLAM2::KeyFrameDatabase@{ORB\_SLAM2::KeyFrameDatabase}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Key\+Frame\+Database\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame}{Key\+Frame}} $\ast$}]{p\+KF }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_key_frame_database_a3eccf99ba2e387d0273f919fd0574ea2}\label{class_o_r_b___s_l_a_m2_1_1_key_frame_database_a3eccf99ba2e387d0273f919fd0574ea2}} 
+\index{ORB\_SLAM2::KeyFrameDatabase@{ORB\_SLAM2::KeyFrameDatabase}!clear@{clear}}
+\index{clear@{clear}!ORB\_SLAM2::KeyFrameDatabase@{ORB\_SLAM2::KeyFrameDatabase}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Key\+Frame\+Database\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_key_frame_database_a2d396aae02c4318ea8c7e7eff8059c69}\label{class_o_r_b___s_l_a_m2_1_1_key_frame_database_a2d396aae02c4318ea8c7e7eff8059c69}} 
+\index{ORB\_SLAM2::KeyFrameDatabase@{ORB\_SLAM2::KeyFrameDatabase}!DetectLoopCandidates@{DetectLoopCandidates}}
+\index{DetectLoopCandidates@{DetectLoopCandidates}!ORB\_SLAM2::KeyFrameDatabase@{ORB\_SLAM2::KeyFrameDatabase}}
+\doxysubsubsection{\texorpdfstring{DetectLoopCandidates()}{DetectLoopCandidates()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame}{Key\+Frame}} $\ast$ $>$ O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Key\+Frame\+Database\+::\+Detect\+Loop\+Candidates (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame}{Key\+Frame}} $\ast$}]{p\+KF,  }\item[{float}]{min\+Score }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_key_frame_database_a008586e4d07ece0d948d0f1633447a2b}\label{class_o_r_b___s_l_a_m2_1_1_key_frame_database_a008586e4d07ece0d948d0f1633447a2b}} 
+\index{ORB\_SLAM2::KeyFrameDatabase@{ORB\_SLAM2::KeyFrameDatabase}!DetectRelocalizationCandidates@{DetectRelocalizationCandidates}}
+\index{DetectRelocalizationCandidates@{DetectRelocalizationCandidates}!ORB\_SLAM2::KeyFrameDatabase@{ORB\_SLAM2::KeyFrameDatabase}}
+\doxysubsubsection{\texorpdfstring{DetectRelocalizationCandidates()}{DetectRelocalizationCandidates()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame}{Key\+Frame}} $\ast$ $>$ O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Key\+Frame\+Database\+::\+Detect\+Relocalization\+Candidates (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_frame}{Frame}} $\ast$}]{F }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_key_frame_database_aa5b56ae1d1cb827fb4602abd61d77a06}\label{class_o_r_b___s_l_a_m2_1_1_key_frame_database_aa5b56ae1d1cb827fb4602abd61d77a06}} 
+\index{ORB\_SLAM2::KeyFrameDatabase@{ORB\_SLAM2::KeyFrameDatabase}!erase@{erase}}
+\index{erase@{erase}!ORB\_SLAM2::KeyFrameDatabase@{ORB\_SLAM2::KeyFrameDatabase}}
+\doxysubsubsection{\texorpdfstring{erase()}{erase()}}
+{\footnotesize\ttfamily void O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Key\+Frame\+Database\+::erase (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame}{Key\+Frame}} $\ast$}]{p\+KF }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_key_frame_database_aa8abf0ca35c86f80c99f377d5c98c0d9}\label{class_o_r_b___s_l_a_m2_1_1_key_frame_database_aa8abf0ca35c86f80c99f377d5c98c0d9}} 
+\index{ORB\_SLAM2::KeyFrameDatabase@{ORB\_SLAM2::KeyFrameDatabase}!SetORBvocabulary@{SetORBvocabulary}}
+\index{SetORBvocabulary@{SetORBvocabulary}!ORB\_SLAM2::KeyFrameDatabase@{ORB\_SLAM2::KeyFrameDatabase}}
+\doxysubsubsection{\texorpdfstring{SetORBvocabulary()}{SetORBvocabulary()}}
+{\footnotesize\ttfamily void O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Key\+Frame\+Database\+::\+Set\+O\+R\+Bvocabulary (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_o_r_b___s_l_a_m2_a2fafba714858cab1bb18d438e2e83c5d}{O\+R\+B\+Vocabulary}} $\ast$}]{porbv }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_key_frame_database_ac98d07dd8f7b70e16ccb9a01abf56b9c}\label{class_o_r_b___s_l_a_m2_1_1_key_frame_database_ac98d07dd8f7b70e16ccb9a01abf56b9c}} 
+\index{ORB\_SLAM2::KeyFrameDatabase@{ORB\_SLAM2::KeyFrameDatabase}!boost::serialization::access@{boost::serialization::access}}
+\index{boost::serialization::access@{boost::serialization::access}!ORB\_SLAM2::KeyFrameDatabase@{ORB\_SLAM2::KeyFrameDatabase}}
+\doxysubsubsection{\texorpdfstring{boost::serialization::access}{boost::serialization::access}}
+{\footnotesize\ttfamily friend class boost\+::serialization\+::access\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_key_frame_database_a31fc30f1474b8c97d81c96135e6912a1}\label{class_o_r_b___s_l_a_m2_1_1_key_frame_database_a31fc30f1474b8c97d81c96135e6912a1}} 
+\index{ORB\_SLAM2::KeyFrameDatabase@{ORB\_SLAM2::KeyFrameDatabase}!mMutex@{mMutex}}
+\index{mMutex@{mMutex}!ORB\_SLAM2::KeyFrameDatabase@{ORB\_SLAM2::KeyFrameDatabase}}
+\doxysubsubsection{\texorpdfstring{mMutex}{mMutex}}
+{\footnotesize\ttfamily std\+::mutex O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Key\+Frame\+Database\+::m\+Mutex\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_key_frame_database_ad11a653313a5f0ef6f6fbc4880df0b7d}\label{class_o_r_b___s_l_a_m2_1_1_key_frame_database_ad11a653313a5f0ef6f6fbc4880df0b7d}} 
+\index{ORB\_SLAM2::KeyFrameDatabase@{ORB\_SLAM2::KeyFrameDatabase}!mpVoc@{mpVoc}}
+\index{mpVoc@{mpVoc}!ORB\_SLAM2::KeyFrameDatabase@{ORB\_SLAM2::KeyFrameDatabase}}
+\doxysubsubsection{\texorpdfstring{mpVoc}{mpVoc}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespace_o_r_b___s_l_a_m2_a2fafba714858cab1bb18d438e2e83c5d}{O\+R\+B\+Vocabulary}}$\ast$ O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Key\+Frame\+Database\+::mp\+Voc\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_o_r_b___s_l_a_m2_1_1_key_frame_database_a3b6d73823fcd1b96f3ba5a66be0b2227}\label{class_o_r_b___s_l_a_m2_1_1_key_frame_database_a3b6d73823fcd1b96f3ba5a66be0b2227}} 
+\index{ORB\_SLAM2::KeyFrameDatabase@{ORB\_SLAM2::KeyFrameDatabase}!mvInvertedFile@{mvInvertedFile}}
+\index{mvInvertedFile@{mvInvertedFile}!ORB\_SLAM2::KeyFrameDatabase@{ORB\_SLAM2::KeyFrameDatabase}}
+\doxysubsubsection{\texorpdfstring{mvInvertedFile}{mvInvertedFile}}
+{\footnotesize\ttfamily std\+::vector$<$list$<$\mbox{\hyperlink{class_o_r_b___s_l_a_m2_1_1_key_frame}{Key\+Frame}}$\ast$$>$ $>$ O\+R\+B\+\_\+\+S\+L\+A\+M2\+::\+Key\+Frame\+Database\+::mv\+Inverted\+File\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+orb\+\_\+slam2/include/\mbox{\hyperlink{_key_frame_database_8h}{Key\+Frame\+Database.\+h}}\item 
+orb\+\_\+slam2/src/\mbox{\hyperlink{_key_frame_database_8cc}{Key\+Frame\+Database.\+cc}}\end{DoxyCompactItemize}

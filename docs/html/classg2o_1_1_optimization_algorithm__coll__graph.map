@@ -1,0 +1,11 @@
+<map id="g2o::OptimizationAlgorithm" name="g2o::OptimizationAlgorithm">
+<area shape="rect" id="node1" title="Generic interface for a non&#45;linear solver operating on a graph." alt="" coords="475,185,678,212"/>
+<area shape="rect" id="node4" href="$classg2o_1_1_sparse_optimizer.html" title=" " alt="" coords="390,275,553,301"/>
+<area shape="rect" id="node2" href="$classg2o_1_1_property_map.html" title="a collection of properties mapping from name to the property itself" alt="" coords="584,96,721,123"/>
+<area shape="rect" id="node3" title=" " alt="" coords="585,5,747,47"/>
+<area shape="rect" id="node5" href="$structg2o_1_1_optimizable_graph.html" title=" " alt="" coords="241,185,413,212"/>
+<area shape="rect" id="node6" href="$classg2o_1_1_hyper_graph.html" title=" " alt="" coords="5,96,137,123"/>
+<area shape="rect" id="node7" href="$classg2o_1_1_jacobian_workspace.html" title="provide memory workspace for computing the Jacobians" alt="" coords="162,96,343,123"/>
+<area shape="rect" id="node8" href="$classg2o_1_1_parameter_container.html" title="map id to parameters" alt="" coords="368,96,553,123"/>
+<area shape="rect" id="node9" title=" " alt="" coords="347,13,561,39"/>
+</map>
